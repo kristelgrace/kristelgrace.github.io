@@ -38,14 +38,14 @@ footer {
   color: #fff;
 }
 
-.button {
+.button { /* style of an active button */
   color: #F6F7F1;
   background-color: #94BCBC;
   border-radius: 5px;
   padding: 8px 15px;
 }
 
-.button-inactive {
+.button-inactive { /* style of an inactive button */
   color: #F6F7F1;
   background-color: #6F8D8D;
   border-radius: 5px;
@@ -57,13 +57,13 @@ footer {
   margin-right: 75px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* adjust margins & paddings for screen size */
   .row {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .work-bio {
+  .work-bio, .about-bio {
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -96,6 +96,8 @@ a:hover {
   text-decoration: none;
   transition: .2s ease;
 }
+
+/************ HOME/ WORK PAGE ************/
 
 /* bio and picture styling */
 
@@ -204,7 +206,6 @@ a:hover {
   opacity: 1;
 }
 
-
 /* for headroom */
 .headroom {
   transition: transform 0.25s ease-in-out 0s;
@@ -225,4 +226,45 @@ a:hover {
     right: 0;
     left: 0;
     top: 0;
+}
+
+/************ ABOUT PAGE ************/
+
+.about-bio {
+  margin-top: 125px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.about-description {
+  font-size: 19px;
+  display: inline;
+  height: 344px;
+  overflow: auto;
+}
+
+#hover-image { /* styling the overlay text on each portfolio item*/
+  top: 50%;
+  left: 50%;
+  transition: .5s ease;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#hidden-image { /*hide the overlay first*/
+  opacity: 0;
+  transition: .2s ease;
+}
+
+#about-image:hover #hidden-image { /* make overlay visible upon hover */
+  opacity: 1;
+  transition: .2s ease;
 }
