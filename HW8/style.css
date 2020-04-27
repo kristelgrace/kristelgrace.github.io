@@ -1,0 +1,222 @@
+/*   global styles   */
+body {
+  background-color: #F6F7F1;
+}
+
+header {
+  background-color: #F0F1EB;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #F0F1EB;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 75px 40px 75px;
+}
+
+.text {
+  font-family: "Lato", sans-serif;
+  color: #646464;
+}
+
+.norm-p-size {
+  font-size: 18px;
+}
+
+.small-htext {
+  font-size: 23px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.button {
+  color: #F6F7F1;
+  background-color: #94BCBC;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.button-inactive {
+  color: #F6F7F1;
+  background-color: #6F8D8D;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.row {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .work-bio {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px 20px 30px 25px;
+  }
+}
+
+
+/* text size of logo */
+#logo {
+  font-size: 23px;
+}
+
+/*   styling links   */
+
+a {
+  text-decoration: none;
+  color: #347979;
+}
+
+a:hover {
+  color: #94BCBC;
+  text-decoration: none;
+}
+
+/* bio and picture styling */
+
+.work-bio {
+  margin-top: 125px;
+  margin-bottom: 20px;
+}
+
+.work-image {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.work-description {
+  font-size: 19px;
+  display: inline;
+  height: 344px;
+  overflow: auto;
+}
+
+/*portfolio items styling */
+
+.bunbun-work {
+  background-color: #F9F4E1;
+  height: 320px;
+}
+
+.junto-work {
+  background-color: #B2ABC0;
+  height: 320px;
+}
+
+.comyoot-work {
+  background-color: #97A0B3;
+  height: 320px;
+}
+
+.pubart-work {
+  background-color: #ccc;
+  height: 320px;
+}
+
+.bunbun-img, .junto-img, .comyoot-img, .pubart-img {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+}
+
+.form-group {
+  margin-bottom: 30px; /* adding bottom margin to grid items */
+}
+
+.overlay-work-items { /* styling the overlay text on each portfolio item*/
+  top: 50%;
+  left: 50%;
+  background: rgba(246,247,241, 0.7);
+  transition: .5s ease;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 30px 40px;
+}
+
+#bunbun-overlay, #junto-overlay, #comyoot-overlay, #pubart-overlay { /*hide the overlay first*/
+  opacity: 0;
+}
+
+#bunbun-work:hover #bunbun-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#bunbun-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease
+}
+
+#junto-work:hover #junto-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#junto-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease
+}
+
+#comyoot-work:hover #comyoot-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#comyoot-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease
+}
+
+#pubart-work:hover #pubart-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+
+/* for headroom */
+.headroom {
+  transition: transform 0.25s ease-in-out 0s;
+  will-change: transform;
+}
+
+.headroom--pinned {
+    transform: translateY(0);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+}
