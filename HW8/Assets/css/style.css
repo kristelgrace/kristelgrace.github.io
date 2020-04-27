@@ -88,11 +88,13 @@ footer {
 a {
   text-decoration: none;
   color: #347979;
+  transition: .3s ease;
 }
 
 a:hover {
   color: #94BCBC;
   text-decoration: none;
+  transition: .3s ease;
 }
 
 /* bio and picture styling */
@@ -167,13 +169,17 @@ a:hover {
   opacity: 0;
 }
 
+#bunbun-view, #junto-view, #comyoot-view {
+  transition: .3s ease;
+}
+
 #bunbun-work:hover #bunbun-overlay { /* make overlay visible upon hover */
   opacity: 1;
 }
 
 #bunbun-view:hover { /* darken color of button upon hover */
   background-color: #6F8D8D;
-  transition: .3s ease
+  transition: .3s ease;
 }
 
 #junto-work:hover #junto-overlay { /* make overlay visible upon hover */
@@ -182,7 +188,7 @@ a:hover {
 
 #junto-view:hover { /* darken color of button upon hover */
   background-color: #6F8D8D;
-  transition: .3s ease
+  transition: .3s ease;
 }
 
 #comyoot-work:hover #comyoot-overlay { /* make overlay visible upon hover */
@@ -191,7 +197,7 @@ a:hover {
 
 #comyoot-view:hover { /* darken color of button upon hover */
   background-color: #6F8D8D;
-  transition: .3s ease
+  transition: .3s ease;
 }
 
 #pubart-work:hover #pubart-overlay { /* make overlay visible upon hover */
