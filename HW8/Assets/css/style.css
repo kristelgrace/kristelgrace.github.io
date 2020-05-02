@@ -26,6 +26,10 @@ footer {
   font-size: 18px;
 }
 
+.big-htext {
+  font-size: 30px;
+}
+
 .small-htext {
   font-size: 23px;
 }
@@ -267,4 +271,22 @@ a:hover {
 #about-image:hover #hidden-image { /* make overlay visible upon hover */
   opacity: 1;
   transition: .2s ease;
+}
+
+/************ BUNBUN PAGE ************/
+
+.bunbun-shortdesc {
+  margin-top: 125px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  background-color: #E7E8E2;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.bunbun-titleimg {
+  max-height: 100%;
+  max-width: 100%;
 }
