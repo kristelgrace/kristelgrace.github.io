@@ -1,6 +1,8 @@
 /*   global styles   */
 body {
   background-color: #F6F7F1;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -18,7 +20,7 @@ footer {
 }
 
 .text {
-  font-family: "Lato", sans-serif;
+  font-family: Helvetica Neue, "Rubik", sans-serif;
   color: #646464;
 }
 
@@ -61,13 +63,31 @@ footer {
   margin-right: 75px;
 }
 
-@media (max-width: 768px) { /* adjust margins & paddings for screen size */
+.form-group {
+  margin-bottom: 30px; /* adding bottom margin to grid items */
+}
+
+@media (max-width: 767px) { /* adjust margins & paddings for screen size less than 767px */
   .row {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .work-bio, .about-bio {
+  .work-bio {
+    padding: 40px 10px;
+  }
+
+  #work-bio.col-sm-6.form-group {
+    margin-bottom: 0px;
+  }
+
+  .work-logo {
+    padding-top: 70px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .about-bio {
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -81,6 +101,16 @@ footer {
   }
 }
 
+@media (min-width: 768px) { /* adjust margins & paddings for screen size more than 768px */
+    .vertical-align {
+        display: flex;
+        align-items: center;
+    }
+
+    .work-bio {
+        padding: 75px 75px;
+    }
+}
 
 /* text size of logo */
 #logo {
@@ -90,10 +120,11 @@ footer {
 /*   styling links   */
 
 a {
-  text-decoration: none;
   color: #347979;
+  text-decoration: none;
   transition: .2s ease;
 }
+
 
 a:hover {
   color: #94BCBC;
@@ -101,29 +132,38 @@ a:hover {
   transition: .2s ease;
 }
 
+.italic:hover {
+  font-style: italic;
+}
+
 /************ HOME/ WORK PAGE ************/
 
 /* bio and picture styling */
 
 .work-bio {
-  margin-top: 125px;
-  margin-bottom: 20px;
+  background-color: #E8EAE1;
+  height: 100vh;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.work-image {
-  max-width: 100%;
+.work-logo {
+  height: auto;
+  max-width: 50%;
   display: block;
   margin: auto;
 }
 
 .work-description {
   font-size: 19px;
-  display: inline;
-  height: 344px;
   overflow: auto;
 }
 
 /*portfolio items styling */
+.work-items {
+  margin-top: 75px;
+}
 
 .bunbun-work {
   background-color: #F9F4E1;
@@ -152,10 +192,6 @@ a:hover {
   top: 50%;
   transform: translateY(-50%);
   max-width: 50%;
-}
-
-.form-group {
-  margin-bottom: 30px; /* adding bottom margin to grid items */
 }
 
 .overlay-work-items { /* styling the overlay text on each portfolio item*/
@@ -248,7 +284,6 @@ a:hover {
 .about-description {
   font-size: 19px;
   display: inline;
-  height: 344px;
   overflow: auto;
 }
 
