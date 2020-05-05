@@ -21,6 +21,12 @@
     <!-- headroom js library for sticky header animation-->
     <script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
 
+    <!-- jump js library for smooth scrolling animation -->
+    <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 
@@ -40,21 +46,27 @@
     </header>
 
     <!-- quick intro/bio -->
-    <div class="row work-bio vertical-align">
-      <div class="col-sm-6 form-group" id="work-bio">
-      <img class="work-logo img-responsive" src="Assets/images/ky logo.png" alt="headshot of kristel">
+    <div class="work-bio">
+      <div class="row vertical-align">
+        <div class="col-lg-6 col-sm-4 form-group" id="work-bio">
+        <img class="work-logo" src="Assets/images/ky logo.png" alt="headshot of kristel">
+        </div>
+        <div class="col-lg-6 col-sm-8 text work-description form-group">
+          hello! my name is kristel and i’m an aspiring management consultant! <br><br>
+          i’m a student at
+          <a href="https://www.cmu.edu" target="_blank">carnegie mellon</a>
+           studying
+          <a href="https://www.cmu.edu/tepper" target="_blank">business administration</a>
+           and
+          <a href="https://www.hcii.cmu.edu" target="_blank">human-computer interaction</a>. <br><br>
+          view some of my work below or <a href="https://www.linkedin.com/in/kristelyu/" target="_blank">connect with me</a>!
+        </div>
       </div>
-      <div class="col-sm-6 text work-description form-group">
-        <br>
-        hello! my name is kristel and i’m an aspiring management consultant! <br><br>
-        i’m a student at
-        <a href="https://www.cmu.edu" target="_blank">carnegie mellon</a>
-         studying
-        <a href="https://www.cmu.edu/tepper" target="_blank">business administration</a>
-         and
-        <a href="https://www.hcii.cmu.edu" target="_blank">human-computer interaction</a>. <br><br>
-        view some of my work below or <a href="https://www.linkedin.com/in/kristelyu/" target="_blank">connect with me</a>!
+
+      <div class="work-arrow">
+        <img class="arrow-down animated infinite bounce slow delay-1s" src="Assets/images/arrow.png" alt="arrow down" onclick="Jump('.work-items')">
       </div>
+
     </div>
 
     <div class="row form-group work-items">

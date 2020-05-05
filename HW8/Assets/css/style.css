@@ -19,6 +19,15 @@ footer {
   padding: 20px 75px 40px 75px;
 }
 
+/* change highlight color, from w3schools */
+::-moz-selection { /* Code for Firefox */
+  background: white;
+}
+
+::selection {
+  background: white;
+}
+
 .text {
   font-family: Helvetica Neue, "Rubik", sans-serif;
   color: #646464;
@@ -83,8 +92,10 @@ footer {
 
   .work-logo {
     padding-top: 70px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    height: auto;
+    max-width: 30%;
+    display: block;
+    margin: auto;
   }
 
   .about-bio {
@@ -104,11 +115,19 @@ footer {
 @media (min-width: 768px) { /* adjust margins & paddings for screen size more than 768px */
     .vertical-align {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
 
     .work-bio {
-        padding: 75px 75px;
+        padding: 200px 0;
+    }
+
+    .work-logo {
+      height: auto;
+      max-width: 40%;
+      display: block;
+      margin: auto;
     }
 }
 
@@ -148,21 +167,27 @@ a:hover {
   margin-right: 0;
 }
 
-.work-logo {
-  height: auto;
-  max-width: 50%;
-  display: block;
-  margin: auto;
-}
-
 .work-description {
   font-size: 19px;
   overflow: auto;
 }
 
+.work-arrow {
+  display: block;
+  text-align: center;
+  background-color: white;
+}
+
+.arrow-down {
+  cursor: pointer;
+  height: 5vh;
+  top: 90vh;
+  position: absolute;
+}
+
 /*portfolio items styling */
 .work-items {
-  margin-top: 75px;
+  padding-top: 75px;
 }
 
 .bunbun-work {
