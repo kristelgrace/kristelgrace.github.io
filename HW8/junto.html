@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>junto | kristel yu</title>
+    <!-- character encoding -->
+    <meta charset="utf-8">
+
+    <!-- initial scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap css+js library for screen responsiveness -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- scrollreveal js library for animating objects -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- headroom js library for sticky header animation-->
+    <script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
+
+    <!-- jump js library for smooth scrolling animation -->
+    <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="headroom header--fixed">
+      <div class="text row">
+        <a href="work.html" class="col-md-9 col-xs-12 bold italic" id="logo">kristel yu</a>
+        <a href="work.html" class="col-md-1 col-xs-3 bold italic" id="work-button">work</a>
+        <a href="about.html" class="col-md-1 col-xs-3 italic" id="about-button">about</a>
+        <a href="resume.html" class="col-md-1 col-xs-6 italic" id="resume-button">resume</a>
+      </div>
+    </header>
+
+    <!-- title portion -->
+    <div class="row bunbun-shortdesc">
+      <div class="col-lg-5 col-sm-6 form-group">
+        <div class="text big-htext bold">
+          bun bun bake shop
+        </div>
+        <p class="text small-htext">
+          designed and developed an online website for a fictitious bakery to
+          facilitate an online ordering process
+        </p>
+        <div class="text timeline norm-p-size">
+          <span class="bold">project duration:</span><br>
+          two months (in 2020)<br>
+          <span class="bold">my role:</span><br>
+          user researcher, UX/UI designer, web developer<br>
+          <span class="bold">tools and languages used:</span><br>
+          html, css, javascript, figma, and invision<br>
+          <span class="bold">link:</span><br>
+          <a href="https://kristelgrace.github.io/assgn6/home.html">bun bun website</a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-sm-6 form-group">
+        <img class="bunbun-titleimg" src="Assets/images/bunbun-desktop.png">
+      </div>
+
+      <div class="col-lg-2 col-xs-12">
+        <div class="sidebar-container text">
+          <span class="content-text">contents</span>
+          <ul class="sidebar-list">
+            <li><a onclick="Jump('#background', {offset: -90})" id="overview-list">background</a></li>
+            <li><a onclick="Jump('#initial-res', {offset: -90})" id="model-list">initial research</a></li>
+            <li><a onclick="Jump('#prototyping', {offset: -90})" id="tab-list">protyping</a></li>
+            <li><a onclick="Jump('#development', {offset: -90})" id="scroll-list">development</a></li>
+            <li><a onclick="Jump('#final-product', {offset: -90})" id="fprod-list">final product</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row bunbun-project-page">
+
+      <div class="col-lg-9">
+        <div class="small-htext text bold title" id="background">background</div>
+        <p class="norm-p-size text bold remove-line">problem</p>
+        <p class="text norm-p-size">
+          Bun Bun Bake Shop is expanding its operations to allow its customers
+          to order online. They need a website that would enable customers to
+          learn more about them, browse the menu, and place an order.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">insight</p>
+        <p class="text norm-p-size">
+          Based on user studies, I found that ordering and shopping websites
+          generally fail to leverage design to improve the efficiency of the
+          ordering process.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">outcome</p>
+        <p class="text norm-p-size">
+          I created a website that leverages design theories and techniques
+          and places a unique emphasis on the needs of the user.
+        </p>
+
+        <div class="small-htext text bold margin-up title" id="initial-res">initial research</div>
+        <p class="norm-p-size text bold remove-line">competitive analysis</p>
+        <p class="text norm-p-size">
+          I analyzed three different online bakery websites. These were online
+          bakeries in pittsburgh. Overall, I found the following strengths and
+          weaknesses in these websites:
+
+          <div class="text norm-p-size italicize">strengths</div>
+          <ul class="text norm-p-size">
+            <li>Clean and logical menu and menu titles</li>
+            <li>Clear display of items in the cart across different pages</li>
+            <li>Filtering and sorting mechanism to fit the user’s needs</li>
+            <li>Quick view feature for products so users stay on the same page</li>
+          </ul>
+
+          <div class="text norm-p-size italicize">weaknesses</div>
+          <ul class="text norm-p-size">
+            <li>Users can’t view all products at once; products are segmented
+              into categories right away.</li>
+            <li>Some clickable buttons did not seem clickable.</li>
+            <li>There is poor organization of items in the page, specifically
+              for adding items to cart.</li>
+          </ul>
+
+        </p>
+
+        <div class="small-htext text bold margin-up title" id="prototyping">prototyping</div>
+        <p class="norm-p-size text bold remove-line">low-fidelity prototyping</p>
+        <p class="text norm-p-size">
+          I first created rough sketches of the website, focusing on the flow
+          of the website. The first prototype was done without any prior
+          research. This rapid prototyping session was followed by a quick user
+          testing where I used the Wizard of Oz technique. I then iterated on
+          my first prototype based on feedback and my competitive analysis.
+          After which, I conducted another user test. This user test would
+          serve as the basis for my next prototype before I created my
+          high-fidelity prototype on Figma.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">high-fidelity prototyping</p>
+        <p class="text norm-p-size">
+          Moving forward, I used figma and invision to create a clickable
+          high-fidelity prototype based on the goals of expected users,
+          considerations for the design, and various aspects of the design
+          and screen transition.
+
+          <div class="text norm-p-size italicize">goals of expected users</div>
+          <ul class="text norm-p-size">
+            <li>Learn more about the store, contact or visit the store,
+              browse the menu, and order cinnamon rolls online</li>
+            <li>Research options for ordering large quantities of pastries/
+              cinnamon rolls online for special occasions or events</li>
+          </ul>
+
+          <div class="text norm-p-size italicize">main considerations for prototype design</div>
+          <ul class="text norm-p-size">
+            <li>Users can get overwhelmed by too much information on each
+              page, so I made sure that there was not too much amount of
+              information on each page.</li>
+            <li>The color scheme used for the website matches the
+              expectations for the website of a bakeshop. Bakeshop websites
+              are expected to be delicate and pretty.</li>
+            <li>Users may have trouble finding the pages most appropriate to
+              their needs. Clickable elements need to look clickable.</li>
+            <li>Users are accustomed to various design patterns. I used
+              numerous design patterns, such as header position, footer
+              information, and designs of different pages.</li>
+          </ul>
+
+          <div class="text norm-p-size italicize">motivations for prototype design and screen transitions</div>
+          <ul class="text norm-p-size">
+            <li>For menu access at any time, header position is fixed.</li>
+            <li>Users receive a pop-up notification below the “shopping cart”
+              button whenever they add an item to their cart.</li>
+            <li>Users can edit their carts and change their minds before
+              checking out.</li>
+            <li>Reassure users of actions with pop-ups (ex. successfully add to
+              cart).</li>
+            <li>Users can be clear of actions they can take. Input fields are
+              white, buttons are yellow.</li>
+          </ul>
+
+        </p>
+
+        <div class="small-htext text bold title" id="development">development</div>
+        <p class="norm-p-size text bold remove-line">HTML/CSS implementation</p>
+        <p class="text norm-p-size">
+          This was my first time coding a website, and the implementation and
+          development process was difficult. I was challenged not to use any
+          existing frameworks and libraries, so it was difficult to make
+          everything from scratch. in this process, i’d like to share
+          the finalized brand identity for the bakeshop.
+        </p>
+        <div class="text norm-p-size italicize">brand identity of the client</div>
+        <ul class="text norm-p-size">
+          <li>Young and upbeat; young persona and uses fun colors</li>
+          <li>Simple and special; simple color sceheme and many spaces</li>
+          <li>New and upcoming; follows trends and shows it off</li>
+        </ul>
+        <p class="norm-p-size text bold remove-line">JavaScript implementation</p>
+        <p class="text norm-p-size">
+          In the final process of this project, I was asked to implement
+          JavaScript to the website for features like adding and removing an
+          item from the cart and making elements responsive to the user’s
+          selection. In doing these, I found several programming concepts to
+          be essential:
+        </p>
+
+        <ul class="text norm-p-size">
+          <li>Setting and getting storage</li>
+          <li>Creating and using functions</li>
+          <li>Getting elements from HTML</li>
+          <li>Adding and removing elements to the HTML</li>
+          <li>Changing indexes of forms, such as drop-down menus</li>
+        </ul>
+
+        <div class="small-htext text bold title" id="final-product">final product</div>
+        <p class="norm-p-size text bold remove-line">features</p>
+        <p class="text norm-p-size">
+          fixed header with large target size for links
+        <p>
+        <img class="max-100width" src="Assets/images/bunbun-header.png" alt="header of bun bun bake shop">
+
+        <br><br>
+        <p class="text norm-p-size">
+          shopping cart page
+        </p>
+        <img class="max-100width" src="Assets/images/bunbun-cart.png" alt="cart page of bun bun bake shop">
+
+        <br><br>
+        <p class="text norm-p-size">
+          wishlist page
+        </p>
+        <img class="max-100width" src="Assets/images/bunbun-wishlist.png" alt="wishlist page of bun bun bake shop">
+
+        <br><br><br>
+
+        <p class="norm-p-size text bold remove-line">reflection</p>
+        <p class="text norm-p-size">
+          This experience was very fun and humbling. Each prototype, user test, and
+          implementation process was very significant to the final outcome. In
+          this project, my greatest takeaway was how much websites are
+          currently being developed with numerous features to help the user
+          out as much as possible. Subtle helps like making the target of a
+          clickable area larger could greatly improve the user experience, even
+          without the user's knowledge. It's very interesting to see design and
+          psychology theories be implemented in website design, sometimes
+          without our knowledge.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="row other-projects">
+      <div class="big-htext text bold">other projects</div>
+      <div class="col-lg-3 col-sm-4 form-group" id="junto-project">
+        <a href="junto.html">
+        <div class="junto-project">
+          <img class="junto-img-project" src="Assets/images/junto.png" alt="logo of Junto">
+
+          <!-- overlay objects for junto -->
+          <span class="overlay-project-items" id="junto-overlay-project">
+            <div class="text norm-p-size">gamified productivity app to combat procrastination</div>
+          </span>
+
+        </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-4 form-group" id="comyoot-project">
+        <a href="comyoot.html">
+        <div class="comyoot-project">
+          <img class="comyoot-img-project" src="Assets/images/comyoot.png" alt="logo of ComYoot">
+
+          <!-- overlay objects for comyoot -->
+          <span class="overlay-project-items" id="comyoot-overlay-project">
+            <div class="text norm-p-size">social media marketing</div>
+          </span>
+
+        </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-4 form-group" id="pubart-project">
+        <div class="pubart-project">
+          <img class="pubart-img-project" src="Assets/images/pubart.png" alt="public art">
+
+          <!-- overlay objects for public art -->
+          <span class="overlay-project-items" id="pubart-overlay-project">
+            <div class="text norm-p-size">public art app (coming soon)</div>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="https://www.linkedin.com/in/kristelyu/" target="_blank">linkedin</a></p>
+      <p><a href="mailto: kristelgraceyu@gmail.com" target="_blank">email</a></p>
+
+
+    </footer>
+
+    <!-- js files for libraries -->
+    <script src="Assets/js/scroll.js"></script>
+    <script src="Assets/js/header.js"></script>
+
+  </body>
+
+</html>
