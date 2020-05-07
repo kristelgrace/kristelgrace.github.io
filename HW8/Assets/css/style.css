@@ -89,6 +89,10 @@ footer {
   margin-bottom: 30px; /* adding bottom margin to grid items */
 }
 
+.max-100width {
+  max-width: 100%;
+}
+
 @media (max-width: 767px) { /* adjust margins & paddings for screen size less than 767px */
   .row {
     margin-left: 10px;
@@ -380,9 +384,10 @@ a:hover {
 
 ul.sidebar-list { /* removing bullet points from unordered list*/
   list-style-type: none;
-  padding-left: 3px;
-  /*line-height: 30px;
-  border-left: solid #E7E8E2;*/
+  padding-left: 10px;
+  line-height: 35px;
+  border-left: solid #E7E8E2;
+  cursor: pointer;
 }
 
 .sidebar-container {
@@ -394,31 +399,6 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 .title {
   margin-bottom: 10px;
   margin-top: 50px;
-}
-
-#overview-list {
-  border-left: solid black;
-  padding: 10px;
-}
-
-#model-list {
-  border-left: solid red;
-  padding: 10px;
-}
-
-#tab-list {
-  border-left: solid gray;
-  padding: 10px;
-}
-
-#scroll-list {
-  border-left: solid white;
-  padding: 10px;
-}
-
-#fprod-list {
-  border-left: solid blue;
-  padding: 10px;
 }
 
 .bunbun-project {
