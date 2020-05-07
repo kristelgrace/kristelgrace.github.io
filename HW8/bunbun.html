@@ -21,6 +21,12 @@
     <!-- headroom js library for sticky header animation-->
     <script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
 
+    <!-- jump js library for smooth scrolling animation -->
+    <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 
@@ -40,161 +46,199 @@
     </header>
 
     <!-- title portion -->
-    <!--<div class="row bunbun-shortdesc">
-      <div class="col-sm-6 form-group">
+    <div class="row bunbun-shortdesc">
+      <div class="col-lg-5 col-sm-6 form-group">
         <div class="text big-htext bold">
           bun bun bake shop
         </div>
         <p class="text small-htext">
-          an online website to facilitate an online ordering process and to create easy access of information
+          designed and developed an online website for a fictitious bakery to
+          facilitate an online ordering process
         </p>
         <div class="text timeline norm-p-size">
-          <span class="bold">timeline:</span><br>
-          january-march 2020<br>
+          <span class="bold">project duration:</span><br>
+          two months (in 2020)<br>
+          <span class="bold">my role:</span><br>
+          user researcher, UX/UI designer, web developer<br>
+          <span class="bold">tools and languages used:</span><br>
+          html, css, javascript, figma, and invision<br>
           <span class="bold">link:</span><br>
           bun bun website
         </div>
       </div>
 
-      <div class="col-sm-6 form-group">
+      <div class="col-lg-5 col-sm-6 form-group">
         <img class="bunbun-titleimg" src="Assets/images/bunbun-desktop.png">
       </div>
-    </div>-->
 
-    <div class="row" style="margin-top: 60px">
-      <div class="col-md-3">
-        <div class="bs-sidebar">
-          <ul class="nav bs-sidenav" id="example">
-            <li class="active"><a href="#overview">Overview</a></li>
-            <li><a href="#model">Model</a></li>
-            <li><a href="#tab">Tab</a></li>
-            <li><a href="#scrollspy">Scroll Spy</a></li>
+      <div class="col-lg-2 col-xs-12">
+        <div class="sidebar-container text">
+          <span class="content-text">contents</span>
+          <ul class="sidebar-list">
+            <li><a onclick="Jump('#background', {offset: -90})" id="overview-list">background</a></li>
+            <li><a onclick="Jump('#initial-res', {offset: -90})" id="model-list">initial research</a></li>
+            <li><a onclick="Jump('#prototyping', {offset: -90})" id="tab-list">protyping</a></li>
+            <li><a onclick="Jump('#development', {offset: -90})" id="scroll-list">development</a></li>
+            <li><a onclick="Jump('#final-product', {offset: -90})" id="fprod-list">final product</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="col-md-9" role="main">
-        <h3 id="overview">Overview</h3>
-        <p class="lead">Overview of Bootstrap</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
-          venenatis a condimentum vitae sapien pellentesque habitant morbi
-          tristique. Diam quam nulla porttitor massa. Erat velit scelerisque
-          in dictum non consectetur a. Bibendum enim facilisis gravida neque
-          convallis. Facilisis leo vel fringilla est ullamcorper eget nulla
-          facilisi. Dignissim convallis aenean et tortor. Convallis convallis
-          tellus id interdum. Cras ornare arcu dui vivamus. Amet consectetur
-          adipiscing elit duis tristique sollicitudin nibh sit amet. Adipiscing
-          elit pellentesque habitant morbi tristique senectus. Tellus elementum
-          sagittis vitae et leo duis ut. Enim eu turpis egestas pretium aenean
-          pharetra magna. Bibendum est ultricies integer quis. Sit amet mattis
-          vulputate enim. Convallis tellus id interdum velit. At consectetur
-          lorem donec massa sapien. Nisl rhoncus mattis rhoncus urna neque
-          viverra justo nec.
+    </div>
 
-          Praesent tristique magna sit amet. Suscipit tellus mauris a diam
-          maecenas sed. Vel facilisis volutpat est velit. Vitae justo eget
-          magna fermentum iaculis eu non. At risus viverra adipiscing at in
-          tellus. Nunc eget lorem dolor sed viverra ipsum nunc aliquet
-          bibendum. Ullamcorper a lacus vestibulum sed arcu non. Euismod
-          lacinia at quis risus. Faucibus scelerisque eleifend donec pretium
-          vulputate sapien nec sagittis aliquam. Sapien et ligula ullamcorper
-          malesuada proin libero nunc. Metus aliquam eleifend mi in nulla
-          posuere sollicitudin. Nibh sed pulvinar proin gravida hendrerit.
+    <div class="row bunbun-project">
+
+      <div class="col-lg-9">
+        <div class="small-htext text bold title" id="background">background</div>
+        <p class="norm-p-size text bold remove-line">problem</p>
+        <p class="text norm-p-size">
+          Bun Bun Bake Shop is expanding its operations to allow its customers
+          to order online. They need a website that would enable customers to
+          learn more about them, browse the menu, and place an order.
         </p>
 
-
-        <h3 id="model">Model</h3>
-        <p class="lead">Understanding Model</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
-          venenatis a condimentum vitae sapien pellentesque habitant morbi
-          tristique. Diam quam nulla porttitor massa. Erat velit scelerisque
-          in dictum non consectetur a. Bibendum enim facilisis gravida neque
-          convallis. Facilisis leo vel fringilla est ullamcorper eget nulla
-          facilisi. Dignissim convallis aenean et tortor. Convallis convallis
-          tellus id interdum. Cras ornare arcu dui vivamus. Amet consectetur
-          adipiscing elit duis tristique sollicitudin nibh sit amet. Adipiscing
-          elit pellentesque habitant morbi tristique senectus. Tellus elementum
-          sagittis vitae et leo duis ut. Enim eu turpis egestas pretium aenean
-          pharetra magna. Bibendum est ultricies integer quis. Sit amet mattis
-          vulputate enim. Convallis tellus id interdum velit. At consectetur
-          lorem donec massa sapien. Nisl rhoncus mattis rhoncus urna neque
-          viverra justo nec.
-
-          Praesent tristique magna sit amet. Suscipit tellus mauris a diam
-          maecenas sed. Vel facilisis volutpat est velit. Vitae justo eget
-          magna fermentum iaculis eu non. At risus viverra adipiscing at in
-          tellus. Nunc eget lorem dolor sed viverra ipsum nunc aliquet
-          bibendum. Ullamcorper a lacus vestibulum sed arcu non. Euismod
-          lacinia at quis risus. Faucibus scelerisque eleifend donec pretium
-          vulputate sapien nec sagittis aliquam. Sapien et ligula ullamcorper
-          malesuada proin libero nunc. Metus aliquam eleifend mi in nulla
-          posuere sollicitudin. Nibh sed pulvinar proin gravida hendrerit.
+        <p class="norm-p-size text bold remove-line">insight</p>
+        <p class="text norm-p-size">
+          Based on user studies, I found that ordering and shopping websites
+          generally fail to leverage design to improve the efficiency of the
+          ordering process.
         </p>
 
-        <h3 id="tab">Tab</h3>
-        <p class="lead">How to use Tab</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
-          venenatis a condimentum vitae sapien pellentesque habitant morbi
-          tristique. Diam quam nulla porttitor massa. Erat velit scelerisque
-          in dictum non consectetur a. Bibendum enim facilisis gravida neque
-          convallis. Facilisis leo vel fringilla est ullamcorper eget nulla
-          facilisi. Dignissim convallis aenean et tortor. Convallis convallis
-          tellus id interdum. Cras ornare arcu dui vivamus. Amet consectetur
-          adipiscing elit duis tristique sollicitudin nibh sit amet. Adipiscing
-          elit pellentesque habitant morbi tristique senectus. Tellus elementum
-          sagittis vitae et leo duis ut. Enim eu turpis egestas pretium aenean
-          pharetra magna. Bibendum est ultricies integer quis. Sit amet mattis
-          vulputate enim. Convallis tellus id interdum velit. At consectetur
-          lorem donec massa sapien. Nisl rhoncus mattis rhoncus urna neque
-          viverra justo nec.
-
-          Praesent tristique magna sit amet. Suscipit tellus mauris a diam
-          maecenas sed. Vel facilisis volutpat est velit. Vitae justo eget
-          magna fermentum iaculis eu non. At risus viverra adipiscing at in
-          tellus. Nunc eget lorem dolor sed viverra ipsum nunc aliquet
-          bibendum. Ullamcorper a lacus vestibulum sed arcu non. Euismod
-          lacinia at quis risus. Faucibus scelerisque eleifend donec pretium
-          vulputate sapien nec sagittis aliquam. Sapien et ligula ullamcorper
-          malesuada proin libero nunc. Metus aliquam eleifend mi in nulla
-          posuere sollicitudin. Nibh sed pulvinar proin gravida hendrerit.
+        <p class="norm-p-size text bold remove-line">outcome</p>
+        <p class="text norm-p-size">
+          I created a website that leverages design theories and techniques
+          and places a unique emphasis on the needs of the user.
         </p>
 
-        <h3 id="scrollspy">Scroll Spy</h3>
-        <p class="lead">Using ScrollSpy</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
-          venenatis a condimentum vitae sapien pellentesque habitant morbi
-          tristique. Diam quam nulla porttitor massa. Erat velit scelerisque
-          in dictum non consectetur a. Bibendum enim facilisis gravida neque
-          convallis. Facilisis leo vel fringilla est ullamcorper eget nulla
-          facilisi. Dignissim convallis aenean et tortor. Convallis convallis
-          tellus id interdum. Cras ornare arcu dui vivamus. Amet consectetur
-          adipiscing elit duis tristique sollicitudin nibh sit amet. Adipiscing
-          elit pellentesque habitant morbi tristique senectus. Tellus elementum
-          sagittis vitae et leo duis ut. Enim eu turpis egestas pretium aenean
-          pharetra magna. Bibendum est ultricies integer quis. Sit amet mattis
-          vulputate enim. Convallis tellus id interdum velit. At consectetur
-          lorem donec massa sapien. Nisl rhoncus mattis rhoncus urna neque
-          viverra justo nec.
+        <div class="small-htext text bold margin-up title" id="initial-res">initial research</div>
+        <p class="norm-p-size text bold remove-line">competitive analysis</p>
+        <p class="text norm-p-size">
+          I analyzed three different online bakery websites. These were online
+          bakeries in pittsburgh. Overall, I found the following strengths and
+          weaknesses in these websites:
 
-          Praesent tristique magna sit amet. Suscipit tellus mauris a diam
-          maecenas sed. Vel facilisis volutpat est velit. Vitae justo eget
-          magna fermentum iaculis eu non. At risus viverra adipiscing at in
-          tellus. Nunc eget lorem dolor sed viverra ipsum nunc aliquet
-          bibendum. Ullamcorper a lacus vestibulum sed arcu non. Euismod
-          lacinia at quis risus. Faucibus scelerisque eleifend donec pretium
-          vulputate sapien nec sagittis aliquam. Sapien et ligula ullamcorper
-          malesuada proin libero nunc. Metus aliquam eleifend mi in nulla
-          posuere sollicitudin. Nibh sed pulvinar proin gravida hendrerit.
+          <div class="text norm-p-size italicize">strengths</div>
+          <ul class="text norm-p-size">
+            <li>Clean and logical menu and menu titles</li>
+            <li>Clear display of items in the cart across different pages</li>
+            <li>Filtering and sorting mechanism to fit the user’s needs</li>
+            <li>Quick view feature for products so users stay on the same page</li>
+          </ul>
+
+          <div class="text norm-p-size italicize">weaknesses</div>
+          <ul class="text norm-p-size">
+            <li>Users can’t view all products at once; products are segmented
+              into categories right away.</li>
+            <li>Some clickable buttons did not seem clickable.</li>
+            <li>There is poor organization of items in the page, specifically
+              for adding items to cart.</li>
+          </ul>
+
         </p>
+
+        <div class="small-htext text bold margin-up title" id="prototyping">prototyping</div>
+        <p class="norm-p-size text bold remove-line">low-fidelity prototyping</p>
+        <p class="text norm-p-size">
+          I first created rough sketches of the website, focusing on the flow
+          of the website. The first prototype was done without any prior
+          research. This rapid prototyping session was followed by a quick user
+          testing where I used the Wizard of Oz technique. I then iterated on
+          my first prototype based on feedback and my competitive analysis.
+          After which, I conducted another user test. This user test would
+          serve as the basis for my next prototype before I created my
+          high-fidelity prototype on Figma.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">high-fidelity prototyping</p>
+        <p class="text norm-p-size">
+          Moving forward, I used figma and invision to create a clickable
+          high-fidelity prototype based on the goals of expected users,
+          considerations for the design, and various aspects of the design
+          and screen transition.
+
+          <div class="text norm-p-size italicize">goals of expected users</div>
+          <ul class="text norm-p-size">
+            <li>Learn more about the store, contact or visit the store,
+              browse the menu, and order cinnamon rolls online</li>
+            <li>Research options for ordering large quantities of pastries/
+              cinnamon rolls online for special occasions or events</li>
+          </ul>
+
+          <div class="text norm-p-size italicize">main considerations for prototype design</div>
+          <ul class="text norm-p-size">
+            <li>Users can get overwhelmed by too much information on each
+              page, so I made sure that there was not too much amount of
+              information on each page.</li>
+            <li>The color scheme used for the website matches the
+              expectations for the website of a bakeshop. Bakeshop websites
+              are expected to be delicate and pretty.</li>
+            <li>Users may have trouble finding the pages most appropriate to
+              their needs. Clickable elements need to look clickable.</li>
+            <li>Users are accustomed to various design patterns. I used
+              numerous design patterns, such as header position, footer
+              information, and designs of different pages.</li>
+          </ul>
+
+          <div class="text norm-p-size italicize">motivations for prototype design and screen transitions</div>
+          <ul class="text norm-p-size">
+            <li>For menu access at any time, header position is fixed.</li>
+            <li>Users receive a pop-up notification below the “shopping cart”
+              button whenever they add an item to their cart.</li>
+            <li>Users can edit their carts and change their minds before
+              checking out.</li>
+            <li>Reassure users of actions with pop-ups (ex. successfully add to
+              cart).</li>
+            <li>Users can be clear of actions they can take. Input fields are
+              white, buttons are yellow.</li>
+          </ul>
+
+        </p>
+
+        <div class="small-htext text bold title" id="development">development</div>
+        <p class="norm-p-size text bold remove-line">HTML/CSS implementation</p>
+        <p class="text norm-p-size">
+          This was my first time coding a website, and the implementation and
+          development process was difficult. I was challenged not to use any
+          existing frameworks and libraries, so it was difficult to make
+          everything from scratch. in this process, i’d like to share
+          the finalized brand identity for the bakeshop.
+        </p>
+        <div class="text norm-p-size italicize">brand identity of the client</div>
+        <ul class="text norm-p-size">
+          <li>Young and upbeat; young persona and uses fun colors</li>
+          <li>Simple and special; simple color sceheme and many spaces</li>
+          <li>New and upcoming; follows trends and shows it off</li>
+        </ul>
+        <p class="norm-p-size text bold remove-line">JavaScript implementation</p>
+        <p class="text norm-p-size">
+          In the final process of this project, I was asked to implement
+          JavaScript to the website for features like adding and removing an
+          item from the cart and making elements responsive to the user’s
+          selection. In doing these, I found several programming concepts to
+          be essential:
+        </p>
+
+        <ul class="text norm-p-size">
+          <li>Setting and getting storage</li>
+          <li>Creating and using functions</li>
+          <li>Getting elements from HTML</li>
+          <li>Adding and removing elements to the HTML</li>
+          <li>Changing indexes of forms, such as drop-down menus</li>
+        </ul>
+
+        <div class="small-htext text bold title" id="final-product">final product</div>
+        <p class="norm-p-size text bold remove-line">features</p>
+        <p class="text norm-p-size">
+          features lalalalalalalalaal
+        </p>
+
+        <p class="norm-p-size text bold remove-line">reflection</p>
+        <p class="text norm-p-size">
+          reflection lalalalala
+        </p>
+
       </div>
+
     </div>
 
 
@@ -209,11 +253,6 @@
     <!-- js files for libraries -->
     <script src="Assets/js/scroll.js"></script>
     <script src="Assets/js/header.js"></script>
-    <script type=text/javascript>
-      $(document).ready( function() {
-        $('body').scrollspy( {target: '#example'});
-      });
-    </script>
 
   </body>
 

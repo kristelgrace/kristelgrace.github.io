@@ -21,11 +21,11 @@ footer {
 
 /* change highlight color, from w3schools */
 ::-moz-selection { /* Code for Firefox */
-  background: white;
+  background: #94BCBC;
 }
 
 ::selection {
-  background: white;
+  background: #94BCBC;
 }
 
 .text {
@@ -45,8 +45,21 @@ footer {
   font-size: 23px;
 }
 
+.remove-line {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.margin-up {
+  margin-top: 30px;
+}
+
 .bold {
   font-weight: 700;
+}
+
+.italicize {
+  font-style: italic;
 }
 
 .white-text {
@@ -131,6 +144,12 @@ footer {
     }
 }
 
+@media (min-width: 1200px) {
+  .sidebar-container {
+    position: fixed;
+  }
+}
+
 /* text size of logo */
 #logo {
   font-size: 23px;
@@ -173,9 +192,7 @@ a:hover {
 }
 
 .work-arrow {
-  display: block;
   text-align: center;
-  background-color: white;
 }
 
 .arrow-down {
@@ -335,6 +352,11 @@ a:hover {
 
 /************ BUNBUN PAGE ************/
 
+.bunbun-project {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .bunbun-shortdesc {
   margin-top: 125px;
   margin-bottom: 20px;
@@ -349,4 +371,52 @@ a:hover {
 .bunbun-titleimg {
   max-height: 100%;
   max-width: 100%;
+}
+
+.content-text {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+ul.sidebar-list { /* removing bullet points from unordered list*/
+  list-style-type: none;
+  padding-left: 3px;
+  /*line-height: 30px;
+  border-left: solid #E7E8E2;*/
+}
+
+.sidebar-container {
+  padding-top: 40px;
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+#overview-list {
+  border-left: solid black;
+  padding: 10px;
+}
+
+#model-list {
+  border-left: solid red;
+  padding: 10px;
+}
+
+#tab-list {
+  border-left: solid gray;
+  padding: 10px;
+}
+
+#scroll-list {
+  border-left: solid white;
+  padding: 10px;
+}
+
+#fprod-list {
+  border-left: solid blue;
+  padding: 10px;
 }
