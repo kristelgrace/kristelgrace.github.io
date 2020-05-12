@@ -226,12 +226,12 @@ a:hover {
   height: 320px;
 }
 
-.pubart-work {
-  background-color: #ccc;
+.creart-work {
+  background-color: #CEB3A7;
   height: 320px;
 }
 
-.bunbun-img, .junto-img, .comyoot-img, .pubart-img {
+.bunbun-img, .junto-img, .comyoot-img, .creart-img {
   display: block;
   margin: auto;
   position: relative;
@@ -253,7 +253,7 @@ a:hover {
   padding: 30px 40px;
 }
 
-#bunbun-overlay, #junto-overlay, #comyoot-overlay, #pubart-overlay { /*hide the overlay first*/
+#bunbun-overlay, #junto-overlay, #comyoot-overlay, #creart-overlay { /*hide the overlay first*/
   opacity: 0;
 }
 
@@ -288,7 +288,7 @@ a:hover {
   transition: .3s ease;
 }
 
-#pubart-work:hover #pubart-overlay { /* make overlay visible upon hover */
+#creart-work:hover #creart-overlay { /* make overlay visible upon hover */
   opacity: 1;
 }
 
@@ -416,12 +416,12 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   height: 150px;
 }
 
-.pubart-project {
-  background-color: #ccc;
+.creart-project {
+  background-color: #CEB3A7;
   height: 150px;
 }
 
-.bunbun-img-project, .junto-img-project, .comyoot-img-project, .pubart-img-project {
+.bunbun-img-project, .junto-img-project, .comyoot-img-project, .creart-img-project {
   display: block;
   margin: auto;
   position: relative;
@@ -443,7 +443,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   padding: 30px 40px;
 }
 
-#bunbun-overlay-project, #junto-overlay-project, #comyoot-overlay-project, #pubart-overlay-project { /*hide the overlay first*/
+#bunbun-overlay-project, #junto-overlay-project, #comyoot-overlay-project, #creart-overlay-project { /*hide the overlay first*/
   opacity: 0;
 }
 
@@ -459,6 +459,6 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   opacity: 1;
 }
 
-#pubart-project:hover #pubart-overlay-project { /* make overlay visible upon hover */
+#creart-project:hover #creart-overlay-project { /* make overlay visible upon hover */
   opacity: 1;
 }

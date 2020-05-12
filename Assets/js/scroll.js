@@ -19,4 +19,4 @@ sr.reveal('#junto-work', {delay: 300});
 
 sr.reveal('#comyoot-work', {delay: 100});
 
-sr.reveal('#pubart-work', {delay: 300});
+sr.reveal('#creart-work', {delay: 300});
