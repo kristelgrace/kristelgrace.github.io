@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>kristel yu</title>
+    <!-- character encoding -->
+    <meta charset="utf-8">
+
+    <!-- initial scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap css+js library for screen responsiveness -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- scrollreveal js library for animating objects -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- headroom js library for sticky header animation-->
+    <script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
+
+    <!-- jump js library for smooth scrolling animation -->
+    <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="headroom header--fixed">
+      <div class="text row">
+        <a href="work.html" class="col-md-9 col-xs-12 bold italic" id="logo">kristel yu</a>
+        <a href="work.html" class="col-md-1 col-xs-3 bold italic" id="work-button">work</a>
+        <a href="about.html" class="col-md-1 col-xs-3 italic" id="about-button">about</a>
+        <a href="https://drive.google.com/file/d/1IJN5jMxx33Cu9ApvbzMyBtCIf9ipigJq/view?usp=sharing" target="_blank" class="col-md-1 col-xs-6 italic" id="resume-button">resume</a>
+      </div>
+    </header>
+
+    <!-- quick intro/bio -->
+    <div class="work-bio">
+      <div class="row vertical-align">
+        <div class="col-lg-6 col-sm-4 form-group" id="work-bio">
+        <img class="work-logo" src="Assets/images/ky logo.png" alt="headshot of kristel">
+        </div>
+        <div class="col-lg-6 col-sm-8 text work-description form-group">
+          hello! my name is kristel and i’m an aspiring management consultant! <br><br>
+          i’m a student at
+          <a href="https://www.cmu.edu" target="_blank">carnegie mellon</a>
+           studying
+          <a href="https://www.cmu.edu/tepper" target="_blank">business administration</a>
+           and
+          <a href="https://www.hcii.cmu.edu" target="_blank">human-computer interaction</a>. <br><br>
+          view some of my work below or <a href="https://www.linkedin.com/in/kristelyu/" target="_blank">connect with me</a>!
+        </div>
+      </div>
+
+      <div class="work-arrow">
+        <img class="arrow-down animated infinite bounce slow delay-1s" src="Assets/images/arrow.png" alt="arrow down" onclick="Jump('.work-items')">
+      </div>
+
+    </div>
+
+    <div class="row form-group work-items">
+
+      <!-- bunbun object -->
+      <div class="col-sm-6 form-group" id="bunbun-work">
+        <a href="bunbun.html">
+          <div class="bunbun-work">
+            <img class="bunbun-img" src="Assets/images/bunbun.png" alt="logo of Bun Bun Bake Shop">
+
+            <!-- overlay objects for bunbun -->
+            <span class="overlay-work-items" id="bunbun-overlay">
+              <div class="text bold small-htext">online bakery website with shopping functionality</div>
+              <div class="text norm-p-size">used html, css, and javascript to code a website from scratch.</div><br>
+              <span class="text norm-p-size button" id="bunbun-view">view project >></span>
+            </span>
+
+          </div>
+        </a>
+      </div>
+
+      <!-- junto object -->
+      <div class="col-sm-6 form-group" id="junto-work">
+        <a href="junto.html">
+        <div class="junto-work">
+          <img class="junto-img" src="Assets/images/junto.png" alt="logo of Junto">
+
+          <!-- overlay objects for junto -->
+          <span class="overlay-work-items" id="junto-overlay">
+            <div class="text bold small-htext">gamified productivity app to combat academic procrastination</div>
+            <div class="text norm-p-size">applied psychology and design theories into a working prototype of a productivity app.</div><br>
+            <span class="text norm-p-size button" id="junto-view">view project >></span>
+          </span>
+
+        </div>
+        </a>
+      </div>
+
+      <!-- comyoot object -->
+      <div class="col-sm-6 form-group" id="comyoot-work">
+        <a href="comyoot.html">
+        <div class="comyoot-work">
+          <img class="comyoot-img" src="Assets/images/comyoot.png" alt="logo of ComYoot">
+
+          <!-- overlay objects for comyoot -->
+          <span class="overlay-work-items" id="comyoot-overlay">
+            <div class="text bold small-htext">social media marketing</div>
+            <div class="text norm-p-size">used photoshop to create the visual identity of comyoot on social media.</div><br>
+            <span class="text norm-p-size button" id="comyoot-view">view project >></span>
+          </span>
+
+        </div>
+        </a>
+      </div>
+
+
+      <!-- public art object -->
+      <div class="col-sm-6 form-group" id="pubart-work">
+        <div class="pubart-work">
+          <img class="pubart-img" src="Assets/images/pubart.png" alt="public art">
+
+          <!-- overlay objects for public art -->
+          <span class="overlay-work-items" id="pubart-overlay">
+            <div class="text bold small-htext">app to connect artists of public art to city locals</div>
+            <div class="text norm-p-size">synthesized results using customer journey mapping, contextual inquiry, user tests, etc.</div><br>
+            <span class="text norm-p-size button-inactive">coming soon...</span>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="https://www.linkedin.com/in/kristelyu/" target="_blank">linkedin</a></p>
+      <p><a href="mailto: kristelgraceyu@gmail.com" target="_blank">email</a></p>
+
+
+    </footer>
+
+    <!-- js files for libraries -->
+    <script src="Assets/js/scroll.js"></script>
+    <script src="Assets/js/header.js"></script>
+
+  </body>
+
+</html>

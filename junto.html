@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>junto | kristel yu</title>
+    <!-- character encoding -->
+    <meta charset="utf-8">
+
+    <!-- initial scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap css+js library for screen responsiveness -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- scrollreveal js library for animating objects -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- headroom js library for sticky header animation-->
+    <script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
+
+    <!-- jump js library for smooth scrolling animation -->
+    <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="headroom header--fixed">
+      <div class="text row">
+        <a href="index.html" class="col-md-9 col-xs-12 bold italic" id="logo">kristel yu</a>
+        <a href="index.html" class="col-md-1 col-xs-3 bold italic" id="work-button">work</a>
+        <a href="about.html" class="col-md-1 col-xs-3 italic" id="about-button">about</a>
+        <a href="https://drive.google.com/file/d/1IJN5jMxx33Cu9ApvbzMyBtCIf9ipigJq/view?usp=sharing" target="_blank" class="col-md-1 col-xs-6 italic" id="resume-button">resume</a>
+      </div>
+    </header>
+
+    <!-- title portion -->
+    <div class="row bunbun-shortdesc">
+      <div class="col-lg-5 col-sm-6 form-group">
+        <div class="text big-htext bold">
+          junto
+        </div>
+        <p class="text small-htext">
+          a gamified productivity app to combat academic procrastination
+          among students
+        </p>
+        <div class="text timeline norm-p-size">
+          <span class="bold">project duration:</span><br>
+          two months (in 2019)<br>
+          <span class="bold">team:</span><br>
+          amy lu, estelle jiang, marc dubin, ivy shi<br>
+          <span class="bold">my role:</span><br>
+          research lead and product designer<br>
+          <span class="bold">tools used:</span><br>
+          figma<br>
+          <span class="bold">link:</span><br>
+          <a href="https://www.figma.com/proto/W29YNvPQCruFHRw0LcGukh/Return-User?node-id=285%3A1&scaling=scale-down">figma prototype</a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-sm-6 form-group">
+        <img class="bunbun-titleimg" src="Assets/images/junto-phone.png">
+      </div>
+
+      <div class="col-lg-2 col-xs-12">
+        <div class="sidebar-container text">
+          <span class="content-text">contents</span>
+          <ul class="sidebar-list">
+            <li><a onclick="Jump('#background', {offset: -90})">background</a></li>
+            <li><a onclick="Jump('#solution', {offset: -90})">solution</a></li>
+            <li><a onclick="Jump('#features', {offset: -90})">features</a></li>
+            <li><a onclick="Jump('#theories', {offset: -90})">theories applied</a></li>
+            <li><a onclick="Jump('#reflection', {offset: -90})">reflection</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row bunbun-project-page">
+
+      <div class="col-lg-9">
+        <div class="small-htext text bold title" id="background">background</div>
+        <p class="norm-p-size text bold remove-line">problem</p>
+        <p class="text norm-p-size">
+          Along with the rise of technology, people are faced with an
+          increasing amount of distractions as they try to do their work
+          productively. Existing apps fail to incentivise users to stop
+          procrastinating.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">insight</p>
+        <p class="text norm-p-size">
+          Students procrastinate due to a wide variety of reasons, but a
+          prevailing reason was to provide pleasure outside of academic stress.
+          Students seek pleasure and begin to procrastinate to release stress.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">outcome</p>
+        <p class="text norm-p-size">
+          We created a gamified task completion experience to combat
+          procrastination. This is marketed as a productivity app and it
+          leverages theories on psychology and design to increase a user’s
+          pleasure surrounding their work.
+        </p>
+
+        <div class="small-htext text bold margin-up title" id="solution">solution</div>
+        <p class="norm-p-size text bold remove-line">a different approach</p>
+        <p class="text norm-p-size">
+          Our team takes a different approach to procrastination than other
+          productivity applications: rather than focusing on simply getting
+          tasks done, we hope to make the environment surrounding the task more
+          enjoyable through internal and external rewards to motivate users to
+          accomplish their tasks.
+        </p>
+
+          <p class="norm-p-size text bold remove-line">Junto</p>
+          <p class="text norm-p-size">
+            Junto is an app that introduces rewards to users when they
+            accomplish tasks; these rewards are presented in the form of
+            unlocking and revealing mystery objects, collecting these objects,
+            and placing these in a virtual world or augmented reality (AR).
+            We also incorporated features to leverage social influences to
+            reduce academic procrastination.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">behind the name Junto</p>
+        <p class="text norm-p-size">
+          The Junto (from the Spanish word for assembly - junta) was the name
+          of a club that Benjamin Franklin formed in 1727. Benjamin Franklin,
+          aside from being one of America’s Founding Fathers, was well known
+          for his wit and famous phrases. Some of his best-known phrases have
+          to do with combatting procrastination and making the most of one’s
+          time. For example, Franklin is quoted to have said “never leave till
+          tomorrow that which you can do today” and “you may delay, but time
+          will not, and lost time is never found again.”
+      </p>
+
+        <div class="small-htext text bold margin-up title" id="features">features</div>
+        <p class="norm-p-size text bold remove-line">unwrapping animation of gift box</p>
+        <p class="norm-p-size text">
+          Law, Yin, Goh, Chen, Terry, & Gajos (2016) explored using curiosity
+          itself as a way to motivate behavior. They found that curiosity
+          could serve as a form of intrinsic motivation to incentivize
+          crowdsource workers to complete more tasks, without negatively
+          affecting performance. Junto uses curiosity as motivation and
+          leverage insights from goal progress theory and self-regulation
+          theory of goal striving by displaying a mystery gift box unwrap
+          in stages as users complete tasks (see Figure 1). We also applied
+          self-awareness theory by allowing users to enter into self-awareness
+          when they see the box on the home screen. The box adjusts to the
+          progress made, so users can clearly see if they are making progress
+          based on the visual status of an unwrapped present. In designing
+          the app, we intended for the progress to be encouraging for the user,
+          such that they match their behavior to their desired outcome, to
+          reveal the contents of the present by accomplishing their tasks.
+        </p>
+        <img class="max-100width" src="Assets/images/junto-giftbox.png" alt="header of bun bun bake shop">
+
+        <br><br>
+        <p class="norm-p-size text bold remove-line">social features</p>
+        <p class="text norm-p-size">
+          Research by Ferrari, Harriot, & Zimmerman (1997) has shown that
+          anti-procrastination tendencies were correlated with higher levels
+          of social satisfaction from peers and family. Lockwood and Pinkus
+          (2008) have shown that social comparisons have the ability to change
+          people’s goals and actions, and suggest that the continued presence
+          of positive role models could have the ability to continually motivate
+          one to achieve a difficult goal. Because course work could seem very
+          daunting, we wanted to incorporate this social element into our game
+          to motivate users to complete their goals. In Junto, users can view
+          the objects that others in their social group have achieved (see
+          Figure 2). Users can get a sense of how productive their friends are
+          and can be motivated by others’ progress. Additionally, to enable
+          friends to help each other out, we incorporated a “remind” feature
+          where a user can remind their other friends to complete their tasks.
+          This is an element of Junto that we did not extract from research,
+          but this was implemented based on informal recommendations from user testing.
+        </p>
+
+        <img class="max-100width" src="Assets/images/junto-social.png" alt="header of bun bun bake shop">
+
+        <br><br>
+        <p class="norm-p-size text bold remove-line">augmented reality</p>
+        <p class="text norm-p-size">
+          Ibáñez, Peláez, Jorge, & Delgado-Kloos (2019) experimented with using
+          augmented reality as an incentive to overcome procrastination with
+          positive results. Their experimental learning task was to require
+          students to correctly answer 4 multiple choice questions in order to
+          capture characters in AR. Our approach was to allow a user to display
+          their already captured characters in AR, but we used Peláez, Jorge, &
+          Delgado-Kloos’s research as a springboard to incorporating AR as a way
+          to avoid procrastination, and we found positive effects from our user
+          testing feedback.<br><br>
+          By using AR, a user can see and interact with their object in “real
+          life.” This was a way of making the prize more “real” after some
+          early users felt a virtual prize would not be enough of a tangible
+          reward to motivate them to complete tasks. This element also furthers
+          the enjoyment aspect of Junto. This was one of the most popular
+          elements of our user testing, and participants expressed their
+          happiness and satisfaction with the cuteness of the item. In addition,
+          users may view their collection of mystery objects in the virtual world.
+        </p>
+
+        <img class="max-100width" src="Assets/images/junto-ar.png" alt="header of bun bun bake shop">
+
+
+
+        <div class="small-htext text bold title" id="theories">theories applied</div>
+        <p class="norm-p-size text bold remove-line">gamification</p>
+        <p class="text norm-p-size">
+          Gamification has been defined as the use of “game-based mechanics,
+          aesthetics, and game thinking to engage people, motivate action,
+          promote learning, and solve problems.” (Kapp, 2012). Alsawaier (2018)
+          conducted a literature review that included past research which has
+          shown that gamification has fostered motivation and performance in a
+          wide range of activities. Specifically, we wanted to incorporate
+          gamification into our app to encourage our users to accomplish their
+          goals and avoid procrastination. Junto involves making each
+          individual tasks into a sort of game - users complete one task to
+          unlock part of a prize.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">outcome-focused</p>
+        <p class="text norm-p-size">
+          In their paper, Kraus & Freund (2014) studied how rewards can deter
+          procrastination. The act of procrastinating often serves as a reward
+          by providing relief from stressful or undesired activity. In order to
+          counteract how procrastination serves as a sort of inherent reward,
+          Kraus & Freund demonstrated that when faced with an unpleasant task,
+          shifting the focus from the task to the outcome can actually reduce
+          procrastination. We incorporate elements of this approach by offering
+          a type of reward for performing each task to shift some of the focus
+          from the unpleasantness of the task to the ensuing reward. In Junto,
+          completing a task provides immediate feedback in the form of a reward.
+          The user will thus shift their focus from completing arduous tasks to
+          unlocking the rewards.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">outcome-focused</p>
+        <p class="text norm-p-size">
+          In their paper, Kraus & Freund (2014) studied how rewards can deter
+          procrastination. The act of procrastinating often serves as a reward
+          by providing relief from stressful or undesired activity. In order to
+          counteract how procrastination serves as a sort of inherent reward,
+          Kraus & Freund demonstrated that when faced with an unpleasant task,
+          shifting the focus from the task to the outcome can actually reduce
+          procrastination. We incorporate elements of this approach by offering
+          a type of reward for performing each task to shift some of the focus
+          from the unpleasantness of the task to the ensuing reward. In Junto,
+          completing a task provides immediate feedback in the form of a reward.
+          The user will thus shift their focus from completing arduous tasks to
+          unlocking the rewards.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">self-regulation theories of goal striving</p>
+        <p class="text norm-p-size">
+          Wieber & Gollwitzer (2010) write that there are four problems that
+          must be overcome for successful goal striving. First, people must
+          overcome the initiation of action on a goal. In Junto, users can
+          easily create tasks and sync tasks with a calendar like Canvas or
+          Google Calendar. Second, people also have to overcome distractions
+          and have to stay on track with the goal. To overcome this problem,
+          Junto aims to increase the pleasure surrounding work or the situation
+          surrounding work by enabling users to collect motivating mystery
+          objects. Third, users must also disengage from failing courses of
+          action. Failure to accomplish tasks should not hinder users from
+          continuing progress with the goal. Junto aims to address this by
+          providing motivation and pleasure that is enough to avoid
+          counter-productive tasks. Fourth, people have to overcome the
+          avoidance of overextension and ego depletion. To combat ego depletion,
+          Junto allows users to review the amount of progress they have made
+          through the collection page.
+        </p>
+
+        <p class="norm-p-size text bold remove-line">design principles</p>
+        <p class="text norm-p-size">
+          The IBM Nudge Library also suggested design principles to use in order
+          to achieve the desired behavior. Junto uses an appeal to emotions by
+          designing cute mystery objects and implementing an easy user interface
+          with light colors. Anticipation is built by having a slow reveal of
+          the mystery object and only fully revealing it when all the tasks have
+          been completed. Progress in tasks can be shown through the unwrapping
+          of the present on the home screen. Habit cycle is formed by creating
+          tasks (cue), completing tasks on time (action), and receiving a
+          revealed mystery object (rewards).
+        </p>
+
+        <div class="small-htext text bold title" id="reflection">reflection</div>
+
+        <p class="norm-p-size text bold remove-line">closing thoughts</p>
+        <p class="text norm-p-size">
+          By working on Junto, I learned a number of things, both from an
+          academic and personal perspective. First, I learned to take
+          constructive criticism and be quick to iterate on designs.
+          Through user feedback and Professor Kaufman’s feedback, I saw how
+          making changes based on these feedbacks significantly improved our
+          application. Second, I learned how to apply design and psychological
+          theories through games. This project enabled me to gain research
+          skills and successfully apply theories to design, all the while
+          making the game user-centered. Third, I learned how to work alongside
+          people who were at different stages of life. Working with graduate
+          students of the HCII has enabled me to communicate better and be more
+          diligent with my work as well. Overall, this project was difficult
+          given the quick timeline, but I really enjoyed it and I hope to
+          continue building on this project in the future.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="row other-projects">
+      <div class="big-htext text bold">other projects</div>
+      <div class="col-lg-3 col-sm-4 form-group" id="bunbun-project">
+        <a href="bunbun.html">
+        <div class="bunbun-project">
+          <img class="bunbun-img-project" src="Assets/images/bunbun.png" alt="logo of Bun Bun Bake Shop">
+
+          <!-- overlay objects for junto -->
+          <span class="overlay-project-items" id="bunbun-overlay-project">
+            <div class="text norm-p-size">online bakery website with shopping functionality</div>
+          </span>
+
+        </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-4 form-group" id="comyoot-project">
+        <a href="comyoot.html">
+        <div class="comyoot-project">
+          <img class="comyoot-img-project" src="Assets/images/comyoot.png" alt="logo of ComYoot">
+
+          <!-- overlay objects for comyoot -->
+          <span class="overlay-project-items" id="comyoot-overlay-project">
+            <div class="text norm-p-size">social media marketing</div>
+          </span>
+
+        </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-4 form-group" id="pubart-project">
+        <div class="pubart-project">
+          <img class="pubart-img-project" src="Assets/images/pubart.png" alt="public art">
+
+          <!-- overlay objects for public art -->
+          <span class="overlay-project-items" id="pubart-overlay-project">
+            <div class="text norm-p-size">public art app (coming soon)</div>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="https://www.linkedin.com/in/kristelyu/" target="_blank">linkedin</a></p>
+      <p><a href="mailto: kristelgraceyu@gmail.com" target="_blank">email</a></p>
+
+
+    </footer>
+
+    <!-- js files for libraries -->
+    <script src="Assets/js/scroll.js"></script>
+    <script src="Assets/js/header.js"></script>
+
+  </body>
+
+</html>

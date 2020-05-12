@@ -1,0 +1,464 @@
+/*   global styles   */
+body {
+  background-color: #F6F7F1;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #F0F1EB;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #F0F1EB;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 75px 40px 75px;
+}
+
+/* change highlight color, from w3schools */
+::-moz-selection { /* Code for Firefox */
+  background: #94BCBC;
+}
+
+::selection {
+  background: #94BCBC;
+}
+
+.text {
+  font-family: Helvetica Neue, "Rubik", sans-serif;
+  color: #646464;
+}
+
+.norm-p-size {
+  font-size: 18px;
+}
+
+.big-htext {
+  font-size: 30px;
+}
+
+.small-htext {
+  font-size: 23px;
+}
+
+.remove-line {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.margin-up {
+  margin-top: 30px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italicize {
+  font-style: italic;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.button { /* style of an active button */
+  color: #F6F7F1;
+  background-color: #94BCBC;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.button-inactive { /* style of an inactive button */
+  color: #F6F7F1;
+  background-color: #6F8D8D;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.row {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.form-group {
+  margin-bottom: 30px; /* adding bottom margin to grid items */
+}
+
+.max-100width {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) { /* adjust margins & paddings for screen size less than 767px */
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .work-bio {
+    padding: 40px 10px;
+  }
+
+  #work-bio.col-sm-6.form-group {
+    margin-bottom: 0px;
+  }
+
+  .work-logo {
+    padding-top: 70px;
+    height: auto;
+    max-width: 30%;
+    display: block;
+    margin: auto;
+  }
+
+  .about-bio {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px 20px 30px 25px;
+  }
+}
+
+@media (min-width: 768px) { /* adjust margins & paddings for screen size more than 768px */
+    .vertical-align {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .work-bio {
+        padding: 200px 0;
+    }
+
+    .work-logo {
+      height: auto;
+      max-width: 40%;
+      display: block;
+      margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+  .sidebar-container {
+    position: fixed;
+  }
+}
+
+/* text size of logo */
+#logo {
+  font-size: 23px;
+}
+
+/*   styling links   */
+
+a {
+  color: #347979;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+
+a:hover {
+  color: #94BCBC;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.italic:hover {
+  font-style: italic;
+}
+
+/************ HOME/ WORK PAGE ************/
+
+/* bio and picture styling */
+
+.work-bio {
+  background-color: #E8EAE1;
+  height: 100vh;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.work-description {
+  font-size: 19px;
+  overflow: auto;
+}
+
+.work-arrow {
+  text-align: center;
+}
+
+.arrow-down {
+  cursor: pointer;
+  height: 5vh;
+  top: 90vh;
+  position: absolute;
+}
+
+/*portfolio items styling */
+.work-items {
+  padding-top: 75px;
+}
+
+.bunbun-work {
+  background-color: #F9F4E1;
+  height: 320px;
+}
+
+.junto-work {
+  background-color: #B2ABC0;
+  height: 320px;
+}
+
+.comyoot-work {
+  background-color: #97A0B3;
+  height: 320px;
+}
+
+.pubart-work {
+  background-color: #ccc;
+  height: 320px;
+}
+
+.bunbun-img, .junto-img, .comyoot-img, .pubart-img {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+}
+
+.overlay-work-items { /* styling the overlay text on each portfolio item*/
+  top: 50%;
+  left: 50%;
+  background: rgba(246,247,241, 0.7);
+  transition: .5s ease;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 30px 40px;
+}
+
+#bunbun-overlay, #junto-overlay, #comyoot-overlay, #pubart-overlay { /*hide the overlay first*/
+  opacity: 0;
+}
+
+#bunbun-view, #junto-view, #comyoot-view {
+  transition: .3s ease;
+}
+
+#bunbun-work:hover #bunbun-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#bunbun-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease;
+}
+
+#junto-work:hover #junto-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#junto-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease;
+}
+
+#comyoot-work:hover #comyoot-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#comyoot-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease;
+}
+
+#pubart-work:hover #pubart-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+/* for headroom */
+.headroom {
+  transition: transform 0.25s ease-in-out 0s;
+  will-change: transform;
+}
+
+.headroom--pinned {
+    transform: translateY(0);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+/************ ABOUT PAGE ************/
+
+.about-bio {
+  margin-top: 125px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.about-description {
+  font-size: 19px;
+  display: inline;
+  overflow: auto;
+}
+
+#hover-image { /* styling the overlay text on each portfolio item*/
+  top: 50%;
+  left: 50%;
+  transition: .5s ease;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#hidden-image { /*hide the overlay first*/
+  opacity: 0;
+  transition: .2s ease;
+}
+
+#about-image:hover #hidden-image { /* make overlay visible upon hover */
+  opacity: 1;
+  transition: .2s ease;
+}
+
+/************ BUNBUN PAGE ************/
+
+.bunbun-project-page {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.bunbun-shortdesc {
+  margin-top: 125px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  background-color: #E7E8E2;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.bunbun-titleimg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.content-text {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+ul.sidebar-list { /* removing bullet points from unordered list*/
+  list-style-type: none;
+  padding-left: 10px;
+  line-height: 35px;
+  border-left: solid #E7E8E2;
+  cursor: pointer;
+}
+
+.sidebar-container {
+  padding-top: 20px;
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.bunbun-project {
+  background-color: #F9F4E1;
+  height: 150px;
+}
+
+.junto-project {
+  background-color: #B2ABC0;
+  height: 150px;
+}
+
+.comyoot-project {
+  background-color: #97A0B3;
+  height: 150px;
+}
+
+.pubart-project {
+  background-color: #ccc;
+  height: 150px;
+}
+
+.bunbun-img-project, .junto-img-project, .comyoot-img-project, .pubart-img-project {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 40%;
+}
+
+.overlay-project-items { /* styling the overlay text on each portfolio item*/
+  top: 50%;
+  left: 50%;
+  background: rgba(246,247,241, 0.7);
+  transition: .5s ease;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 30px 40px;
+}
+
+#bunbun-overlay-project, #junto-overlay-project, #comyoot-overlay-project, #pubart-overlay-project { /*hide the overlay first*/
+  opacity: 0;
+}
+
+#bunbun-project:hover #bunbun-overlay-project { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#junto-project:hover #junto-overlay-project { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#comyoot-project:hover #comyoot-overlay-project { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#pubart-project:hover #pubart-overlay-project { /* make overlay visible upon hover */
+  opacity: 1;
+}
