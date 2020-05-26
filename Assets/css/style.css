@@ -257,7 +257,7 @@ a:hover {
   opacity: 0;
 }
 
-#bunbun-view, #junto-view, #comyoot-view {
+#bunbun-view, #junto-view, #creart-view, #comyoot-view {
   transition: .3s ease;
 }
 
@@ -290,6 +290,11 @@ a:hover {
 
 #creart-work:hover #creart-overlay { /* make overlay visible upon hover */
   opacity: 1;
+}
+
+#creart-view:hover { /* darken color of button upon hover */
+  background-color: #6F8D8D;
+  transition: .3s ease;
 }
 
 /* for headroom */
