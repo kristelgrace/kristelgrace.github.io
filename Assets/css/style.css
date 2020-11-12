@@ -87,6 +87,19 @@ footer {
   max-width: 100%;
 }
 
+
+@media (max-width: 420px) { /* adjust margins & paddings for screen size less than 400px */
+  .work-description {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 421px) { /* adjust margins & paddings for screen size less than 400px */
+  .work-description {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 767px) { /* adjust margins & paddings for screen size less than 767px */
   .row {
     margin-left: 10px;
@@ -185,7 +198,6 @@ a:hover {
 }
 
 .work-description {
-  font-size: 2em;
   overflow: auto;
 }
 
