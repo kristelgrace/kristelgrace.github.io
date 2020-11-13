@@ -89,7 +89,7 @@ footer {
 }
 
 
-@media (max-width: 420px) { /* adjust margins & paddings for screen size less than 400px */
+@media (max-width: 420px) { /* adjust margins & paddings for screen size less than 420px */
   .work-description {
     font-size: 1.4em;
   }
@@ -97,7 +97,7 @@ footer {
 
 
 
-@media (min-width: 421px) { /* adjust margins & paddings for screen size less than 400px */
+@media (min-width: 421px) { /* adjust margins & paddings for screen size more than 420px */
   .work-description {
     font-size: 2em;
   }
@@ -138,16 +138,6 @@ footer {
   }
 }
 
-@media (min-width: 1380px) { /* adjust margins & paddings for screen size more than 1380px */
-    #container{
-      width: 1350px;
-      margin: 0 auto;
-    }
-
-    .sidebar-container {
-      position: fixed;
-    }
-}
 
 @media (min-width: 768px) { /* adjust margins & paddings for screen size more than 768px */
     .vertical-align {
@@ -172,6 +162,17 @@ footer {
       margin: 0 auto;
     }
 
+}
+
+@media (min-width: 1380px) { /* adjust margins & paddings for screen size more than 1380px */
+    #container{
+      width: 1280px;
+      margin: 0 auto;
+    }
+
+    .sidebar-container {
+      position: fixed;
+    }
 }
 
 /* text size of logo */
