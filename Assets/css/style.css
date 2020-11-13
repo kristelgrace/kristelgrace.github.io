@@ -1,19 +1,20 @@
 /*   global styles   */
 body {
-  background-color: #F6F7F1;
+  background-color: #FFF1E6;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 header {
-  background-color: #F0F1EB;
+  background-color: #FFEAD8;
   font-size: 1.3em;
   font-weight: 400;
   padding: 20px 0;
 }
 
 footer {
-  background-color: #F0F1EB;
+  background-color: #FFEAD8;
   font-size: 1em;
   font-weight: 400;
   padding: 20px 75px 40px 75px;
@@ -21,11 +22,11 @@ footer {
 
 /* change highlight color, from w3schools */
 ::-moz-selection { /* Code for Firefox */
-  background: #94BCBC;
+  background: #FFE8D3;
 }
 
 ::selection {
-  background: #94BCBC;
+  background: #FFE8D3;
 }
 
 .text {
@@ -67,9 +68,9 @@ footer {
 }
 
 .button {
-  color: #347979;
-  background-color: rgba(148,188,188, 0.15);
-  box-shadow: 0px 0px 0px 1px rgb(148,188,188) inset;
+  color: #F27F40;
+  background-color: rgba(255,172,99, 0.15);
+  box-shadow: 0px 0px 0px 1px rgb(242,127,64) inset;
   border-radius: 5px;
   padding: 8px 15px;
 }
@@ -94,6 +95,8 @@ footer {
   }
 }
 
+
+
 @media (min-width: 421px) { /* adjust margins & paddings for screen size less than 400px */
   .work-description {
     font-size: 2em;
@@ -107,19 +110,18 @@ footer {
   }
 
   .work-bio {
-    padding: 40px 10px;
+    padding: 40px 50px;
   }
 
-  #work-bio.col-sm-6.form-group {
+  #work-bio.form-group {
     margin-bottom: 0px;
   }
 
   .work-logo {
     padding-top: 70px;
     height: auto;
-    max-width: 30%;
+    max-width: 80%;
     display: block;
-    margin: auto;
   }
 
   .about-bio {
@@ -136,6 +138,17 @@ footer {
   }
 }
 
+@media (min-width: 1380px) { /* adjust margins & paddings for screen size more than 1380px */
+    #container{
+      width: 1350px;
+      margin: 0 auto;
+    }
+
+    .sidebar-container {
+      position: fixed;
+    }
+}
+
 @media (min-width: 768px) { /* adjust margins & paddings for screen size more than 768px */
     .vertical-align {
         display: flex;
@@ -144,21 +157,21 @@ footer {
     }
 
     .work-bio {
-        padding: 200px 0;
+        padding: 100px 0;
     }
 
     .work-logo {
+      padding-top: 70px;
       height: auto;
-      max-width: 40%;
+      max-width: 60%;
       display: block;
-      margin: auto;
     }
-}
 
-@media (min-width: 1200px) {
-  .sidebar-container {
-    position: fixed;
-  }
+    #work-container{
+      width: 700px;
+      margin: 0 auto;
+    }
+
 }
 
 /* text size of logo */
@@ -169,14 +182,14 @@ footer {
 /*   styling links   */
 
 a {
-  color: #347979;
+  color: #F27F40;
   text-decoration: none;
   transition: .2s ease;
 }
 
 
 a:hover {
-  color: #94BCBC;
+  color: #F7C599;
   text-decoration: none;
   transition: .2s ease;
 }
@@ -190,7 +203,7 @@ a:hover {
 /* bio and picture styling */
 
 .work-bio {
-  background-color: #E8EAE1;
+  background-color: #FFE1C7;
   height: 100vh;
   width: 100%;
   margin-left: 0;
@@ -218,7 +231,7 @@ a:hover {
 }
 
 .bunbun-work {
-  background-color: #F9F4E1;
+  background-color: #FFF5CD;
   height: 320px;
 }
 
@@ -249,7 +262,7 @@ a:hover {
 .overlay-work-items { /* styling the overlay text on each portfolio item*/
   top: 50%;
   left: 50%;
-  background: rgba(246,247,241, 0.6);
+  background: rgba(255,241,230, 0.6);
   transition: .5s ease;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -273,7 +286,7 @@ a:hover {
 
 #bunbun-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #94BCBC;
+  background-color: #F27F40;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -284,7 +297,7 @@ a:hover {
 
 #junto-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #94BCBC;
+  background-color: #F27F40;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -295,7 +308,7 @@ a:hover {
 
 #comyoot-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #94BCBC;
+  background-color: #F27F40;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -306,7 +319,7 @@ a:hover {
 
 #creart-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #94BCBC;
+  background-color: #F27F40;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -382,13 +395,14 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.bunbun-shortdesc {
+.space{
   margin-top: 125px;
   margin-bottom: 20px;
 }
 
 .timeline {
-  background-color: #E7E8E2;
+  background-color: #FFF9F4;
+  border-radius: 3px;
   padding: 15px;
   margin-top: 20px;
 }
