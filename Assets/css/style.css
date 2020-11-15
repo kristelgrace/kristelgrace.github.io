@@ -523,7 +523,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -533,11 +533,14 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  padding: 0 8px;
   background-color: #FEF8F3;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
 
 .accordion:after {
