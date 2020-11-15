@@ -85,6 +85,10 @@ header .logo {
 	margin: 10px 0px 10px 45px;
 }
 
+img#logo {
+	max-width: 70%;
+}
+
 .home {
 	grid-area: b;
 	border-bottom: 6px solid #F9F3E2;
@@ -170,6 +174,7 @@ header .logo {
 	margin-top: 10px;
 	line-height: 30px;
 	text-align: justify;
+	margin-bottom: 10px;
 }
 
 .customize-rolls {
@@ -257,7 +262,7 @@ header .logo {
 }
 
 .box-class {
-	margin-left: 105px;
+	margin-left: 94px;
 	font-size: 15px;
 	padding: 2px 0 0 10px;
 	background: #fff;

@@ -397,6 +397,15 @@ a:hover {
   margin-bottom: 100px;
 }
 
+.no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#no-padding{
+  padding-left: 0;
+}
+
 .space{
   margin-top: 125px;
   margin-bottom: 20px;
@@ -423,7 +432,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   list-style-type: none;
   padding-left: 10px;
   line-height: 35px;
-  border-left: solid #E7E8E2;
+  border-left: solid #fff;
   cursor: pointer;
 }
 
