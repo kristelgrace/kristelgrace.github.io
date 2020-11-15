@@ -448,7 +448,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 }
 
 .bunbun-project {
-  background-color: #F9F4E1;
+  background-color: #FFF5CD;
   height: 150px;
 }
 
@@ -518,7 +518,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   background-color: #FFEAD8;
   color: #646464;
   cursor: pointer;
-  padding: 5px;
+  padding: 2px 8px;
   width: 100%;
   text-align: left;
   border: none;
@@ -533,7 +533,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 8px;
+  padding: 0 13px;
   background-color: #FEF8F3;
   max-height: 0;
   overflow: hidden;
@@ -544,13 +544,13 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '+'; /* Unicode character for "plus" sign (+) */
   font-size: 1.1em;
   color: #646464;
   float: right;
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "-"; /* Unicode character for "minus" sign (-) */
 }
