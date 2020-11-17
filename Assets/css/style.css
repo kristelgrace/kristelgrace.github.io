@@ -162,6 +162,10 @@ footer {
       margin: 0 auto;
     }
 
+    .shallmake-space{
+      margin-top: 130px;
+    }
+
 }
 
 @media (min-width: 1380px) { /* adjust margins & paddings for screen size more than 1380px */
