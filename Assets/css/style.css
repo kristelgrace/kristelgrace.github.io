@@ -67,6 +67,11 @@ footer {
   font-style: italic;
 }
 
+#footer {
+  padding: 0;
+  margin: 0;
+}
+
 .white-text {
   color: #fff;
 }
@@ -148,6 +153,10 @@ footer {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    #right {
+      text-align: right;
     }
 
     .work-bio {
@@ -411,6 +420,10 @@ a:hover {
 .no-margin {
   margin-left: 0;
   margin-right: 0;
+}
+
+.no-padding {
+  padding-left: 0;
 }
 
 #no-padding{
