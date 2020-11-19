@@ -181,6 +181,12 @@ footer {
 
 }
 
+@media (max-width: 1229px) {
+  .sidebar-container {
+    padding-top: 0;
+  }
+}
+
 @media (min-width: 1230px) { /* adjust margins & paddings for screen size more than 1380px */
     #container{
       width: 1130px;
@@ -189,6 +195,7 @@ footer {
 
     .sidebar-container {
       position: fixed;
+      padding-top: 100px;
     }
 }
 
@@ -461,7 +468,6 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 }
 
 .sidebar-container {
-  padding-top: 20px;
   font-size: 1.25em;
   line-height: 38px;
 }
