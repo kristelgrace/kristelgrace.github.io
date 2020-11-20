@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- bootstrap css+js library for screen responsiveness -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -79,15 +79,15 @@
       </div>
 
       <div class="col-lg-2 col-xs-12">
-        <div class="sidebar-container text">
-          <ul class="sidebar-list">
-            <li><a onclick="Jump('#background', {offset: -90})">Background</a></li>
-            <li><a onclick="Jump('#research-phase', {offset: -90})">Research Phase</a></li>
-            <li><a onclick="Jump('#solution', {offset: -90})">Solution</a></li>
-            <li><a onclick="Jump('#theories-applied', {offset: -90})">Theories Applied</a></li>
-            <li><a onclick="Jump('#prototyping', {offset: -90})">Prototyping</a></li>
-            <li><a onclick="Jump('#final-design', {offset: -90})">Final Design</a></li>
-            <li><a onclick="Jump('#reflection', {offset: -90})">Reflection</a></li>
+        <div class="sidebar-container text" id="myScrollspy">
+          <ul class="sidebar-list nav nav-pills nav-stacked">
+            <li><a href="#background">Background</a></li>
+            <li><a href="#research-phase">Research Phase</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#theories-applied">Theories Applied</a></li>
+            <li><a href="#prototyping">Prototyping</a></li>
+            <li><a href="#final-design">Final Design</a></li>
+            <li><a href="#reflection">Reflection</a></li>
           </ul>
         </div>
       </div>
@@ -147,7 +147,7 @@
             <div class="col-sm-6" id="no-padding">
               <p class="norm-p-size text bold remove-line">Common pattern</p>
               <p class="text norm-p-size">
-                <img class="max-100width" src="Assets/images/junto-pattern.png" alt="Common procrastination pattern">
+                <img class="max-100width" src="Assets/images/junto-pattern.png" alt="Common procrastination pattern"><br><br>
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@
             <img class="max-100width" src="Assets/images/junto-affinity.png" alt="Affinity Diagram">
           </p>
 
-        <div class="small-htext text bold margin-up title" id="solution">Solution</div>
+        <div class="small-htext text bold title" id="solution">Solution</div>
         <div class="no-margin row">
           <div class="col-sm-6" id="no-padding">
             <p class="norm-p-size text bold remove-line">A Different Approach</p>
@@ -443,6 +443,8 @@
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/fade.js"></script>
     <script src="Assets/js/accordion.js"></script>
+    <script src="Assets/js/smoothscroll.js"></script>
+    <script src="Assets/js/scrollspying.js"></script>
 
   </body>
 

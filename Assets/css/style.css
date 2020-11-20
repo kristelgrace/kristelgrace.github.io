@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 header {
@@ -459,13 +460,6 @@ a:hover {
   line-height: 40px;
 }
 
-ul.sidebar-list { /* removing bullet points from unordered list*/
-  list-style-type: none;
-  padding-left: 10px;
-  line-height: 35px;
-  border-left: solid #fff;
-  cursor: pointer;
-}
 
 .sidebar-container {
   font-size: 1.25em;
@@ -474,7 +468,8 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 
 .title {
   margin-bottom: 10px;
-  margin-top: 50px;
+  padding-top: 130px;
+  margin-top: -100px;
 }
 
 .bunbun-project {
@@ -562,7 +557,7 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active-accordion, .accordion:hover {
   background-color: #FFE1C7;
 }
 
@@ -586,6 +581,29 @@ ul.sidebar-list { /* removing bullet points from unordered list*/
   margin-left: 6px;
 }
 
-.active:after {
+.active-accordion:after {
   content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+/************ NAV BAR ************/
+.nav>li>a {
+  padding: 0 10px;
+}
+
+.nav-pills>li>a {
+  border-left: 6px solid #FFF9F4;
+  border-radius: 0;
+  color: #F7C599;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color: #F27F40;
+  background-color: transparent;
+  border-left: 6px solid #F27F40;
+  font-weight: 600;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: transparent;
+  color: #FFEAD8;
 }

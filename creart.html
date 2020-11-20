@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- bootstrap css+js library for screen responsiveness -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -76,14 +76,14 @@
       </div>
 
       <div class="col-lg-2 col-xs-12">
-        <div class="sidebar-container text">
-          <ul class="sidebar-list">
-            <li><a onclick="Jump('#background', {offset: -90})">Background</a></li>
-            <li><a onclick="Jump('#problem', {offset: -90})">Problem Space</a></li>
-            <li><a onclick="Jump('#research', {offset: -90})">Research Phase</a></li>
-            <li><a onclick="Jump('#insights', {offset: -90})">Insights</a></li>
-            <li><a onclick="Jump('#final-design', {offset: -90})">Final Design</a></li>
-            <li><a onclick="Jump('#reflection', {offset: -90})">Reflection</a></li>
+        <div class="sidebar-container text" id="myScrollspy">
+          <ul class="sidebar-list nav nav-pills nav-stacked">
+            <li><a href="#background">Background</a></li>
+            <li><a href="#problem">Problem Space</a></li>
+            <li><a href="#research">Research Phase</a></li>
+            <li><a href="#insights">Insights</a></li>
+            <li><a href="#final-design">Final Design</a></li>
+            <li><a href="#reflection">Reflection</a></li>
           </ul>
         </div>
       </div>
@@ -311,6 +311,8 @@
     <script src="Assets/js/scroll.js"></script>
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/fade.js"></script>
+    <script src="Assets/js/smoothscroll.js"></script>
+    <script src="Assets/js/scrollspying.js"></script>
 
   </body>
 
