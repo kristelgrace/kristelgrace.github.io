@@ -315,22 +315,22 @@ a:hover {
 }
 
 .bunbun-work {
-  background-color: #FFF5CD;
+  background-color: #FFE1C7;
   height: 320px;
 }
 
 .junto-work {
-  background-color: #B2ABC0;
+  background-color: #FFE1C7;
   height: 320px;
 }
 
 .comyoot-work {
-  background-color: #CED9E4;
+  background-color: #FFE1C7;
   height: 320px;
 }
 
 .creart-work {
-  background-color: #CEB3A7;
+  background-color: #FFE1C7;
   height: 320px;
 }
 
@@ -340,13 +340,14 @@ a:hover {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 50%;
+  max-height: 100%;
+  max-width: auto;
 }
 
 .overlay-work-items { /* styling the overlay text on each portfolio item*/
   top: 50%;
   left: 50%;
-  background: rgba(255,241,230, 0.6);
+  background: rgba(255,241,230, 0.7);
   transition: .5s ease;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -502,6 +503,7 @@ a:hover {
   border-radius: 3px;
   padding: 15px;
   margin-top: 20px;
+  z-index: 3;
 }
 
 .bunbun-titleimg {
@@ -526,8 +528,14 @@ a:hover {
   margin-top: -100px;
 }
 
+.bg-title {
+  margin-bottom: 10px;
+  padding-top: 70px;
+  margin-top: -10px;
+}
+
 .bunbun-project {
-  background-color: #FFF5CD;
+  background-color: #FADFA9;
   height: 150px;
 }
 
@@ -644,20 +652,20 @@ a:hover {
   padding: 0 10px;
 }
 
-.nav-pills>li>a {
+.nav-pills>li>a { /*color inactive*/
   border-left: 6px solid #FFF9F4;
   border-radius: 0;
-  color: #F7C599;
+  color: #FDA16E;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ /*color on select or active*/
   color: #F27F40;
   background-color: transparent;
   border-left: 6px solid #F27F40;
   font-weight: 600;
 }
 
-.nav>li>a:focus, .nav>li>a:hover{
+.nav>li>a:focus, .nav>li>a:hover{ /*color on hover*/
   background-color: transparent;
   color: #FFEAD8;
 }
