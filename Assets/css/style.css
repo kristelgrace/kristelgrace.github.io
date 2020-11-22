@@ -535,22 +535,22 @@ a:hover {
 }
 
 .bunbun-project {
-  background-color: #FADFA9;
+  background-color: #FFE1C7;
   height: 150px;
 }
 
 .junto-project {
-  background-color: #B2ABC0;
+  background-color: #FFE1C7;
   height: 150px;
 }
 
 .comyoot-project {
-  background-color: #CED9E4;
+  background-color: #FFE1C7;
   height: 150px;
 }
 
 .creart-project {
-  background-color: #CEB3A7;
+  background-color: #FFE1C7;
   height: 150px;
 }
 
@@ -560,7 +560,8 @@ a:hover {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 40%;
+  max-height: 100%;
+  width: auto;
 }
 
 .overlay-project-items { /* styling the overlay text on each portfolio item*/
@@ -647,7 +648,19 @@ a:hover {
   content: "-"; /* Unicode character for "minus" sign (-) */
 }
 
-/************ NAV BAR ************/
+/**** figma ****/
+
+.figma {
+  height: 600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+}
+
+/************ SIDENAV BAR ************/
 .nav>li>a {
   padding: 0 10px;
 }
