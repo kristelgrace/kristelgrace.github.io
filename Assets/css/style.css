@@ -82,7 +82,7 @@ footer {
 }
 
 .button {
-  color: #F27F40;
+  color: #F47563;
   background-color: rgba(255,172,99, 0.15);
   box-shadow: 0px 0px 0px 1px rgb(242,127,64) inset;
   border-radius: 5px;
@@ -262,7 +262,7 @@ footer {
 /*   styling links   */
 
 a {
-  color: #F27F40;
+  color: #F47563;
   text-decoration: none;
   transition: .2s ease;
 }
@@ -371,7 +371,7 @@ a:hover {
 
 #bunbun-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #F27F40;
+  background-color: #F47563;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -382,7 +382,7 @@ a:hover {
 
 #junto-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #F27F40;
+  background-color: #F47563;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -393,7 +393,7 @@ a:hover {
 
 #comyoot-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #F27F40;
+  background-color: #F47563;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -404,7 +404,7 @@ a:hover {
 
 #creart-view:hover { /* darken color of button upon hover */
   color: #F6F7F1;
-  background-color: #F27F40;
+  background-color: #F47563;
   box-shadow: 0px 0px 0px 0px;
   transition: .5s ease;
 }
@@ -672,9 +672,9 @@ a:hover {
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ /*color on select or active*/
-  color: #F27F40;
+  color: #F47563;
   background-color: transparent;
-  border-left: 6px solid #F27F40;
+  border-left: 6px solid #F47563;
   font-weight: 600;
 }
 
