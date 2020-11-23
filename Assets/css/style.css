@@ -39,6 +39,10 @@ footer {
   font-size: 1.2em;
 }
 
+.small-text {
+  font-size: 1em;
+}
+
 .big-htext {
   font-size: 2em;
 }
@@ -88,6 +92,14 @@ footer {
   border-radius: 5px;
   padding: 8px 15px;
   white-space: nowrap;
+}
+
+.tags {
+  background-color: rgba(0,0,0, 0.15);
+  border-radius: 5px;
+  padding: 5px 9px;;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .row {
@@ -310,6 +322,14 @@ a:hover {
 }
 
 /*portfolio items styling */
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
 .work-items {
   padding-top: 75px;
 }
@@ -347,7 +367,7 @@ a:hover {
 .overlay-work-items { /* styling the overlay text on each portfolio item*/
   top: 50%;
   left: 50%;
-  background: rgba(255,241,230, 0.7);
+  background: rgba(255,241,230, 0.8);
   transition: .5s ease;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -569,7 +589,7 @@ a:hover {
 .overlay-project-items { /* styling the overlay text on each portfolio item*/
   top: 50%;
   left: 50%;
-  background: rgba(255,241,230, 0.7);
+  background: rgba(255,241,230, 0.8);
   transition: .5s ease;
   position: absolute;
   transform: translate(-50%, -50%);
