@@ -13,6 +13,8 @@
 	<!--- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Aleo:400,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 
 	<!-- character encoding, sourced from stackoverflow -->
 	<meta charset="UTF-8">
@@ -24,55 +26,48 @@
 		<header>
 			<div class="logo">
 				<a href="home.html">
-					<img src="logo.png" alt="Bun Bun Bake Shop logo">
+					<img src="logo.png" alt="Bun Bun Bake Shop logo" id="logo">
 				</a>
 			</div>
 			<a href="home.html"><div class="box home">home</div></a>
 			<a href="about.html"><div class="box about">about</div></a>
 			<a href="menu.html"><div class="box menu">menu</div></a>
-			<a href="contact.html"><div class="box contact">contact</div></a>
 			<div class="place"></div>
 			<span class="wishlist"><a href="wishlist.html" id="wishList">wishlist (<span id="wishCount">0</span>)</a></span>
 			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (<span id="itemCount">0</span>)</a></span>
 		</header>
 
 
-		<div class="picture">
-			<img src="valentines.jpg" alt="Valentine's Day Cinnamon Rolls">
-			<div id="valentine-box">
-				<h2>Valentine's Day Specials: New Flavors!</h2>
-				<p>Valentine's Day is right around the corner! Treat yourself or your significant other to our new flavors, strawberry delight and berry overload. Our Valentine's specials come in the shape of a heart! Available for a limited time only.</p>
-				<a href="menu.html"><div id="order-button">view menu</div></a>
-				<div class="arrow left"><img src="arrow-left.png" alt="arrow left"></div>
-				<div class="arrow right"><img src="arrow-right.png" alt="arrow right"></div>
-				<div class="arrow circles"><img src="circles.png" alt="image scroll"></div>
-			</div>
+		<div class="home-picture">
+				<span class="home-order">
+					<span class="bunbun-imgtext">
+						bun bun bake shop
+					</span>
+					<a href="menu.html"><h2>start ordering</h2></a>
+				</span>
+			<img src="home-image.png">
+
 		</div>
 
 
 		<footer>
 			<!-- bun bun info -->
 			<div id="shop">bun bun bake shop</div>
-			<div id="address">5000 Forbes Avenue, Pittsburgh PA 15213</div>
-			<div id="info">grab cinnamon rolls 7am-7pm daily</div>
-
-			<!-- bun bun email -->
-			<div id="news-info">join our newsletter for more discounts and updates!</div>
-			<form method="POST">
-				<input type="text" name="email" id="email" placeholder="email address">
-				<input type="submit" value="sign up">
-			</form>
+			<div id="address">
+				5000 Forbes Avenue, Pittsburgh PA 15213<br>
+				grab cinnamon rolls 7am-7pm daily
+			</div>
 
 			<!-- bottom links -->
 
 			<div id="bottom-links">
-				<p>contact us - terms & conditions - privacy policy</p>
-				<p>facebook - instagram - twitter - yelp</p>
+				<p>contact us • terms & conditions • privacy policy</p>
+				<p>facebook • instagram • twitter • yelp</p>
 			</div>
 
 			<!-- copyright bottom -->
 			<div id="copyright">
-				<p>Copyright 2020 - Bun Bun Bake Shop</p>
+				<p>Copyright 2020 • Bun Bun Bake Shop</p>
 			</div>
 		</footer>
 

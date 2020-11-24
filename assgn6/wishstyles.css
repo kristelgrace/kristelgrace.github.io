@@ -1,5 +1,5 @@
 body {
-	background-color: #F9F3E2;
+	background-color: #FFF4E6;
 	margin: 0;
 	color: #564D46;
 }
@@ -7,7 +7,7 @@ body {
 
 
 h2 {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 30px;
 	padding: 0;
 	font-weight: 400;
@@ -15,7 +15,7 @@ h2 {
 }
 
 h4 {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 23px;
 	padding: 0;
 	font-weight: 400;
@@ -23,7 +23,7 @@ h4 {
 }
 
 h5 {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 20px;
 	padding: 0;
 	font-weight: 400;
@@ -31,7 +31,7 @@ h5 {
 }
 
 p, span {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 18px;
 	margin-bottom: 5px;
 }
@@ -55,16 +55,14 @@ header {
 	grid-auto-rows: 70px;
 	grid-template-areas:
 		"a b c d e f f f g g g h h h";
-	box-shadow: 2px 2px 6px rgba(1, 0, 0, 0.2);
-	background-color: #F9F3E2;
-	position: fixed;
+	/*box-shadow: 2px 2px 6px rgba(1, 0, 0, 0.2);*/
+	background-color: #FFF4E6;
 	width: 100%;
 	z-index: 10;
-	opacity: 0.9;
 }
 
 a .box {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 18px;
 	margin: auto 10px 0px 10px; /* to center */
 	cursor: pointer;
@@ -74,7 +72,7 @@ a .box {
 }
 
 a .box:hover {
-	border-bottom: 6px solid #FDE19A;
+	border-bottom: 3px solid #FDE19A;
 	color: #928378;
 }
 
@@ -85,28 +83,20 @@ a .box:hover {
 	align-items: center;
 }
 
-#logo-picture img {
-	max-height: 30%;
+img#logo {
+	max-width: 70%;
 }
 
 .home{
 	grid-area: b;
-	border-bottom: 6px solid #F9F3E2;
 }
 
 .about {
 	grid-area: c;
-	border-bottom: 6px solid #F9F3E2;
 }
 
 .menu {
 	grid-area: d;
-	border-bottom: 6px solid #F9F3E2;
-}
-
-.contact {
-	grid-area: e;
-	border-bottom: 6px solid #F9F3E2;
 }
 
 .wishlist {
@@ -116,9 +106,9 @@ a .box:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 18px;
-	border-radius: 5px;
+	border-radius: 20px;
 	background-color: #FDE19A;
 }
 
@@ -129,9 +119,9 @@ a .box:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 18px;
-	border-radius: 5px;
+	border-radius: 20px;
 	background-color: #FDE19A;
 }
 
@@ -144,11 +134,12 @@ a .box:hover {
 /********** BODY **********/
 
 .all-wishes {
-	margin-top: 115px;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 700px;
 	display: block;
+	height: calc(100vh - 300px);
 }
 
 .wish-1 {
@@ -166,7 +157,7 @@ a .box:hover {
 	border: 2px solid white;
 	border-radius: 5px;
 	height: 100px;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Nunito Sans', 'Cabin', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	margin-bottom: 45px;
@@ -226,101 +217,48 @@ footer {
 		"a b c"
 		"d d d";
 	position: relative;
-	width: 100%;
+	margin: 0 100px;
 }
-
 
 #shop {
 	grid-area: a;
 	margin-top: 45px;
 	font-family: 'Aleo', serif;
 	font-size: 40px;
-	margin-left: 45px;
 	font-weight: 700;
 	margin-bottom: 0;
 }
 
 #address {
 	grid-area: a;
-	font-family: 'Aleo', serif;
-	margin-left: 45px;
-	font-size: 18px;
+	font-family: 'Nunito Sans', 'Cabin', serif;
+	font-size: 16px;
 	margin-top: 92px;
 	margin-bottom: 0;
-	letter-spacing: 0.3px
-}
-
-#info {
-	grid-area: a;
-	font-family: 'Aleo', serif;
-	margin-left: 45px;
-	font-size: 18px;
-	margin-top: 110px;
-	letter-spacing: 1.6px;
-	word-spacing: 2.7px;
-}
-
-#news-info {
-	grid-area: b;
-	margin: 80px auto 0px auto;
-	font-family: 'Cabin', sans-serif;
-	font-size: 18px;
-}
-
-footer form input[type=text] {
-	border: 0.6px solid rgba(86, 77, 70, 0.3);
-	border-radius: 5px;
-	height: 20px;
-	padding-left: 8px;
-	vertical-align: center;
-	width: 260px;
-	margin-left: 50px;
-	font-family: 'Cabin', sans-serif;
-	font-size: 14px;
-	color: #564D46;
-}
-
-footer form input[type=submit] {
-	border-radius: 5px;
-	height: 24px;
-	text-align: center;
-	margin-left: 310px;
-	width: 102px;
-	background-color: #FDE19A;
-	margin-left: 2px;
-	cursor: pointer;
-	border: none;
-	font-family: 'Cabin', sans-serif;
-	color: #564D46;
-	font-size: 15px;
-}
-
-form input[type=submit]:hover {
-	color: #928378;
-}
-
-footer form {
-	grid-area: b;
-	margin-top: 106px;
 }
 
 #bottom-links {
 	grid-area: c;
-	margin: 80px 45px 0 0;
+	margin: 91px 0 0 0;
 	text-align: right;
 }
 
 #bottom-links p {
 	padding: 0;
 	margin: 0;
+	font-size: 16px;
 }
 
 #copyright {
 	grid-area: d;
-	border-top: 1px solid #564D46;
-	margin: 100px 45px 50px 45px;
-	padding-top: 20px;
+	border-top: 0.5px solid #564D46;
+	margin: 100px 0 50px 0;
+	padding-top: 10px;
 	padding-bottom: 50px;
 	line-height: 1px;
 	text-align: center;
+}
+
+#copyright p {
+	font-size: 12px;
 }

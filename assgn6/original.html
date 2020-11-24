@@ -13,6 +13,8 @@
 	<!--- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Aleo:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 
 	<!-- character encoding, sourced from stackoverflow -->
 	<meta charset="UTF-8">
@@ -30,85 +32,93 @@
 			<a href="home.html"><div class="box home">home</div></a>
 			<a href="about.html"><div class="box about">about</div></a>
 			<a href="menu.html"><div class="box menu">menu</div></a>
-			<a href="contact.html"><div class="box contact">contact</div></a>
 			<div class="place"></div>
 			<span class="wishlist"><a href="wishlist.html" id="wishList">wishlist (<span id="wishCount">0</span>)</a></span>
 			<span class="cart"><a href="cart.html" id="shoppingCart">shopping cart (<span id="itemCount"></span>)</a></span>
 		</header>
 
 		<div class="original-flavor">
-			<p><a href="menu.html">« back to menu</a></p>
+			<h5 class="breadcrumbs">
+				<a href="menu.html"><a href="menu.html" id="breadcrumb-link">Menu</a> > Original<br><br>
+			</h5>
 			<img id="origImage" src="none.png" alt="original cinnamon roll">
 			<div id="original-text">
-				<h2>original</h2>
-				<h5>our famous original cinnamon roll is made with the finest ingredients imported from Sweden. we bake our cinnamon rolls daily so you can enjoy the amazing goodness of a deliciously sweet and fragrant cinnamon roll. a gluten-free version is also available. <br>choose from a selection of our delectable glazes: sugar-milk, vanilla-milk, or double-chocolate! our glazes are created in the store and are mixed to perfectly complement our cinnamon rolls.</h5><br>
+				<h2>Original</h2>
+				<h5>
+					Our famous original cinnamon roll is made with the finest
+					ingredients imported from Sweden. We bake our cinnamon rolls daily so
+					you can enjoy the amazing goodness of a deliciously sweet and fragrant
+					cinnamon roll.
+				</h5>
+				<br>
 			</div>
 			<div class="customize-rolls">
+
 				<form method="POST" id="originalForm">
-					<section class="glazes">
-						<h5><label for="glaze">glaze</label></h5>
-						<span class="glaze-class">
-							<select name="glaze" id="glaze" onchange="updateGlaze()">
-								<option value="none">none</option>
-								<option value="sugar-milk">sugar-milk</option>
-								<option value="vanilla-milk">vanilla-milk</option>
-								<option value="double-chocolate">double-chocolate</option>
-							</select>
-						</span>
-					</section>
+
+					<label for="glaze" id="glaze-label"><h5>glaze</h5></label>
+					<span class="glaze-class">
+						<select name="glaze" id="glaze" onchange="updateGlaze()">
+							<option value="none">none</option>
+							<option value="sugar-milk">sugar-milk</option>
+							<option value="vanilla-milk">vanilla-milk</option>
+							<option value="double-chocolate">double-chocolate</option>
+						</select>
+					</span>
+
 					<br>
-					<section class="rolls">
-						<h5><label for="roll" >number of rolls</label></h5>
-						<span class="roll-class">
-							<select name="roll" id="roll" onchange="updateRoll()">
-								<option value="1">1</option>
-								<option value="3">3</option>
-								<option value="6">6</option>
-								<option value="12">12</option>
-							</select>
-						</span>
-					</section>
+
+					<label for="roll" id="roll-label"><h5>number of rolls</h5></label>
+					<span class="roll-class">
+						<select name="roll" id="roll" onchange="updateRoll()">
+							<option value="1">1</option>
+							<option value="3">3</option>
+							<option value="6">6</option>
+							<option value="12">12</option>
+						</select>
+					</span>
+
 					<br>
-					<section class="boxes">
-						<h5><label for="boxOrder">boxes</label></h5>
-						<span class="box-class">
-							<input type="number" name="box" id="boxOrder" value="1" min="1" onchange="updateBox()">
-						</span>
-					</section>
-					<h2 id="priceOriginal">$5.00</h2>
-					<div class="add to-cart">
-						<input type="button" onclick="getOrder()" value="add to cart">
-					</div>
-					<div class="add to-wishlist">
-						<input type="button" onclick="addOrder()" value="add to wish">
+
+					<label for="boxOrder" id="box-label"><h5>boxes</h5></label>
+					<span class="box-class">
+						<input type="number" name="box" id="boxOrder" value="1" min="1" onchange="updateBox()">
+					</span>
+
+					<div class="adding">
+						<h2 id="priceOriginal">$5.00</h2>
+
+						<div class="add to-wishlist">
+							<input type="button" onclick="addOrder()" value="add to wishlist">
+						</div>
+
+						<div class="add to-cart">
+							<input type="button" onclick="getOrder()" value="add to cart">
+						</div>
 					</div>
 				</form>
+
 			</div>
 		</div>
 
 		<footer>
 			<!-- bun bun info -->
 			<div id="shop">bun bun bake shop</div>
-			<div id="address">5000 Forbes Avenue, Pittsburgh PA 15213</div>
-			<div id="info">grab cinnamon rolls 7am-7pm daily</div>
-
-			<!-- bun bun email -->
-			<div id="news-info">join our newsletter for more discounts and updates!</div>
-			<form method="POST">
-				<input type="text" name="email" id="email" placeholder="email address">
-				<input type="submit" value="sign up">
-			</form>
+			<div id="address">
+				5000 Forbes Avenue, Pittsburgh PA 15213<br>
+				grab cinnamon rolls 7am-7pm daily
+			</div>
 
 			<!-- bottom links -->
 
 			<div id="bottom-links">
-				<p>contact us - terms & conditions - privacy policy</p>
-				<p>facebook - instagram - twitter - yelp</p>
+				<p>contact us • terms & conditions • privacy policy</p>
+				<p>facebook • instagram • twitter • yelp</p>
 			</div>
 
 			<!-- copyright bottom -->
 			<div id="copyright">
-				<p>Copyright 2020 - Bun Bun Bake Shop</p>
+				<p>Copyright 2020 • Bun Bun Bake Shop</p>
 			</div>
 		</footer>
 
