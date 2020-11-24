@@ -273,20 +273,22 @@ footer {
 
 /*   styling links   */
 
-a {
+a, .figma-link-jump {
   color: #F47563;
   text-decoration: none;
   transition: .2s ease;
+  cursor: pointer;
 }
 
 a:link {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, .figma-link-jump:hover {
   color: #F7C599;
   text-decoration: none;
   transition: .2s ease;
+  cursor: pointer;
 }
 
 .italic:hover {
