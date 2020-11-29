@@ -105,8 +105,9 @@ img#logo {
 
 .wishlist {
 	grid-area: g;
+	width: 140px;
 	padding: 0px 20px; /* top & botton, right&left */
-	margin: 18px 45px 18px 40px; /* top right bottom left*/
+	margin: 18px 10px 18px 40px; /* top right bottom left*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -118,6 +119,7 @@ img#logo {
 
 .cart {
 	grid-area: h;
+	width: 140px;
 	padding: 0 20px; /* top & botton, right&left */
 	margin: 18px 45px 18px 0; /* top right bottom left*/
 	display: flex;
