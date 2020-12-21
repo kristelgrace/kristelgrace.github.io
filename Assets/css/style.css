@@ -64,6 +64,10 @@ footer {
   margin-top: 30px;
 }
 
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -78,6 +82,10 @@ footer {
 
 .center-text {
   text-align: center;
+}
+
+.right-text {
+  text-align: right;
 }
 
 #footer {
