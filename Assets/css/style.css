@@ -562,6 +562,32 @@ a:hover, .figma-link-jump:hover {
   margin-top: -10px;
 }
 
+.overlaying-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.under-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.over-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .bunbun-project {
   background-color: #FFE1C7;
   height: 150px;
