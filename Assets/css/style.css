@@ -36,7 +36,7 @@ footer {
 }
 
 .norm-p-size {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .small-text {
@@ -55,6 +55,14 @@ footer {
   font-size: 1.6em;
 }
 
+.sub-htext {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #FDA16E !important;
+  font-weight: bold;
+  padding-bottom: 5px !important;
+}
+
 .remove-line {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -65,7 +73,7 @@ footer {
 }
 
 .margin-bottom {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .bold {
@@ -224,6 +232,11 @@ footer {
   footer {
     padding: 20px 20px 30px 25px;
   }
+
+  .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
@@ -258,23 +271,37 @@ footer {
       margin-top: 130px;
     }
 
+    .no-left-padding {
+      padding-left: 0;
+    }
+
+    #no-left-padding{
+      padding-left: 0;
+    }
+
+    .no-right-padding {
+      padding-right: 0;
+    }
+
 }
 
-@media (max-width: 1199px) { /* adjust for screen size less than 1229px */
+@media (max-width: 991px) { /* adjust for screen size less than 1229px */
   .sidebar-container {
     display: none;
   }
 }
 
-@media (min-width: 1200px) { /* adjust margins & paddings for screen size more than 1380px */
-    #container{
-      width: 1100px;
-      margin: 0 auto;
-    }
+@media (min-width: 992px) {
+  .sidebar-container {
+    position: fixed;
+    padding-top: 100px;
+  }
+}
 
-    .sidebar-container {
-      position: fixed;
-      padding-top: 100px;
+@media (min-width: 1200px) { /* adjust margins & paddings for screen size more than 1200px */
+    #container{
+      width: 1000px;
+      margin: 0 auto;
     }
 }
 
@@ -521,14 +548,6 @@ a:hover, .figma-link-jump:hover {
   margin-right: 0;
 }
 
-.no-padding {
-  padding-left: 0;
-}
-
-#no-padding{
-  padding-left: 0;
-}
-
 .space{
   margin-top: 125px;
   margin-bottom: 20px;
@@ -554,14 +573,14 @@ a:hover, .figma-link-jump:hover {
 
 
 .sidebar-container {
-  font-size: 1.25em;
-  line-height: 38px;
+  font-size: 1em;
+  line-height: 30px;
 }
 
 .title {
   margin-bottom: 10px;
-  padding-top: 130px;
-  margin-top: -100px;
+  padding-top: 120px;
+  margin-top: -50px;
 }
 
 .bg-title {
@@ -685,6 +704,10 @@ a:hover, .figma-link-jump:hover {
 
 /************ JUNTO PAGE ************/
 
+#medfi-carousel {
+  max-width: 400px;
+  margin: auto;
+}
 
 /** sourced from w3schools **/
 /* Style the buttons that are used to open and close the accordion panel */

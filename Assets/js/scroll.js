@@ -10,14 +10,24 @@ var config = {
 
 window.sr = ScrollReveal(config)
 
-sr.reveal('#bunbun-work', {delay: 100});
-sr.reveal('#junto-work', {delay: 300});
+sr.reveal('#junto-work', {delay: 100});
+sr.reveal('#creart-work', {delay: 500});
 sr.reveal('#comyoot-work', {delay: 100});
-sr.reveal('#creart-work', {delay: 300});
+sr.reveal('#bunbun-work', {delay: 500});
+
 
 // reveal text annotations on project images
 sr.reveal('#junto-affinity-text1', {delay: 200});
 sr.reveal('#junto-affinity-text2', {delay: 1800});
+sr.reveal('#junto-usertesting-text1', {delay: 200});
+sr.reveal('#junto-usertesting-text2', {delay: 600});
+sr.reveal('#junto-taskcomp-text1', {delay: 200});
+sr.reveal('#junto-taskcomp-text2', {delay: 800});
+sr.reveal('#junto-social-text1', {delay: 1500});
+sr.reveal('#junto-social-text2', {delay: 1800});
+sr.reveal('#junto-demoday-text1', {delay: 200});
+sr.reveal('#junto-demoday-text2', {delay: 500});
+sr.reveal('#junto-demoday-text3', {delay: 800});
 
 // reveal the full overlay
 var configa = {
@@ -33,6 +43,8 @@ var configa = {
 window.srcomp = ScrollReveal(configa)
 
 srcomp.reveal('#junto-affinity-complete', {delay: 2200});
+srcomp.reveal('#junto-usertesting-complete', {delay: 1000});
+srcomp.reveal('#junto-demoday-complete', {delay: 1100});
 
 
 var configsumL = {
