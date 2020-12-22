@@ -765,6 +765,18 @@ a:hover, .figma-link-jump:hover {
   box-shadow: none;
 }
 
+/************ CREART PAGE ************/
+.horizontal-scroll-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.hor-scroll-item {
+  display: inline-block;
+  max-height: 400px;
+}
+
 /************ SIDENAV BAR ************/
 .nav>li>a {
   padding: 0 10px;

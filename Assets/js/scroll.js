@@ -28,6 +28,8 @@ sr.reveal('#junto-social-text2', {delay: 1800});
 sr.reveal('#junto-demoday-text1', {delay: 200});
 sr.reveal('#junto-demoday-text2', {delay: 500});
 sr.reveal('#junto-demoday-text3', {delay: 800});
+sr.reveal('#creart-affinity-text', {delay: 1000});
+sr.reveal('#creart-uft-text', {delay: 200});
 
 // reveal the full overlay
 var configa = {
@@ -45,6 +47,8 @@ window.srcomp = ScrollReveal(configa)
 srcomp.reveal('#junto-affinity-complete', {delay: 2200});
 srcomp.reveal('#junto-usertesting-complete', {delay: 1000});
 srcomp.reveal('#junto-demoday-complete', {delay: 1100});
+srcomp.reveal('#creart-affinity-complete', {delay: 1300});
+srcomp.reveal('#creart-uft-complete', {delay: 800});
 
 
 var configsumL = {
@@ -62,6 +66,10 @@ window.srsumL = ScrollReveal(configsumL)
 srsumL.reveal('#one', {delay: 400});
 srsumL.reveal('#two', {delay: 800});
 srsumL.reveal('#three', {delay: 1200});
+srsumL.reveal('#no1-insight', {delay: 400});
+srsumL.reveal('#no2-insight', {delay: 800});
+srsumL.reveal('#no3-insight', {delay: 1200});
+srsumL.reveal('#no4-insight', {delay: 1600});
 
 
 var configsumR = {
@@ -77,6 +85,10 @@ var configsumR = {
 window.srsumR = ScrollReveal(configsumR)
 
 
-srsumR.reveal('#problem', {delay: 300});
+srsumR.reveal('#problem', {delay: 400});
 srsumR.reveal('#insight', {delay: 800});
 srsumR.reveal('#outcome', {delay: 1200});
+srsumR.reveal('#insight01', {delay: 400});
+srsumR.reveal('#insight02', {delay: 800});
+srsumR.reveal('#insight03', {delay: 1200});
+srsumR.reveal('#insight04', {delay: 1600});
