@@ -102,8 +102,9 @@ img#logo {
 
 .wishlist {
 	grid-area: g;
+	width: 140px;
 	padding: 0px 20px; /* top & botton, right&left */
-	margin: 18px 45px 18px 40px; /* top right bottom left*/
+	margin: 18px 10px 18px 40px; /* top right bottom left*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -115,6 +116,7 @@ img#logo {
 
 .cart {
 	grid-area: h;
+	width: 140px;
 	padding: 0 20px; /* top & botton, right&left */
 	margin: 18px 45px 18px 0; /* top right bottom left*/
 	display: flex;
@@ -139,7 +141,7 @@ img#logo {
 	margin: 30px 100px 0 100px;
 	display: grid;
 	grid-template-areas:
-	"b b c a"
+	"b b b a"
 	"d e f a"
 	"g h i a";
 	grid-template-columns: repeat(4, 1fr);
@@ -233,21 +235,22 @@ img#logo {
 	grid-area: b;
 }
 
+#our-products h4 {
+	display: inline;
+}
+
 /* referred to coderwall.com and wisdmlabs.com*/
 .sorting {
+	display: inline;
 	font-size: 12px;
 	padding: 8px 0 0 20px; /*top right bottom left*/
 	background: #fff url(down-arrow.png) no-repeat 90% 50%;
 	border: none;
 	border-radius: 20px;
-	position: relative;
 	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	margin-bottom: 20px;
 	color: #564D46;
 	cursor: pointer;
 	width: 185px;
-	grid-area; c;
-	margin-left: 25px;
 }
 
 /* referred to coderwall.com and wisdmlabs.com */
