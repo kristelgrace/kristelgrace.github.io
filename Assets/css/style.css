@@ -299,7 +299,12 @@ footer {
 }
 
 @media (min-width: 1200px) { /* adjust margins & paddings for screen size more than 1200px */
-    #container{
+    .container{
+      width: 1000px !important;
+      margin: 0 auto !important;
+    }
+
+    #junto-container, #creart-container, #comyoot-container, #bunbun-container {
       width: 1000px;
       margin: 0 auto;
     }
