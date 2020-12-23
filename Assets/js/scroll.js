@@ -17,24 +17,36 @@ sr.reveal('#bunbun-work', {delay: 500});
 
 
 // reveal text annotations on project images
-sr.reveal('#junto-affinity-text1', {delay: 200});
-sr.reveal('#junto-affinity-text2', {delay: 1800});
-sr.reveal('#junto-usertesting-text1', {delay: 200});
-sr.reveal('#junto-usertesting-text2', {delay: 600});
-sr.reveal('#junto-taskcomp-text1', {delay: 200});
-sr.reveal('#junto-taskcomp-text2', {delay: 800});
-sr.reveal('#junto-social-text1', {delay: 1500});
-sr.reveal('#junto-social-text2', {delay: 1800});
-sr.reveal('#junto-demoday-text1', {delay: 200});
-sr.reveal('#junto-demoday-text2', {delay: 500});
-sr.reveal('#junto-demoday-text3', {delay: 800});
-sr.reveal('#creart-affinity-text', {delay: 1000});
-sr.reveal('#creart-uft-text', {delay: 200});
+var configText = {
+  origin: 'bottom',
+  distance: '75%',
+  duration: 500,
+  easing: 'ease',
+  mobile: true,
+  reset: false,
+  viewFactor: 0.4
+};
+
+window.srText = ScrollReveal(configText)
+
+srText.reveal('#junto-affinity-text1', {delay: 200});
+srText.reveal('#junto-affinity-text2', {delay: 1800});
+srText.reveal('#junto-usertesting-text1', {delay: 200});
+srText.reveal('#junto-usertesting-text2', {delay: 600});
+srText.reveal('#junto-taskcomp-text1', {delay: 400});
+srText.reveal('#junto-taskcomp-text2', {delay: 1900});
+srText.reveal('#junto-social-text1', {delay: 2000});
+srText.reveal('#junto-social-text2', {delay: 2500});
+srText.reveal('#junto-demoday-text1', {delay: 400});
+srText.reveal('#junto-demoday-text2', {delay: 800});
+srText.reveal('#junto-demoday-text3', {delay: 1200});
+srText.reveal('#creart-affinity-text', {delay: 1000});
+srText.reveal('#creart-uft-text', {delay: 200});
 
 // reveal the full overlay
 var configa = {
   origin: 'bottom',
-  distance: '40px',
+  distance: '75%',
   duration: 0,
   easing: 'ease',
   mobile: true,
@@ -46,14 +58,14 @@ window.srcomp = ScrollReveal(configa)
 
 srcomp.reveal('#junto-affinity-complete', {delay: 2200});
 srcomp.reveal('#junto-usertesting-complete', {delay: 1000});
-srcomp.reveal('#junto-demoday-complete', {delay: 1100});
+srcomp.reveal('#junto-demoday-complete', {delay: 2000});
 srcomp.reveal('#creart-affinity-complete', {delay: 1300});
 srcomp.reveal('#creart-uft-complete', {delay: 800});
 
 
 var configsumL = {
   origin: 'left',
-  distance: '40px',
+  distance: '75%',
   duration: 500,
   easing: 'ease',
   mobile: true,
@@ -74,7 +86,7 @@ srsumL.reveal('#no4-insight', {delay: 1600});
 
 var configsumR = {
   origin: 'right',
-  distance: '40px',
+  distance: '75%',
   duration: 500,
   easing: 'ease',
   mobile: true,
