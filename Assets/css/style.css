@@ -21,8 +21,9 @@ footer {
   padding: 20px 75px 40px 75px;
 }
 
-/* change highlight color, from w3schools */
-::-moz-selection { /* Code for Firefox */
+/*   change highlight color, from w3schools   */
+/* Code for Firefox */
+::-moz-selection {
   background: #FFE8D3;
 }
 
@@ -108,15 +109,15 @@ footer {
 .button {
   color: #F47563;
   background-color: rgba(255,172,99, 0.15);
-  box-shadow: 0px 0px 0px 1px rgb(242,127,64) inset;
-  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgb(242,127,64) inset;
+  border-radius: 5px 5px;
   padding: 8px 15px;
   white-space: nowrap;
 }
 
 .tags {
   background-color: rgba(0,0,0, 0.15);
-  border-radius: 5px;
+  border-radius: 5px 5px;
   padding: 5px 9px;;
   margin-left: 5px;
   margin-right: 5px;
@@ -156,7 +157,7 @@ footer {
   min-width: 130px;
   /*box-shadow: 0 0 5px 0 rgba(255,255,255,0.7);*/
   border: solid 1px rgba(255,255,255,0.6);
-  border-radius: 3px;
+  border-radius: 3px 3px;
   font-size: 0.8em;
   z-index: 1;
 }
@@ -184,22 +185,22 @@ footer {
   font-style: italic;
 }
 
-
-@media (max-width: 420px) { /* adjust margins & paddings for screen size less than 420px */
+/* adjust margins & paddings for screen size less than 420px */
+@media (max-width: 420px) {
   .work-description {
     font-size: 1.4em;
   }
 }
 
-
-
-@media (min-width: 421px) { /* adjust margins & paddings for screen size more than 420px */
+/* adjust margins & paddings for screen size more than 420px */
+@media (min-width: 421px) {
   .work-description {
     font-size: 2em;
   }
 }
 
-@media (max-width: 767px) { /* adjust margins & paddings for screen size less than 767px */
+/* adjust margins & paddings for screen size less than 767px */
+@media (max-width: 767px) {
   .row {
     margin-left: 10px;
     margin-right: 10px;
@@ -239,8 +240,8 @@ footer {
   }
 }
 
-
-@media (min-width: 768px) { /* adjust margins & paddings for screen size more than 768px */
+/* adjust margins & paddings for screen size more than 768px */
+@media (min-width: 768px) {
     .vertical-align {
         display: flex;
         flex-wrap: wrap;
@@ -285,12 +286,14 @@ footer {
 
 }
 
-@media (max-width: 991px) { /* adjust for screen size less than 1229px */
+/* adjust for screen size less than 991px */
+@media (max-width: 991px) {
   .sidebar-container {
     display: none;
   }
 }
 
+/* adjust for screen size more than 992px */
 @media (min-width: 992px) {
   .sidebar-container {
     position: fixed;
@@ -298,7 +301,8 @@ footer {
   }
 }
 
-@media (min-width: 1200px) { /* adjust margins & paddings for screen size more than 1200px */
+/* adjust margins & paddings for screen size more than 1200px */
+@media (min-width: 1200px) {
     .container{
       width: 1000px !important;
       margin: 0 auto !important;
@@ -407,7 +411,6 @@ a:hover, .figma-link-jump:hover {
   top: 50%;
   transform: translateY(-50%);
   max-height: 100%;
-  max-width: auto;
 }
 
 .overlay-work-items { /* styling the overlay text on each portfolio item*/
@@ -560,7 +563,7 @@ a:hover, .figma-link-jump:hover {
 
 .timeline {
   background-color: #FFF9F4;
-  border-radius: 3px;
+  border-radius: 3px 3px;
   padding: 15px;
   margin-top: 20px;
   z-index: 3;
@@ -726,7 +729,7 @@ a:hover, .figma-link-jump:hover {
   border: none;
   outline: none;
   transition: 0.5s;
-  border-radius: 5px;
+  border-radius: 5px 5px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
