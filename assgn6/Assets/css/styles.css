@@ -126,7 +126,9 @@ img#logo {
 }
 
 /********** FOOTER **********/
-footer {
+
+/* in each page css, due to issues with cart footer */
+/*footer {
 	height: 150px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -136,8 +138,7 @@ footer {
 		"d d d";
 	position: relative;
 	margin: 0 100px;
-}
-
+}*/
 
 #shop {
 	margin-top: 45px;

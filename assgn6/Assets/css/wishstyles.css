@@ -93,3 +93,16 @@ span {
 .price-wish {
 	grid-area: f;
 }
+
+/********** FOOTER **********/
+footer {
+	height: 150px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 60px;
+	grid-template-areas:
+		"a b c"
+		"d d d";
+	position: relative;
+	margin: 0 100px;
+}

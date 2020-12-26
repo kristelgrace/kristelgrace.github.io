@@ -24,24 +24,24 @@ function Original(glaze, roll, box, image, price) {
 function getOrder() {
 	var originalGlaze = document.getElementById("glaze"); // retrieve the glaze options
 	var selectedGlaze = originalGlaze.options[originalGlaze.selectedIndex].text; //retrieve selected glaze
-	var glazeImage = "none.png" // set a sample image
+	var glazeImage = "Assets/images/none.png" // set a sample image
 
   //update the selected image
 	if (selectedGlaze=="none")
 	{
-		glazeImage="none.png";
+		glazeImage="Assets/images/none.png";
 	}
 	else if (selectedGlaze=="vanilla-milk")
 	{
-		glazeImage="vanilla.png";
+		glazeImage="Assets/images/vanilla.png";
 	}
 	else if (selectedGlaze=="sugar-milk")
 	{
-		glazeImage="sugar.png";
+		glazeImage="Assets/images/sugar.png";
 	}
 	else if (selectedGlaze=="double-chocolate")
 	{
-		glazeImage="choco.png";
+		glazeImage="Assets/images/choco.png";
 	}
 
 	var originalRoll = document.getElementById("roll"); // retrieve the roll options
@@ -76,24 +76,24 @@ function getOrder() {
 function addOrder () {
   var originalGlaze = document.getElementById("glaze"); // retrieve the glaze options
 	var selectedGlaze = originalGlaze.options[originalGlaze.selectedIndex].text; //retrieve selected glaze
-	var glazeImage = "none.png" // set a sample image
+	var glazeImage = "Assets/images/none.png" // set a sample image
 
   //update the selected image
 	if (selectedGlaze=="none")
 	{
-		glazeImage="none.png";
+		glazeImage="Assets/images/none.png";
 	}
 	else if (selectedGlaze=="vanilla-milk")
 	{
-		glazeImage="vanilla.png";
+		glazeImage="Assets/images/vanilla.png";
 	}
 	else if (selectedGlaze=="sugar-milk")
 	{
-		glazeImage="sugar.png";
+		glazeImage="Assets/images/sugar.png";
 	}
 	else if (selectedGlaze=="double-chocolate")
 	{
-		glazeImage="choco.png";
+		glazeImage="Assets/images/choco.png";
 	}
 
 	var originalRoll = document.getElementById("roll"); // retrieve the roll options
@@ -140,19 +140,19 @@ function updateGlaze() {
   // change the displayed picture based on selected glaze
 	if (currentGlaze=="none")
 	{
-		currentPicture.src="none.png";
+		currentPicture.src="Assets/images/none.png";
 	}
 	else if (currentGlaze=="vanilla-milk")
 	{
-		currentPicture.src="vanilla.png";
+		currentPicture.src="Assets/images/vanilla.png";
 	}
 	else if (currentGlaze=="sugar-milk")
 	{
-		currentPicture.src="sugar.png";
+		currentPicture.src="Assets/images/sugar.png";
 	}
 	else if (currentGlaze=="double-chocolate")
 	{
-		currentPicture.src="choco.png";
+		currentPicture.src="Assets/images/choco.png";
 	}
 }
 
@@ -184,19 +184,19 @@ function updateCartGlaze() {
     // update displayed image of glaze
   	if (currentGlaze=="none")
   	{
-  		currentPicture.src="smallnone.png";
+  		currentPicture.src="Assets/images/smallnone.png";
   	}
   	else if (currentGlaze=="vanilla-milk")
   	{
-  		currentPicture.src="smalloriginal.png";
+  		currentPicture.src="Assets/images/smalloriginal.png";
   	}
   	else if (currentGlaze=="sugar-milk")
   	{
-  		currentPicture.src="smallsugar.png";
+  		currentPicture.src="Assets/images/smallsugar.png";
   	}
   	else if (currentGlaze=="double-chocolate")
   	{
-  		currentPicture.src="smallchoco.png";
+  		currentPicture.src="Assets/images/smallchoco.png";
   	}
 
   	cartItems[i].glaze = currentGlaze; // update current selected glaze
@@ -408,22 +408,22 @@ function onLoad () {
       		if (displayGlaze == "none")
       		{
       			glazeDisplayIndex = 0;
-      			currentPicture.src = "smallnone.png";
+      			currentPicture.src = "Assets/images/smallnone.png";
       		}
       		else if (displayGlaze == "sugar-milk")
       		{
       				glazeDisplayIndex = 1;
-      				currentPicture.src = "smallsugar.png"
+      				currentPicture.src = "Assets/images/smallsugar.png"
       		}
       		else if (displayGlaze == "vanilla-milk")
       		{
       				glazeDisplayIndex = 2;
-      				currentPicture.src = "smalloriginal.png";
+      				currentPicture.src = "Assets/images/smalloriginal.png";
       		}
       		else if (displayGlaze == "double-chocolate")
       		{
       				glazeDisplayIndex = 3;
-      				currentPicture.src = "smallchoco.png";
+      				currentPicture.src = "Assets/images/smallchoco.png";
       		}
       		cartGlaze.selectedIndex = glazeDisplayIndex
       	}
@@ -533,19 +533,19 @@ function onLoad () {
             // update glaze display index and picture based on cart selection
         		if (displayGlaze == "none")
         		{
-        			currentPicture.src = "smallnone.png";
+        			currentPicture.src = "Assets/images/smallnone.png";
         		}
         		else if (displayGlaze == "sugar-milk")
         		{
-        				currentPicture.src = "smallsugar.png"
+        				currentPicture.src = "Assets/images/smallsugar.png"
         		}
         		else if (displayGlaze == "vanilla-milk")
         		{
-        				currentPicture.src = "smalloriginal.png";
+        				currentPicture.src = "Assets/images/smalloriginal.png";
         		}
         		else if (displayGlaze == "double-chocolate")
         		{
-        				currentPicture.src = "smallchoco.png";
+        				currentPicture.src = "Assets/images/smallchoco.png";
         		}
         	}
 
