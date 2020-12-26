@@ -106,6 +106,10 @@ footer {
   color: #fff;
 }
 
+.feedback-red {
+  color: #C71818;
+}
+
 .button {
   color: #F47563;
   background-color: rgba(255,172,99, 0.15);
