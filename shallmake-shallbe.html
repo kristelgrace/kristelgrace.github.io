@@ -74,8 +74,8 @@
           One month (in 2020)<br>
           <span class="bold">My role:</span><br>
           Interaction Designer<br>
-          <span class="bold">Tools used:</span><br>
-          Figma<br>
+          <span class="bold">Research methods:</span><br>
+          Wireframing, prototyping, user testing<br>
           <span class="bold">Project outcome:</span><br>
           <span class="figma-link-jump" onclick="Jump('#final-design')">Interactive Figma prototype</span>
         </div>
@@ -149,57 +149,134 @@
 
 
         <div class="small-htext text bold title" id="experimentation">Experimentation</div>
-        <div class="no-margin row">
-          <div class="col-sm-6 no-padding no-left-padding">
-            <p class="sub-htext text remove-line">Typographic Signals</p>
-            <p class="text norm-p-size margin-bottom">
-              <img class="max-100width" src="Assets/images/shallmake-typo.png" alt="Typographic signals experiment">
-            </p>
+        <p class="sub-htext text remove-line">Typographic Signals</p>
+        <p class="text norm-p-size">
+          I learned how typographic signals created very different effects.
+          Line spaces generally broke text for easier readability,
+          while higher weights drew user attention as either emphasized text or
+          titles. Smaller text discouraged users to read the entire portion
+          because it seemed like fineprint material.
+        </p>
+        <div id="typography-carousel" class="carousel slide margin-bottom" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#typography-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#typography-carousel" data-slide-to="1"></li>
+            <li data-target="#typography-carousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="Assets/images/shallmake/shallmake-typo3.png" alt="Project text using typographic signals">
+            </div>
+
+            <div class="item">
+              <img src="Assets/images/shallmake/shallmake-typo2.png" alt="Project text using typographic signals">
+            </div>
+
+            <div class="item">
+              <img src="Assets/images/shallmake/shallmake-typo1.png" alt="Project text using typographic signals">
+            </div>
+
           </div>
 
-          <div class="col-sm-6 no-padding no-right-padding">
-            <p class="sub-htext text remove-line">Color Theory</p>
-            <p class="text norm-p-size margin-bottom">
-              <img class="max-100width" src="Assets/images/shallmake-color.png" alt="Color theory: colors don't appear the same">
-            </p>
-          </div>
+          <!-- Left and right controls -->
+          <span class="left carousel-control" href="#typography-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </span>
+          <span class="right carousel-control" href="#typography-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </span>
+
         </div>
 
-        <div class="no-margin row">
-          <div class="col-sm-6 no-padding no-left-padding">
-            <p class="sub-htext text remove-line">Grid</p>
-            <p class="text norm-p-size">
-              <img class="max-100width" src="Assets/images/shallmake-grid.png" alt="Using grid to organize info differently">
-            </p>
+        <p class="sub-htext text remove-line">Color Theory</p>
+        <p class="text norm-p-size">
+          I learned about different color theories and experimented with
+          color combinations. The image below shows that color is relative:
+          the inner squares are the same color, but they appear different.
+        </p>
+        <img class="max-100width margin-bottom" src="Assets/images/shallmake/shallmake-color.png" alt="Color theory: colors don't appear the same">
+
+        <p class="sub-htext text remove-line">Grid</p>
+        <p class="text norm-p-size">
+          My biggest takeaway from this experimentation was that grids contain
+          and does not constrain elements. It gives designers a visual starting
+          point rather than a blank canvas. One grid opens different layout
+          possibilities:
+        </p>
+        <div id="grid-carousel" class="carousel slide margin-bottom" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#grid-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#grid-carousel" data-slide-to="1"></li>
+            <li data-target="#grid-carousel" data-slide-to="2"></li>
+            <li data-target="#grid-carousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="Assets/images/shallmake/shallmake-grid1.png" alt="Experimenting with grid">
+            </div>
+
+            <div class="item">
+              <img src="Assets/images/shallmake/shallmake-grid2.png" alt="Experimenting with grid">
+            </div>
+
+            <div class="item">
+              <img src="Assets/images/shallmake/shallmake-grid3.png" alt="Experimenting with grid">
+            </div>
+
+            <div class="item">
+              <img src="Assets/images/shallmake/shallmake-grid4.png" alt="Experimenting with grid">
+            </div>
+
           </div>
 
-          <div class="col-sm-6 no-padding no-right-padding">
-            <p class="sub-htext text remove-line">Information Architecture (IA)</p>
-            <p class="text norm-p-size">
-              <img class="max-100width" src="Assets/images/shallmake-ia.png" alt="IA of the website">
-            </p>
-          </div>
+          <!-- Left and right controls -->
+          <span class="left carousel-control" href="#grid-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </span>
+          <span class="right carousel-control" href="#grid-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </span>
+
         </div>
+
+        <p class="sub-htext text remove-line">Information Architecture</p>
+        <p class="text norm-p-size">
+          I analyzed the relationship and hierarchy of different elements on the website
+          and organized them into this information architecture:
+        </p>
+          <img class="max-100width" src="Assets/images/shallmake/shallmake-ia.png" alt="IA of the website">
 
         <div class="small-htext text bold title" id="prototyping">Prototyping</div>
         <p class="sub-htext text remove-line">Med-Fidelity Prototype</p>
         <p class="text norm-p-size margin-bottom">
           Listed below are some design intentions and feedback from critique sessions on the home page
-          <img class="max-100width" src="Assets/images/shallmake-medfi.png" alt="Medium Fidelity prototypes">
+          <img class="max-100width" src="Assets/images/shallmake/shallmake-medfi.png" alt="Medium Fidelity prototypes">
         </p>
 
         <div class="no-margin row">
           <div class="col-sm-6 no-padding no-left-padding">
             <p class="sub-htext text remove-line">Color Palette</p>
             <p class="text norm-p-size">
-              <img class="max-100width" src="Assets/images/shallmake-colors.png" alt="Color palette of the site">
+              <img class="max-100width" src="Assets/images/shallmake/shallmake-colors.png" alt="Color palette of the site">
             </p>
           </div>
 
           <div class="col-sm-6 no-padding no-right-padding">
             <p class="sub-htext text remove-line">Interaction Design</p>
             <p class="text norm-p-size">
-              <img class="max-100width" src="Assets/images/shallmake-ixd.png" alt="Interaction design examples">
+              <img class="max-100width" src="Assets/images/shallmake/shallmake-ixd.png" alt="Interaction design examples">
             </p>
           </div>
         </div>
