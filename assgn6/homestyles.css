@@ -1,0 +1,56 @@
+/********** HEADER **********/
+
+.home {
+	grid-area: b;
+	border-bottom: 3px solid #FDE19A;
+}
+
+.about {
+	grid-area: c;
+}
+
+.menu {
+	grid-area: d;
+}
+
+/********** BODY **********/
+.home-picture {
+	margin-top: 20px;
+	z-index: 1;
+}
+
+.home-picture img {
+	width: 800px;
+	display: block;
+  margin: auto;
+  position: relative;
+	z-index: 1;
+}
+
+.home-order {
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 630px;
+	z-index: 10;
+}
+
+.home-order h2 {
+	background-color: #FDE19A;
+	width: 300px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 100px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-order h2:hover {
+	background-color: #564D46;
+}
+
+.bunbun-imgtext {
+	font-family: 'Aleo', serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}

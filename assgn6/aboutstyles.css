@@ -1,86 +1,8 @@
-body {
-	background-color: #FFF4E6;
-	margin: 0;
-	color: #564D46;
-}
-
-h2 {
-	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	font-size: 30px;
-	padding: 0;
-	font-weight: 400;
-	margin: 0;
-}
-
-h4 {
-	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	font-size: 23px;
-	padding: 0;
-	font-weight: 400;
-	margin: 0;
-}
-
-p {
-	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	font-size: 18px;
-	margin-bottom: 5px;
-}
-
-a {
-	text-decoration: none;
-	color: #564D46;
-}
-
-a:hover {
-	color: #928378;
-}
-
 /********** HEADER **********/
-
-header {
-	top: 0;
-	height: 70px;
-	display: grid;
-	grid-template-columns: 4fr repeat(10, 1fr);
-	grid-auto-rows: 70px;
-	grid-template-areas:
-		"a b c d e f f f g g g h h h";
-	/*box-shadow: 2px 2px 6px rgba(1, 0, 0, 0.2);*/
-	background-color: #FFF4E6;
-	width: 100%;
-	z-index: 10;
-}
-
-a .box {
-	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	font-size: 18px;
-	margin: auto 10px 0px 10px; /* to center */
-	cursor: pointer;
-	padding: 23px 5px 19px 5px;
-	text-align: center;
-	align-self: end;
-}
-
-a .box:hover {
-	border-bottom: 3px solid #FDE19A;
-	color: #928378;
-}
-
-.logo {
-	grid-area: a;
-	display: flex;
-	margin-left: 45px;
-	align-items: center;
-}
-
-img#logo {
-	max-width: 70%;
-}
 
 .home {
 	grid-area: b;
 }
-
 
 .about {
 	grid-area: c;
@@ -89,43 +11,6 @@ img#logo {
 
 .menu {
 	grid-area: d;
-}
-
-.contact {
-	grid-area: e;
-}
-
-.wishlist {
-	grid-area: g;
-	width: 140px;
-	padding: 0px 20px; /* top & botton, right&left */
-	margin: 18px 10px 18px 40px; /* top right bottom left*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	font-size: 18px;
-	border-radius: 20px;
-	background-color: #FDE19A;
-}
-
-.cart {
-	grid-area: h;
-	width: 140px;
-	padding: 0 20px; /* top & botton, right&left */
-	margin: 18px 45px 18px 0; /* top right bottom left*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Nunito Sans', 'Cabin', sans-serif;
-	font-size: 18px;
-	border-radius: 20px;
-	background-color: #FDE19A;
-}
-
-.button {
-	border-radius: 5px;
-	background-color: #FDE19A;
 }
 
 /********** BODY **********/
@@ -172,7 +57,6 @@ img#logo {
 	grid-area: d;
 }
 
-
 .stuart {
 	grid-area: e;
 }
@@ -183,60 +67,4 @@ img#logo {
 
 .trevor {
 	grid-area: g;
-}
-
-/********** FOOTER **********/
-footer {
-	height: 150px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 70px;
-	grid-template-areas:
-		"a b c"
-		"d d d";
-	position: relative;
-	margin: 0 100px;
-}
-
-#shop {
-	grid-area: a;
-	margin-top: 45px;
-	font-family: 'Aleo', serif;
-	font-size: 40px;
-	font-weight: 700;
-	margin-bottom: 0;
-}
-
-#address {
-	grid-area: a;
-	font-family: 'Nunito Sans', 'Cabin', serif;
-	font-size: 16px;
-	margin-top: 92px;
-	margin-bottom: 0;
-}
-
-#bottom-links {
-	grid-area: c;
-	margin: 91px 0 0 0;
-	text-align: right;
-}
-
-#bottom-links p {
-	padding: 0;
-	margin: 0;
-	font-size: 16px;
-}
-
-#copyright {
-	grid-area: d;
-	border-top: 0.5px solid #564D46;
-	margin: 100px 0 50px 0;
-	padding-top: 10px;
-	padding-bottom: 50px;
-	line-height: 1px;
-	text-align: center;
-}
-
-#copyright p {
-	font-size: 12px;
 }
