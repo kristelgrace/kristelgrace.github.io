@@ -1,6 +1,6 @@
 /*   global styles   */
 body {
-  background-color: #FFF1E6;
+  background-color: #FFFEFC;
   margin: 0;
   padding: 0;
   position: relative;
@@ -8,14 +8,14 @@ body {
 }
 
 header {
-  background-color: #FFEAD8;
+  background-color: #FFF8F2;
   font-size: 1.3em;
   font-weight: 400;
   padding: 20px 0;
 }
 
 footer {
-  background-color: #FFEAD8;
+  background-color: #FFF8F2;
   font-size: 0.95em;
   font-weight: 400;
   padding: 20px 75px 40px 75px;
@@ -44,21 +44,25 @@ footer {
   font-size: 0.95em;
 }
 
-.big-htext {
+.small-htext {
   font-size: 2em;
 }
 
 .bigger-htext {
-  font-size: 2.3em;
+  font-size: 3em;
 }
 
-.small-htext {
-  font-size: 1.6em;
+.big-htext {
+  font-size: 2.5em;
+}
+
+.smaller-htext {
+  font-size: 1.5em;
 }
 
 .sub-htext {
   color: #FDA16E !important;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   padding-bottom: 5px !important;
   text-transform: uppercase;
@@ -112,16 +116,16 @@ footer {
 
 .button {
   color: #F47563;
-  background-color: rgba(255,172,99, 0.15);
-  box-shadow: 0 0 0 1px rgb(242,127,64) inset;
-  border-radius: 5px 5px;
+  background-color: #FFF8F2; /*rgba(255,172,99, 0.25)*/
+  box-shadow: 0 0 0 1px rgb(244,117,99) inset;
+  /*border-radius: 5px 5px;*/
   padding: 8px 15px;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .tags {
   background-color: rgba(0,0,0, 0.15);
-  border-radius: 5px 5px;
+  /*border-radius: 5px 5px;*/
   padding: 5px 9px;;
   margin-left: 5px;
   margin-right: 5px;
@@ -154,9 +158,9 @@ footer {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  background-color: #FFF1E6;
-  border: solid 1px rgba(255,255,255,0.6);
-  border-radius: 3px 3px;
+  background-color: #FFF8F2;
+  border: solid 2px rgba(255,255,255,0.9);
+  border-radius: 0;
   font-size: 0.8em;
   display: none;
   position: absolute;
@@ -174,7 +178,7 @@ footer {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #FFF9F4;
+  background-color: #FFF8F2;
   font-style: italic;
 }
 
@@ -299,9 +303,16 @@ footer {
 /* adjust for screen size more than 992px */
 @media (min-width: 992px) {
   .sidebar-container {
-    padding-top: 100px;
+    padding-top: 300px;
     position: fixed;
+    z-index: 0;
   }
+
+  .table-padding {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
 }
 
 /* adjust margins & paddings for screen size more than 1200px */
@@ -311,7 +322,7 @@ footer {
       width: 1000px !important;
     }
 
-    #junto-container, #creart-container, #comyoot-container, #bunbun-container {
+    #junto-container, #creart-container, #shallmake-container, #bunbun-container {
       margin: 0 auto;
       width: 1000px;
     }
@@ -351,7 +362,7 @@ a:hover, .figma-link-jump:hover {
 /* bio and picture styling */
 
 .work-bio {
-  background-color: #FFE1C7;
+  background-color: #FFF0E3;
   height: 100vh;
   margin-left: 0;
   margin-right: 0;
@@ -363,7 +374,7 @@ a:hover, .figma-link-jump:hover {
 }
 
 .work-arrow {
-  padding-right: 35px;
+  padding-right: 5vh;
   text-align: center;
 }
 
@@ -387,27 +398,12 @@ a:hover, .figma-link-jump:hover {
   padding-top: 75px;
 }
 
-.bunbun-work {
-  background-color: #FFE1C7;
+.bunbun-work, .junto-work, .shallmake-work, .creart-work {
+  background-color: #FFF8F2;
   height: 320px;
 }
 
-.junto-work {
-  background-color: #FFE1C7;
-  height: 320px;
-}
-
-.comyoot-work {
-  background-color: #FFE1C7;
-  height: 320px;
-}
-
-.creart-work {
-  background-color: #FFE1C7;
-  height: 320px;
-}
-
-.bunbun-img, .junto-img, .comyoot-img, .creart-img {
+.bunbun-img, .junto-img, .shallmake-img, .creart-img {
   display: block;
   margin: auto;
   max-height: 100%;
@@ -418,7 +414,7 @@ a:hover, .figma-link-jump:hover {
 
 /* styling the overlay text on each portfolio item*/
 .overlay-work-items {
-  background: rgba(255,241,230, 0.9);
+  background: rgba(255,254,252, 0.9);
   height: 100%;
   left: 50%;
   margin: auto;
@@ -426,60 +422,41 @@ a:hover, .figma-link-jump:hover {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: .5s ease;
+  transition: .4s ease;
   width: 100%;
 }
 
-#bunbun-overlay, #junto-overlay, #comyoot-overlay, #creart-overlay { /*hide the overlay first*/
+#bunbun-overlay, #junto-overlay, #shallmake-overlay, #creart-overlay { /*hide the overlay first*/
   opacity: 0;
 }
 
-#bunbun-view, #junto-view, #creart-view, #comyoot-view {
-  transition: .3s ease;
+#bunbun-view, #junto-view, #creart-view, #shallmake-view {
+  transition: .15s ease;
+  z-index: 2;
+}
+
+
+#junto-view:hover, #bunbun-view:hover, #shallmake-view:hover, #creart-view:hover  { /* darken color of button upon hover */
+  background-color: #F47563;
+  /*box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.25);*/
+  color: #FFF;
+  transition: .15s ease;
 }
 
 #bunbun-work:hover #bunbun-overlay { /* make overlay visible upon hover */
   opacity: 1;
 }
 
-#bunbun-view:hover { /* darken color of button upon hover */
-  background-color: #F47563;
-  box-shadow: 0;
-  color: #F6F7F1;
-  transition: .5s ease;
-}
-
 #junto-work:hover #junto-overlay { /* make overlay visible upon hover */
   opacity: 1;
 }
 
-#junto-view:hover { /* darken color of button upon hover */
-  background-color: #F47563;
-  box-shadow: 0;
-  color: #F6F7F1;
-  transition: .5s ease;
-}
-
-#comyoot-work:hover #comyoot-overlay { /* make overlay visible upon hover */
+#shallmake-work:hover #shallmake-overlay { /* make overlay visible upon hover */
   opacity: 1;
-}
-
-#comyoot-view:hover { /* darken color of button upon hover */
-  background-color: #F47563;
-  box-shadow: 0;
-  color: #F6F7F1;
-  transition: .5s ease;
 }
 
 #creart-work:hover #creart-overlay { /* make overlay visible upon hover */
   opacity: 1;
-}
-
-#creart-view:hover { /* darken color of button upon hover */
-  background-color: #F47563;
-  box-shadow: 0;
-  color: #F6F7F1;
-  transition: .5s ease;
 }
 
 /** for headroom **/
@@ -548,6 +525,48 @@ a:hover, .figma-link-jump:hover {
 
 /************ BUNBUN PAGE ************/
 
+.project-header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFFEFC;
+}
+
+.header-image {
+  display: block;
+	max-width: 100vh;
+}
+
+#header-subtext {
+  font-size: 1.6em;
+}
+
+#arrow-container {
+  text-align: center;
+  padding-right: 7vh;
+}
+
+#arrow-down {
+  height: 7vh;
+  position: absolute;
+  top: 85vh;
+  cursor: pointer;
+}
+
+#background {
+  padding-top: 50px;
+}
+
+#project-header-container {
+  margin-top: 60vh;
+  width: 100%;
+}
+
+#project-header-text {
+  background: rgba(255,254,252,0.9);
+  padding: 20px;
+}
+
 .bunbun-project-page {
   margin-bottom: 100px;
   margin-top: 30px;
@@ -559,15 +578,21 @@ a:hover, .figma-link-jump:hover {
 }
 
 .space{
-  margin-bottom: 20px;
-  margin-top: 125px;
+  height: 120px;
+  background: #FFFEFC;
+  z-index: 5;
+  position: relative;
+}
+
+.small-padding-bottom {
+  margin-bottom: 15px;
 }
 
 .timeline {
-  background-color: #FFF9F4;
+  background-color: #FFF8F2;
   border-radius: 3px 3px;
   margin-top: 20px;
-  padding: 15px;
+  padding: 10px;
   z-index: 3;
 }
 
@@ -588,15 +613,17 @@ a:hover, .figma-link-jump:hover {
 }
 
 .title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: -50px;
   padding-top: 120px;
+  text-align: center;
 }
 
 .bg-title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: -10px;
   padding-top: 70px;
+  text-align: center;
 }
 
 .overlaying-image {
@@ -609,13 +636,14 @@ a:hover, .figma-link-jump:hover {
   left: 0;
   position: relative;
   top: 0;
+  z-index: 0;
 }
 
 .overlay-text {
   left: 0;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .over-overlay {
@@ -645,27 +673,12 @@ a:hover, .figma-link-jump:hover {
   width: 9px;
 }
 
-.bunbun-project {
-  background-color: #FFE1C7;
+.bunbun-project, .junto-project, .shallmake-project, .creart-project {
+  background-color: #FFF8F2;
   height: 150px;
 }
 
-.junto-project {
-  background-color: #FFE1C7;
-  height: 150px;
-}
-
-.comyoot-project {
-  background-color: #FFE1C7;
-  height: 150px;
-}
-
-.creart-project {
-  background-color: #FFE1C7;
-  height: 150px;
-}
-
-.bunbun-img-project, .junto-img-project, .comyoot-img-project, .creart-img-project {
+.bunbun-img-project, .junto-img-project, .shallmake-img-project, .creart-img-project {
   display: block;
   margin: auto;
   max-height: 100%;
@@ -676,7 +689,7 @@ a:hover, .figma-link-jump:hover {
 }
 
 .overlay-project-items { /* styling the overlay text on each portfolio item*/
-  background: rgba(255,241,230, 0.8);
+  background: rgba(255,254,252, 0.9);;
   color: #fff;
   height: 100%;
   left: 50%;
@@ -688,7 +701,7 @@ a:hover, .figma-link-jump:hover {
   width: 100%;
 }
 
-#bunbun-overlay-project, #junto-overlay-project, #comyoot-overlay-project, #creart-overlay-project { /*hide the overlay first*/
+#bunbun-overlay-project, #junto-overlay-project, #shallmake-overlay-project, #creart-overlay-project { /*hide the overlay first*/
   opacity: 0;
 }
 
@@ -700,7 +713,7 @@ a:hover, .figma-link-jump:hover {
   opacity: 1;
 }
 
-#comyoot-project:hover #comyoot-overlay-project { /* make overlay visible upon hover */
+#shallmake-project:hover #shallmake-overlay-project { /* make overlay visible upon hover */
   opacity: 1;
 }
 
@@ -712,7 +725,15 @@ a:hover, .figma-link-jump:hover {
   text-align: center;
 }
 
+.footer-margin {
+  margin: 100px 0;
+}
+
 /************ JUNTO PAGE ************/
+
+#junto-figma-container {
+  text-align: center;
+}
 
 #medfi-carousel {
   margin: auto;
@@ -722,7 +743,7 @@ a:hover, .figma-link-jump:hover {
 /** sourced from w3schools **/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #FFEAD8;
+  background-color: #FFF8F2;
   color: #646464;
   cursor: pointer;
   padding: 3px 8px;
@@ -736,12 +757,12 @@ a:hover, .figma-link-jump:hover {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active-accordion, .accordion:hover {
-  background-color: #FFE1C7;
+  background-color: #FFEAD8;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  background-color: #ffedde;
+  background-color: #FFFFFF;
   border: none;
   box-shadow: none;
   max-height: 0;
@@ -793,7 +814,7 @@ a:hover, .figma-link-jump:hover {
 }
 
 .nav-pills>li>a { /*color inactive*/
-  border-left: 6px solid #FFF9F4;
+  border-left: 6px solid #FFF8F2;
   border-radius: 0;
   color: #FDA16E;
 }

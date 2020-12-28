@@ -59,35 +59,10 @@
     </header>
 
     <!-- title portion -->
-    <div class="space">
-    </div>
-    <div class="row bunbun-shortdesc container">
-      <div class="col-lg-5 col-sm-6 form-group">
-        <div class="text big-htext bold">
-          Bun Bun Bake Shop
-        </div>
-        <p class="text small-htext">
-          An online website for a fictional bakery to facilitate an online ordering process
-        </p>
-        <div class="text timeline norm-p-size">
-          <span class="bold">Project duration:</span><br>
-          Two months (in 2020)<br>
-          <span class="bold">My role:</span><br>
-          UX/UI Designer and Researcher, Web Developer<br>
-          <span class="bold">Research methods:</span><br>
-          Paper prototyping, user testing, A/B testing<br>
-          <span class="bold">Tools and languages used:</span><br>
-          HTML, CSS, JavaScript, Figma, and InVision<br>
-          <span class="bold">Link:</span><br>
-          <a href="https://kristelgrace.github.io/bunbun/home.html" target="_blank">Web Prototype</a> (Only designed for 1366 x 178)
-        </div>
+    <div class="fixed-container row container">
+      <div class="col-md-10">
       </div>
-
-      <div class="col-lg-5 col-sm-6 form-group">
-        <img class="bunbun-titleimg" src="Assets/images/bunbun-desktop2b.png" alt="mockup of BunBun on an iMac">
-      </div>
-
-      <div class="col-lg-2 col-xs-12">
+      <div class="col-md-2 col-xs-12">
         <div class="sidebar-container text" id="myScrollspy">
           <ul class="sidebar-list nav nav-pills nav-stacked">
             <li><a href="#summary">Summary</a></li>
@@ -99,16 +74,86 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="overlaying-image project-header">
+      <img class="header-image under-overlay" src="Assets/images/bunbun/bunbun-header.png" alt="BunBun header showing designs">
+      <div id="arrow-container">
+        <img id="arrow-down" src="Assets/images/arrows-down.png" alt="Arrows down" onclick="Jump('#background')">
+      </div>
+
+      <div class="overlay-text" id="project-header-container">
+        <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12" id="project-header-text">
+          <div class="text bigger-htext bold">
+            Bun Bun Bake Shop
+          </div>
+
+          <div class="text" id="header-subtext">
+            An online website for a fictional bakery to facilitate an online ordering process
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="space">
+    </div>
+
+    <div class="row container">
+      <div class="col-md-9 form-group">
+        <p class="text small-htext" id="background">
+          Project Background
+        </p>
+
+        <div class="row no-margin text timeline norm-p-size margin-bottom">
+          <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">Duration</span><br>
+              Two Montha<br><br>
+              <span class="bold">Context</span><br>
+              05430 Programming Usable Interfaces (Spring '20)<br><br>
+            </div>
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">My roles</span><br>
+              UI/UX Designer<br>
+              Web Developer<br><br>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">Research methods</span><br>
+              Paper prototyping<br>
+              User testing<br>
+            </div>
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">Tools and languages</span><br>
+              Vanilla HTML/CSS<br>
+              JavaScript<br>
+              Figma<br>
+              InVision<br>
+            </div>
+          </div>
+
+        </div>
+        <div class="view-final">
+          <a href="bunbun/home.html" target="_blank">
+            <div class="text norm-p-size button" id="bunbun-view">View the web prototype — designed for 1366 x 768</div>
+          </a>
+        </div>
+      </div>
 
     </div>
 
     <div class="row bunbun-project-page container">
 
       <div class="col-lg-9">
-        <div class="small-htext text bold bg-title" id="summary">Summary</div>
+        <div class="big-htext text bold bg-title" id="summary">Summary</div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="one">01</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="one">01</div>
           <div class="col-sm-11 no-left-padding no-padding" id="problem">
             <p class="sub-htext text bold remove-line">Problem</p>
             <p class="text norm-p-size margin-bottom">
@@ -121,7 +166,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="two">02</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="two">02</div>
           <div class="col-sm-11 no-left-padding no-padding" id="insight">
             <p class="sub-htext text remove-line">Insight</p>
             <p class="text norm-p-size margin-bottom">
@@ -133,7 +178,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="three">03</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="three">03</div>
           <div class="col-sm-11 no-left-padding no-padding" id="outcome">
             <p class="sub-htext text remove-line">Outcome</p>
             <p class="text norm-p-size">
@@ -143,7 +188,7 @@
           </div>
         </div>
 
-        <div class="small-htext text bold title" id="initial-research">Initial Research</div>
+        <div class="big-htext text bold title" id="initial-research">Initial Research</div>
         <p class="sub-htext text remove-line">Competitive Analysis</p>
         <p class="text norm-p-size">
           I analyzed three different online bakery websites. These were online
@@ -172,7 +217,7 @@
           </div>
         </div>
 
-        <div class="small-htext text bold margin-up title" id="prototyping">Prototyping</div>
+        <div class="big-htext text bold margin-up title" id="prototyping">Prototyping</div>
         <p class="sub-htext text remove-line">Low-Fidelity Prototyping</p>
         <p class="text norm-p-size margin-bottom">
           I began the process with rapid prototyping followed by a user test
@@ -196,7 +241,7 @@
         <img class="max-100width" src="Assets/images/bunbun/bunbun-color.png" alt="color palette">
       -->
 
-        <div class="small-htext text bold title" id="development">Development</div>
+        <div class="big-htext text bold title" id="development">Development</div>
         <p class="sub-htext text remove-line">HTML/CSS Implementation</p>
         <p class="text norm-p-size margin-bottom">
           This project challenged me not to use any existing frameworks and
@@ -212,7 +257,7 @@
           selection.
         </p>
 
-        <div class="small-htext text bold title" id="final-design">Final Design</div>
+        <div class="big-htext text bold title" id="final-design">Final Design</div>
         <p class="sub-htext text remove-line">Some Highlights</p>
         <p class="text norm-p-size">
           Fixed header with large target size for links
@@ -230,14 +275,13 @@
         <img class="max-100width" src="Assets/images/bunbun/bunbun-cart.png" alt="cart page of bun bun bake shop"><br><br><br>
 
         <div class="view-final">
-          <a href="https://kristelgrace.github.io/bunbun/home.html" target="_blank">
-            <span class="text norm-p-size bold button" id="bunbun-view">View the web prototype</span>
+          <a href="bunbun/home.html" target="_blank">
+            <div class="text norm-p-size button" id="bunbun-view">View the web prototype — designed for 1366 x 768</div>
           </a>
-          <br><br>
-          <div class="text norm-p-size">Only designed for 1366 x 768</div>
         </div>
 
-        <p class="small-htext text bold title" id="reflection">Reflection</p>
+        <p class="big-htext text bold title" id="reflection">Reflection</p>
+        <p class="sub-htext text remove-line">Lessons Learned</p>
         <p class="text norm-p-size">
           Each prototype, user test, and implementation process was significant
           to the final design. My greatest takeaway from this project was how
@@ -249,61 +293,12 @@
           without our knowledge.
         </p>
 
-      </div>
-
-    </div>
-
-    <div class="row other-projects container">
-      <div class="big-htext text bold title">Other Projects</div>
-      <div class="col-lg-3 col-sm-4 form-group" id="junto-project">
-        <a href="junto.html">
-        <div class="junto-project">
-          <img class="junto-img-project" src="Assets/images/junto-project.png" alt="logo of Junto">
-
-          <!-- overlay objects for junto -->
-          <div class="overlay-project-items" id="junto-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Junto</div>
-              <div class="text small-text">Gamified AR anti-procrastination app</div>
-            </div>
-          </div>
-
+        <div class="footer-margin">
+          <a href="junto.html">
+              <div class="text norm-p-size button view-final" id="junto-view">View next project — Junto</div>
+          </a>
         </div>
-        </a>
-      </div>
 
-      <div class="col-lg-3 col-sm-4 form-group" id="creart-project">
-        <a href="creart.html">
-          <div class="creart-project">
-            <img class="creart-img-project" src="Assets/images/creart-project.png" alt="public art">
-
-            <!-- overlay objects for public art -->
-            <div class="overlay-project-items" id="creart-overlay-project">
-              <div class="vertical-center">
-                <div class="text norm-p-size semibold">CreArt</div>
-                <div class="text small-text">Public art co-creation app</div>
-              </div>
-            </div>
-
-          </div>
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-sm-4 form-group" id="comyoot-project">
-        <a href="shallmake-shallbe.html">
-        <div class="comyoot-project">
-          <img class="comyoot-img-project" src="Assets/images/shallmake-project.png" alt="Shall Make, Shall Be: The Bill of Rights at Play">
-
-          <!-- overlay objects for comyoot -->
-          <div class="overlay-project-items" id="comyoot-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Shall Make, Shall Be</div>
-              <div class="text small-text">Interactive website redesign</div>
-            </div>
-          </div>
-
-        </div>
-        </a>
       </div>
 
     </div>

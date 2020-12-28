@@ -59,35 +59,9 @@
     </header>
 
     <!-- title portion -->
-    <div class="space">
-    </div>
-    <div class="row bunbun-shortdesc container">
-      <div class="col-md-5 col-sm-6 form-group">
-        <div class="text big-htext bold">
-          Junto
-        </div>
-        <p class="text small-htext">
-          A gamified productivity app to combat academic procrastination
-          among students
-        </p>
-        <div class="text timeline norm-p-size">
-          <span class="bold">Project Duration:</span><br>
-          Two months (in 2019)<br>
-          <span class="bold">Team:</span><br>
-          1 Graphic Designer, 1 Researcher, 2 UX Designers<br>
-          <span class="bold">My role:</span><br>
-          Research Lead and UX Designer<br>
-          <span class="bold">Research methods:</span><br>
-          Affinity diagramming, paper prototyping, storyboarding, user testing<br>
-          <span class="bold">Project outcome:</span><br>
-          <span class="figma-link-jump" onclick="Jump('#prototype')">Interactive Figma prototype</span>
-        </div>
+    <div class="fixed-container row container">
+      <div class="col-md-10">
       </div>
-
-      <div class="col-md-5 col-sm-6 form-group">
-        <img class="bunbun-titleimg" src="Assets/images/junto-phone3.png" alt="mockup of Junto on iPhone">
-      </div>
-
       <div class="col-md-2 col-xs-12">
         <div class="sidebar-container text" id="myScrollspy">
           <ul class="sidebar-list nav nav-pills nav-stacked">
@@ -101,6 +75,79 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="overlaying-image project-header">
+      <img class="header-image under-overlay" src="Assets/images/junto/junto-header.png" alt="Junto header showing designs">
+      <div id="arrow-container">
+        <img id="arrow-down" src="Assets/images/arrows-down.png" alt="Arrows down" onclick="Jump('#background')">
+      </div>
+
+      <div class="overlay-text" id="project-header-container">
+        <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12" id="project-header-text">
+          <div class="text bigger-htext bold">
+            Junto
+          </div>
+
+          <div class="text" id="header-subtext">
+            A gamified productivity app to combat academic procrastination
+            among students
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="space">
+    </div>
+    <div class="row container">
+      <div class="col-md-9 form-group">
+        <p class="text small-htext" id="background">
+          Project Background
+        </p>
+
+        <div class="row no-margin text timeline norm-p-size margin-bottom">
+          <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">Duration</span><br>
+              Two months<br><br>
+              <span class="bold">Context</span><br>
+              05499 Persuasive Design (Fall '19)<br><br>
+            </div>
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">Team</span><br>
+              1 Graphic Designer<br>
+              1 Researcher<br>
+              2 UX Designers<br><br>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">My roles</span><br>
+              Research Lead<br>
+              UX Designer<br><br>
+            </div>
+            <div class="col-md-6 col-sm-12 no-padding table-padding">
+              <span class="bold">Research methods</span><br>
+              Affinity diagramming<br>
+              Paper prototyping<br>
+              Storyboarding<br>
+              User testing<br><br>
+            </div>
+          </div>
+
+        </div>
+        <div id="junto-view" class="figma-link-jump text norm-p-size button view-final" onclick="Jump('#prototype')">
+          Jump to the Interactive Prototype
+        </div>
+      </div>
+
+
+      <!--<div class="col-md-5 col-sm-6 form-group">
+        <img class="bunbun-titleimg" src="Assets/images/junto-phone3.png" alt="mockup of Junto on iPhone">
+      </div>-->
 
     </div>
 
@@ -108,9 +155,9 @@
 
       <div class="col-md-9">
         <div class="summary">
-          <div class="small-htext text bold bg-title" id="summary">Summary</div>
+          <div class="big-htext text bold bg-title" id="summary">Summary</div>
           <div class="no-margin row">
-            <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="one">01</div>
+            <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="one">01</div>
             <div class="col-sm-11 no-left-padding no-padding" id="problem">
               <p class="sub-htext text bold remove-line">Problem</p>
               <p class="text norm-p-size margin-bottom">
@@ -125,7 +172,7 @@
           </div>
 
           <div class="no-margin row">
-            <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="two">02</div>
+            <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="two">02</div>
             <div class="col-sm-11 no-left-padding no-padding" id="insight">
               <p class="sub-htext text remove-line">Insight</p>
               <p class="text norm-p-size margin-bottom">
@@ -139,7 +186,7 @@
           </div>
 
           <div class="no-margin row">
-            <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="three">03</div>
+            <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="three">03</div>
             <div class="col-sm-11 no-left-padding no-padding" id="outcome">
               <p class="sub-htext text remove-line">Outcome</p>
               <p class="text norm-p-size">
@@ -158,7 +205,7 @@
 
 
 
-        <div class="small-htext text bold title" id="research-phase">Research Phase</div>
+        <div class="big-htext text bold title" id="research-phase">Research Phase</div>
           <p class="sub-htext text remove-line">Interviews</p>
           <p class="text norm-p-size remove-line">
             We interviewed 15 undergraduate students to determine the causes and
@@ -186,7 +233,7 @@
           <p class="text norm-p-size">
           </p>
 
-        <div class="small-htext text bold title" id="solution">Solution</div>
+        <div class="big-htext text bold title" id="solution">Solution</div>
 
         <p class="sub-htext text remove-line">A Different Approach</p>
         <p class="text norm-p-size margin-bottom">
@@ -221,8 +268,10 @@
             combating procrastination and making the most of one’s time</span>.
         </p>
 
+        <img class="max-100width" src="Assets/images/junto/junto-mockup.png" alt="person holding an iPhone using Junto">
 
-        <div class="small-htext text bold title" id="theories-applied">Theories Applied</div>
+
+        <div class="big-htext text bold title" id="theories-applied">Theories Applied</div>
         <div class="no-margin row">
           <div class="col-sm-6 no-left-padding no-padding">
             <button class="accordion norm-p-size text remove-line semibold">Augmented Reality</button>
@@ -334,7 +383,7 @@
           </div>
         </div>
 
-        <div class="small-htext text bold title" id="prototyping">Prototyping</div>
+        <div class="big-htext text bold title" id="prototyping">Prototyping</div>
         <div class="no-margin row">
           <div class="col-sm-6 no-left-padding no-padding">
             <p class="sub-htext text remove-line">Med-Fidelity Prototype</p>
@@ -411,7 +460,7 @@
           <img class="max-100width over-overlay" id="junto-usertesting-complete" src="Assets/images/junto/junto-usertesting-annotated.png" alt="User testing annotated">
         </div>
 
-        <div class="small-htext text bold title" id="final-design">Final Design</div>
+        <div class="big-htext text bold title" id="final-design">Final Design</div>
 
         <p class="sub-htext text remove-line">Onboarding</p>
         <video class="max-100width margin-bottom" controls preload="metadata">
@@ -457,7 +506,7 @@
         <p class="sub-htext text remove-line" id="prototype">Interactive Prototype - Try it for yourself!</p>
         <iframe class="figma margin-bottom" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfK1K7l1oemxGr4HCLkxNt5%2FJunto%3Fnode-id%3D1%253A3%26viewport%3D503%252C104%252C0.0895676389336586%26scaling%3Dscale-down" allowfullscreen></iframe>
 
-        <div class="small-htext text bold title" id="reflection">Reflection</div>
+        <div class="big-htext text bold title" id="reflection">Reflection</div>
 
         <p class="sub-htext text remove-line">Lessons Learned</p>
         <p class="text norm-p-size margin-bottom">
@@ -482,67 +531,15 @@
           <img class="max-100width over-overlay" id="junto-demoday-complete" src="Assets/images/junto/junto-demoday-annotated.png" alt="Demo day annotated">
         </div>
 
+        <div class="footer-margin">
+          <a href="creart.html">
+              <div class="text norm-p-size button view-final" id="creart-view">View next project — CreArt</div>
+          </a>
+        </div>
 
       </div>
 
     </div>
-
-    <div class="row other-projects container">
-      <div class="big-htext text bold title">Other Projects</div>
-
-      <div class="col-lg-3 col-sm-4 form-group" id="creart-project">
-        <a href="creart.html">
-          <div class="creart-project">
-            <img class="creart-img-project" src="Assets/images/creart-project.png" alt="public art">
-
-            <!-- overlay objects for public art -->
-            <div class="overlay-project-items" id="creart-overlay-project">
-              <div class="vertical-center">
-                <div class="text norm-p-size semibold">CreArt</div>
-                <div class="text small-text">Public art co-creation app</div>
-              </div>
-            </div>
-
-          </div>
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-sm-4 form-group" id="comyoot-project">
-        <a href="shallmake-shallbe.html">
-        <div class="comyoot-project">
-          <img class="comyoot-img-project" src="Assets/images/shallmake-project.png" alt="Shall Make, Shall Be: The Bill of Rights at Play">
-
-          <!-- overlay objects for comyoot -->
-          <div class="overlay-project-items" id="comyoot-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Shall Make, Shall Be</div>
-              <div class="text small-text">Interactive website redesign</div>
-            </div>
-          </div>
-
-        </div>
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-sm-4 form-group" id="bunbun-project">
-        <a href="bunbun.html">
-        <div class="bunbun-project">
-          <img class="bunbun-img-project" src="Assets/images/bunbun-project.png" alt="logo of Bun Bun Bake Shop">
-
-          <!-- overlay objects for junto -->
-          <div class="overlay-project-items" id="bunbun-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Bun Bun Bake Shop</div>
-              <div class="text small-text">Bakery website for online ordering</div>
-            </div>
-          </div>
-
-        </div>
-        </a>
-      </div>
-
-    </div>
-
 
 
     <footer>

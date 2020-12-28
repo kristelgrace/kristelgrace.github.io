@@ -59,54 +59,101 @@
     </header>
 
     <!-- title portion -->
+    <div class="fixed-container row container">
+      <div class="col-md-10">
+      </div>
+      <div class="col-md-2 col-xs-12">
+          <div class="sidebar-container text" id="myScrollspy">
+            <ul class="sidebar-list nav nav-pills nav-stacked">
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#scope">Scope</a></li>
+              <li><a href="#research">Research Phase</a></li>
+              <li><a href="#insights">Insights</a></li>
+              <li><a href="#solution">Solution</a></li>
+              <li><a href="#final-design">Final Design</a></li>
+              <li><a href="#reflection">Reflection</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="overlaying-image project-header">
+      <img class="header-image under-overlay" src="Assets/images/creart/creart-header.png" alt="CreArt header showing designs">
+      <div id="arrow-container">
+        <img id="arrow-down" src="Assets/images/arrows-down.png" alt="Arrows down" onclick="Jump('#background')">
+      </div>
+
+      <div class="overlay-text" id="project-header-container">
+        <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12" id="project-header-text">
+          <div class="text bigger-htext bold">
+            CreArt
+          </div>
+
+          <div class="text" id="header-subtext">
+            A mobile app for co-creating augmented reality public art in a city
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <div class="space">
     </div>
-    <div class="row bunbun-shortdesc container">
-      <div class="col-lg-5 col-sm-6 form-group">
-        <div class="text big-htext bold">
-          CreArt
-        </div>
-        <p class="text small-htext">
-          A mobile app for co-creating augmented reality public art in a city
+    <div class="row container">
+      <div class="col-md-9 form-group">
+        <p class="text small-htext" id="background">
+          Project Background
         </p>
-        <div class="text timeline norm-p-size">
-          <span class="bold">Project duration:</span><br>
-          Three months (in 2020)<br>
-          <span class="bold">Team:</span><br>
-          2 UX Designers and 2 UX Researchers<br>
-          <span class="bold">My role:</span><br>
-          UX Design Lead and Research Lead<br>
-          <span class="bold">Research methods:</span><br>
-          Contextual interview, customer journey mapping, affinity diagramming, think-alouds, storyboarding, speed dating<br>
+
+        <div class="row no-margin text timeline norm-p-size margin-bottom table-padding">
+          <div class="col-md-6 col-sm-6">
+              <div class="col-md-6 col-sm-12 table-padding no-padding">
+                <span class="bold small-padding-bottom">Duration</span><br>
+                Three months<br><br>
+                <span class="bold small-padding-bottom">Context</span><br>
+                05410 User-Centered Research and Evaluation (Spring '20)<br><br>
+              </div>
+
+              <div class="col-md-6 col-sm-12 table-padding no-padding">
+                <span class="bold">Team</span><br>
+                2 UX Designers<br>
+                2 UX Researchers<br><br>
+              </div>
+            </div>
+
+          <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12 table-padding no-padding">
+              <span class="bold">My roles</span><br>
+              Research Lead<br>
+              UX Design Lead<br><br>
+            </div>
+
+            <div class="col-md-6 col-sm-12 table-padding no-padding">
+              <span class="bold">Research methods</span><br>
+              Contextual interview<br>
+              User journey mapping<br>
+              Affinity diagramming<br>
+              Think-alouds<br>
+              Storyboarding<br>
+              Speed dating<br><br>
+            </div>
+          </div>
+
+        </div>
+        <div id="creart-view" class="figma-link-jump text norm-p-size button view-final" onclick="Jump('#final-design')">
+          Jump to the final design
         </div>
       </div>
-
-      <div class="col-lg-5 col-sm-6 form-group">
-        <img class="bunbun-titleimg" src="Assets/images/creart-phone2.png" alt="mockup of CreArt on iPhone">
-      </div>
-
-      <div class="col-lg-2 col-xs-12">
-        <div class="sidebar-container text" id="myScrollspy">
-          <ul class="sidebar-list nav nav-pills nav-stacked">
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#scope">Scope</a></li>
-            <li><a href="#research">Research Phase</a></li>
-            <li><a href="#insights">Insights</a></li>
-            <li><a href="#solution">Solution</a></li>
-            <li><a href="#final-design">Final Design</a></li>
-            <li><a href="#reflection">Reflection</a></li>
-          </ul>
-        </div>
-      </div>
-
     </div>
 
     <div class="row bunbun-project-page container">
 
-      <div class="col-lg-9">
-        <div class="small-htext text bold title" id="summary">Summary</div>
+      <div class="col-md-9">
+        <div class="big-htext text bold bg-title" id="summary">Summary</div>
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="one">01</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="one">01</div>
           <div class="col-sm-11 no-left-padding no-padding" id="problem">
             <p class="sub-htext text bold remove-line">Problem</p>
             <p class="text norm-p-size margin-bottom">
@@ -120,7 +167,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="two">02</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="two">02</div>
           <div class="col-sm-11 no-left-padding no-padding" id="insight">
             <p class="sub-htext text remove-line">Insight</p>
             <p class="text norm-p-size margin-bottom">
@@ -134,7 +181,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="three">03</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="three">03</div>
           <div class="col-sm-11 no-left-padding no-padding" id="outcome">
             <p class="sub-htext text remove-line">Outcome</p>
             <p class="text norm-p-size">
@@ -149,8 +196,8 @@
 
 
 
-        <div class="small-htext text bold title" id="scope">Scope</div>
-        <p class="small-htext text italicize">
+        <div class="big-htext text bold title" id="scope">Scope</div>
+        <p class="smaller-htext text italicize">
           How might we encourage the general public to take part in art
           co-creation while feeling
           <span class="semibold">connected to the community</span>
@@ -165,7 +212,7 @@
           </span>
         </p>
 
-        <div class="small-htext text bold title" id="research">Research Phase</div>
+        <div class="big-htext text bold title" id="research">Research Phase</div>
         <p class="sub-htext text remove-line">Three Phases of Research</p>
         <img class="max-100width margin-bottom" src="Assets/images/creart/creart-research.png" alt="Research phases conducted">
 
@@ -249,14 +296,14 @@
 
         </div>
 
-        <div class="small-htext text bold margin-up title" id="insights">Insights</div>
+        <div class="big-htext text bold margin-up title" id="insights">Insights</div>
         <p class="text norm-p-size">
           From the previously stated user research methodologies, our team
           discovered the following insights:
         </p>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="no1-insight">01</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="no1-insight">01</div>
           <div class="col-sm-11 no-left-padding no-padding" id="insight01">
             <p class="sub-htext text bold remove-line">Motivation for Outcome and Process</p>
             <p class="text norm-p-size margin-bottom">
@@ -269,7 +316,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="no2-insight">02</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="no2-insight">02</div>
           <div class="col-sm-11 no-left-padding no-padding" id="insight02">
             <p class="sub-htext text bold remove-line">Building the Community through Interactions</p>
             <p class="text norm-p-size margin-bottom">
@@ -282,7 +329,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="no3-insight">03</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="no3-insight">03</div>
           <div class="col-sm-11 no-left-padding no-padding" id="insight03">
             <p class="sub-htext text bold remove-line">Low Threshold for Collaboration</p>
             <p class="text norm-p-size margin-bottom">
@@ -294,7 +341,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="no4-insight">04</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="no4-insight">04</div>
           <div class="col-sm-11 no-left-padding no-padding" id="insight04">
             <p class="sub-htext text bold remove-line">Negative Critique Unwelcome</p>
             <p class="text norm-p-size">
@@ -305,14 +352,14 @@
           </div>
         </div>
 
-        <div class="small-htext text bold title" id="solution">Solution</div>
+        <div class="big-htext text bold title" id="solution">Solution</div>
         <p class="text norm-p-size margin-bottom">
           CreArt is an AR art co-creation app that allows users to co-create art
           with friends and families on top of existing landmarks around the city.
         </p>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="01-solution">01</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="01-solution">01</div>
           <div class="col-sm-11 no-left-padding no-padding margin-bottom" id="solution01">
             <p class="sub-htext text bold remove-line">Livability</p>
             <p class="text norm-p-size">
@@ -328,7 +375,7 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="02-solution">02</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="02-solution">02</div>
           <div class="col-sm-11 no-left-padding no-padding margin-bottom" id="solution02">
             <p class="sub-htext text bold remove-line">Motivation</p>
             <p class="text norm-p-size">
@@ -344,9 +391,9 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="03-solution">03</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="03-solution">03</div>
           <div class="col-sm-11 no-left-padding no-padding margin-bottom" id="solution03">
-            <p class="sub-htext text bold remove-line">Co-Creation Design</p>
+            <p class="sub-htext text bold remove-line">Collaboration</p>
             <p class="text norm-p-size">
               The design of the co-creation itself is important to users. CreArt
               improves the collaboration experience by...
@@ -363,9 +410,9 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="04-solution">04</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="04-solution">04</div>
           <div class="col-sm-11 no-left-padding no-padding margin-bottom" id="solution04">
-            <p class="sub-htext text bold remove-line">Uniqueness of CreArt</p>
+            <p class="sub-htext text bold remove-line">Uniqueness</p>
             <p class="text norm-p-size">
               CreArt is a uniquely designed platform that aims to increase the
               livability of the city by...
@@ -381,9 +428,9 @@
         </div>
 
         <div class="no-margin row">
-          <div class="col-sm-1 bigger-htext text semibold no-left-padding no-padding" id="05-solution">05</div>
+          <div class="col-sm-1 big-htext text semibold no-left-padding no-padding" id="05-solution">05</div>
           <div class="col-sm-11 no-left-padding no-padding" id="solution05">
-            <p class="sub-htext text bold remove-line">Measuring CreArt's Effectiveness</p>
+            <p class="sub-htext text bold remove-line">Measurability</p>
             <p class="text norm-p-size">
               CreArt can measure its impact on specific aspects of
               the livability of a city, such as:
@@ -405,7 +452,7 @@
         </div>
 
 
-        <div class="small-htext text bold title" id="final-design">Final Design</div>
+        <div class="big-htext text bold title" id="final-design">Final Design</div>
         <p class="sub-htext text remove-line">Journey</p>
         <div class="horizontal-scroll-container margin-bottom">
           <img class="hor-scroll-item" src="Assets/images/creart/creart-journey.png" alt="steps in our prototype of CreArt">
@@ -450,7 +497,7 @@
 
         </div>
 
-        <div class="small-htext text bold title margin-up" id="reflection">Reflection</div>
+        <div class="big-htext text bold title margin-up" id="reflection">Reflection</div>
 
         <p class="sub-htext text remove-line">Lessons Learned</p>
         <p class="text norm-p-size">
@@ -464,62 +511,12 @@
           insights and unique discoveries.
         </p>
 
-      </div>
-
-    </div>
-
-    <div class="row other-projects container">
-      <div class="big-htext text bold title">Other Projects</div>
-
-      <div class="col-lg-3 col-sm-4 form-group" id="junto-project">
-        <a href="junto.html">
-        <div class="junto-project">
-          <img class="junto-img-project" src="Assets/images/junto-project.png" alt="logo of Junto">
-
-          <!-- overlay objects for junto -->
-          <div class="overlay-project-items" id="junto-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Junto</div>
-              <div class="text small-text">Gamified AR anti-procrastination app</div>
-            </div>
-          </div>
-
+        <div class="footer-margin">
+          <a href="shallmake-shallbe.html">
+              <div class="text norm-p-size button view-final" id="shallmake-view">View next project — Shall Make, Shall Be</div>
+          </a>
         </div>
-        </a>
-      </div>
 
-      <div class="col-lg-3 col-sm-4 form-group" id="comyoot-project">
-        <a href="shallmake-shallbe.html">
-        <div class="comyoot-project">
-          <img class="comyoot-img-project" src="Assets/images/shallmake-project.png" alt="Shall Make, Shall Be: The Bill of Rights at Play">
-
-          <!-- overlay objects for comyoot -->
-          <div class="overlay-project-items" id="comyoot-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Shall Make, Shall Be</div>
-              <div class="text small-text">Interactive website redesign</div>
-            </div>
-          </div>
-
-        </div>
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-sm-4 form-group" id="bunbun-project">
-        <a href="bunbun.html">
-        <div class="bunbun-project">
-          <img class="bunbun-img-project" src="Assets/images/bunbun-project.png" alt="logo of Bun Bun Bake Shop">
-
-          <!-- overlay objects for junto -->
-          <div class="overlay-project-items" id="bunbun-overlay-project">
-            <div class="vertical-center">
-              <div class="text norm-p-size semibold">Bun Bun Bake Shop</div>
-              <div class="text small-text">Bakery website for online ordering</div>
-            </div>
-          </div>
-
-        </div>
-        </a>
       </div>
 
     </div>
