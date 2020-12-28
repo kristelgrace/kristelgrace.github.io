@@ -362,7 +362,7 @@ a:hover, .figma-link-jump:hover {
 /* bio and picture styling */
 
 .work-bio {
-  background-color: #FBE2CA;
+  background-color: #FBE2CA; /*FFF0E3*/
   height: 100vh;
   margin-left: 0;
   margin-right: 0;
