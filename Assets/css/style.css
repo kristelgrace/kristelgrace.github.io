@@ -701,6 +701,12 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   text-align: center;
 }
 
+.other-projects {
+  margin-top: 150px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 .bg-title {
   margin-bottom: 20px;
   margin-top: -10px;
@@ -808,7 +814,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .footer-margin {
-  margin: 100px 0;
+  margin-bottom: 100px;
 }
 
 /************ JUNTO PAGE ************/
