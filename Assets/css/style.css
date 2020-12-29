@@ -377,7 +377,6 @@ a.underline:hover, a.underline:focus {
   background-size: 100% 2px;
   text-decoration: none;
   color: #FDA16E;
-  font-style: italic;
 }
 
 .italic:hover {
