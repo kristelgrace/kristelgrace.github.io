@@ -592,6 +592,24 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   object-fit: cover;
 }
 
+.placeholder-wrapper {
+  position: relative;
+  line-height: 0;
+}
+
+.placeholder-image {
+  position: relative;
+}
+
+
+.placeholder-loading {
+  position: absolute;
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+}
+
+
 #header-subtext {
   font-size: 1.6em;
 }
