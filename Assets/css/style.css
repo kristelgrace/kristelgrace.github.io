@@ -595,10 +595,16 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .placeholder-wrapper {
   position: relative;
   line-height: 0;
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
 }
 
 .placeholder-image {
   position: relative;
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
 }
 
 
