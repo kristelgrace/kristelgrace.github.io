@@ -594,6 +594,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .placeholder-wrapper {
   position: relative;
+  display: block;
   line-height: 0;
   height: 100vh;
   width: auto;
@@ -602,6 +603,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .placeholder-image {
   position: relative;
+  display: block;
   height: 100vh;
   width: auto;
   object-fit: cover;
@@ -610,6 +612,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .placeholder-loading {
   position: absolute;
+  display: block;
   height: 100vh;
   width: auto;
   object-fit: cover;
