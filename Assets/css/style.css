@@ -73,7 +73,6 @@ footer {
   font-weight: bold;
   padding-bottom: 5px !important;
   text-transform: uppercase;
-  color: #646464;
   letter-spacing: 0.5px;
   font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
@@ -356,11 +355,29 @@ a:link {
   text-decoration: none;
 }
 
+
 a:hover, .figma-link-jump:hover {
   color: #F7C599;
   cursor: pointer;
   text-decoration: none;
   transition: .2s ease;
+}
+
+.underline {
+  color: #F47563;
+  text-decoration: none;
+  background-image: linear-gradient(#FDA16E, #FDA16E);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+a.underline:hover, a.underline:focus {
+  background-size: 100% 2px;
+  text-decoration: none;
+  color: #FDA16E;
+  font-style: italic;
 }
 
 .italic:hover {
