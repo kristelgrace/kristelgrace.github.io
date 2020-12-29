@@ -31,33 +31,40 @@ footer {
   background: #FFE8D3;
 }
 
-.text {
-  color: #646464;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
-}
-
-.norm-p-size {
-  font-size: 1.1em;
-}
-
 .small-text {
   font-size: 0.95em;
-}
-
-.small-htext {
-  font-size: 2em;
-}
-
-.bigger-htext {
-  font-size: 3em;
-}
-
-.big-htext {
-  font-size: 2.5em;
+  color: #646464;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .smaller-htext {
   font-size: 1.5em;
+  color: #646464;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
+
+.small-htext {
+  font-size: 2em;
+  color: #646464;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
+
+.norm-text {
+  font-size: 1.1em;
+  color: #646464;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
+
+.big-htext {
+  font-size: 2.5em;
+  color: #646464;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
+
+.bigger-htext {
+  font-size: 3em;
+  color: #646464;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .sub-htext {
@@ -66,6 +73,9 @@ footer {
   font-weight: bold;
   padding-bottom: 5px !important;
   text-transform: uppercase;
+  color: #646464;
+  letter-spacing: 0.5px;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .remove-line {
@@ -609,7 +619,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   object-fit: cover;
 }
 
-
 .placeholder-loading {
   position: absolute;
   display: block;
@@ -618,9 +627,10 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   object-fit: cover;
 }
 
-
 #header-subtext {
   font-size: 1.6em;
+  color: #646464;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 #arrow-container {
@@ -637,6 +647,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 #background {
   padding-top: 50px;
+  text-align: center;
 }
 
 #project-header-container {
