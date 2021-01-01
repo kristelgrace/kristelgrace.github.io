@@ -62,45 +62,51 @@ srcomp.reveal('#junto-demoday-complete', {delay: 2000});
 srcomp.reveal('#creart-affinity-complete', {delay: 1300});
 srcomp.reveal('#creart-uft-complete', {delay: 800});
 
+function isMobile(){
+  return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
 
-var configsumL = {
-  origin: 'left',
-  distance: '75%',
-  duration: 500,
-  easing: 'ease',
-  mobile: true,
-  reset: false,
-  viewFactor: 0.4
-};
+if (!isMobile()) {
+  var configsumL = {
+    origin: 'left',
+    distance: '75%',
+    duration: 500,
+    easing: 'ease',
+    mobile: true,
+    reset: false,
+    viewFactor: 0.4
+  };
 
-window.srsumL = ScrollReveal(configsumL)
+  window.srsumL = ScrollReveal(configsumL)
 
-srsumL.reveal('#one', {delay: 400});
-srsumL.reveal('#two', {delay: 800});
-srsumL.reveal('#three', {delay: 1200});
-srsumL.reveal('#no1-insight', {delay: 400});
-srsumL.reveal('#no2-insight', {delay: 800});
-srsumL.reveal('#no3-insight', {delay: 1200});
-srsumL.reveal('#no4-insight', {delay: 1600});
-
-
-var configsumR = {
-  origin: 'right',
-  distance: '75%',
-  duration: 500,
-  easing: 'ease',
-  mobile: true,
-  reset: false,
-  viewFactor: 0.4
-};
-
-window.srsumR = ScrollReveal(configsumR)
+  srsumL.reveal('#one', {delay: 400});
+  srsumL.reveal('#two', {delay: 800});
+  srsumL.reveal('#three', {delay: 1200});
+  srsumL.reveal('#no1-insight', {delay: 400});
+  srsumL.reveal('#no2-insight', {delay: 800});
+  srsumL.reveal('#no3-insight', {delay: 1200});
+  srsumL.reveal('#no4-insight', {delay: 1600});
 
 
-srsumR.reveal('#problem', {delay: 400});
-srsumR.reveal('#insight', {delay: 800});
-srsumR.reveal('#outcome', {delay: 1200});
-srsumR.reveal('#insight01', {delay: 400});
-srsumR.reveal('#insight02', {delay: 800});
-srsumR.reveal('#insight03', {delay: 1200});
-srsumR.reveal('#insight04', {delay: 1600});
+  var configsumR = {
+    origin: 'right',
+    distance: '75%',
+    duration: 500,
+    easing: 'ease',
+    mobile: true,
+    reset: false,
+    viewFactor: 0.4
+  };
+
+  window.srsumR = ScrollReveal(configsumR)
+
+
+  srsumR.reveal('#problem', {delay: 400});
+  srsumR.reveal('#insight', {delay: 800});
+  srsumR.reveal('#outcome', {delay: 1200});
+  srsumR.reveal('#insight01', {delay: 400});
+  srsumR.reveal('#insight02', {delay: 800});
+  srsumR.reveal('#insight03', {delay: 1200});
+  srsumR.reveal('#insight04', {delay: 1600});
+
+}
