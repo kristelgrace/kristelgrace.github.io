@@ -68,13 +68,17 @@ footer {
 }
 
 .sub-htext {
-  color: #FDA16E !important;
+  color: #FDA16E;
   font-size: 1em;
   font-weight: bold;
   padding-bottom: 5px !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
+
+.orange-text {
+  color: #FDA16E !important;
 }
 
 .remove-line {
