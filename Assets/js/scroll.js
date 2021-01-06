@@ -10,10 +10,12 @@ var config = {
 
 window.sr = ScrollReveal(config)
 
-sr.reveal('#junto-work', {delay: 100});
-sr.reveal('#creart-work', {delay: 500});
-sr.reveal('#shallmake-work', {delay: 100});
-sr.reveal('#bunbun-work', {delay: 500});
+sr.reveal('#checkout-work', {delay: 100});
+sr.reveal('#junto-work', {delay: 500});
+sr.reveal('#creart-work', {delay: 100});
+sr.reveal('#shallmake-work', {delay: 500});
+sr.reveal('#bunbun-work', {delay: 100});
+sr.reveal('#comyoot-work', {delay: 500});
 
 
 // reveal text annotations on project images

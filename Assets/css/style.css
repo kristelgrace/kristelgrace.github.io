@@ -335,7 +335,7 @@ footer {
       width: 1000px !important;
     }
 
-    #checkout-container, #junto-container, #creart-container, #shallmake-container, #bunbun-container {
+    #checkout-container, #junto-container, #creart-container, #shallmake-container, #bunbun-container, #comyoot-container {
       margin: 0 auto;
       width: 1000px;
     }
@@ -481,12 +481,12 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   padding-top: 75px;
 }
 
-.checkout-work, .bunbun-work, .junto-work, .shallmake-work, .creart-work {
+.checkout-work, .bunbun-work, .junto-work, .shallmake-work, .creart-work, .comyoot-work {
   background-color: #FFF8F2;
   height: 320px;
 }
 
-.checkout-img, .bunbun-img, .junto-img, .shallmake-img, .creart-img {
+.checkout-img, .bunbun-img, .junto-img, .shallmake-img, .creart-img, .comyoot-img {
   display: block;
   margin: auto;
   max-height: 100%;
@@ -509,17 +509,17 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   width: 100%;
 }
 
-#checkout-overlay, #bunbun-overlay, #junto-overlay, #shallmake-overlay, #creart-overlay { /*hide the overlay first*/
+#checkout-overlay, #bunbun-overlay, #junto-overlay, #shallmake-overlay, #creart-overlay, #comyoot-overlay { /*hide the overlay first*/
   opacity: 0;
 }
 
-#checkout-view, #bunbun-view, #junto-view, #creart-view, #shallmake-view {
+#checkout-view, #bunbun-view, #junto-view, #creart-view, #shallmake-view, #comyoot-view {
   transition: .15s ease;
   z-index: 2;
 }
 
 
-#checkout-view:hover, #junto-view:hover, #bunbun-view:hover, #shallmake-view:hover, #creart-view:hover  { /* darken color of button upon hover */
+#checkout-view:hover, #junto-view:hover, #bunbun-view:hover, #shallmake-view:hover, #creart-view:hover, #comyoot-view:hover  { /* darken color of button upon hover */
   background-color: #F47563;
   /*box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.25);*/
   color: #FFF;
@@ -543,6 +543,10 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 #creart-work:hover #creart-overlay { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#comyoot-work:hover #comyoot-overlay { /* make overlay visible upon hover */
   opacity: 1;
 }
 
@@ -798,12 +802,12 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   width: 9px;
 }
 
-.checkout-project, .bunbun-project, .junto-project, .shallmake-project, .creart-project {
+.checkout-project, .bunbun-project, .junto-project, .shallmake-project, .creart-project, .comyoot-project {
   background-color: #FFF8F2;
   height: 150px;
 }
 
-.checkout-img-project, .bunbun-img-project, .junto-img-project, .shallmake-img-project, .creart-img-project {
+.checkout-img-project, .bunbun-img-project, .junto-img-project, .shallmake-img-project, .creart-img-project, .comyoot-img-project {
   display: block;
   margin: auto;
   max-height: 100%;
@@ -826,7 +830,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   width: 100%;
 }
 
-#bunbun-overlay-project, #junto-overlay-project, #shallmake-overlay-project, #creart-overlay-project { /*hide the overlay first*/
+#checkout-overlay-project, #bunbun-overlay-project, #junto-overlay-project, #shallmake-overlay-project, #creart-overlay-project, #comyoot-overlay-project { /*hide the overlay first*/
   opacity: 0;
 }
 
@@ -847,6 +851,10 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 #creart-project:hover #creart-overlay-project { /* make overlay visible upon hover */
+  opacity: 1;
+}
+
+#comyoot-project:hover #comyoot-overlay-project { /* make overlay visible upon hover */
   opacity: 1;
 }
 
