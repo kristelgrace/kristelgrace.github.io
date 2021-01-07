@@ -414,6 +414,9 @@ a.underline:hover, a.underline:focus {
   overflow: auto;
 }
 
+.work-sentence {
+  margin-bottom: 14px;
+}
 
 /*scroll down arrow animation from https://codepen.io/pmcgriff/pen/myKGZg*/
 html body [data-ca3_iconfont="ETmodules"]::before {
