@@ -260,7 +260,14 @@ footer {
   }
 }
 
-/* adjust margins & paddings for screen size more than 768px */
+/* adjust for screen size less than 767px (sm) */
+@media (max-width: 767px) {
+  #checkout-final-sm {
+    display: none;
+  }
+}
+
+/* adjust margins & paddings for screen size more than 768px (sm) */
 @media (min-width: 768px) {
     .vertical-align {
         align-items: center;
@@ -304,16 +311,20 @@ footer {
       padding-right: 0;
     }
 
+    #checkout-final-xs {
+      display: none;
+    }
+
 }
 
-/* adjust for screen size less than 991px */
+/* adjust for screen size less than 991px (md) */
 @media (max-width: 991px) {
   .sidebar-container {
     display: none;
   }
 }
 
-/* adjust for screen size more than 992px */
+/* adjust for screen size more than 992px (md) */
 @media (min-width: 992px) {
   .sidebar-container {
     padding-top: 300px;
@@ -328,7 +339,7 @@ footer {
 
 }
 
-/* adjust margins & paddings for screen size more than 1200px */
+/* adjust margins & paddings for screen size more than 1200px (lg) */
 @media (min-width: 1200px) {
     .container{
       margin: 0 auto !important;
