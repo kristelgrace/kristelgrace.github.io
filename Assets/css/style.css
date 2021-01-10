@@ -965,7 +965,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .nav-pills>li>a { /*color inactive*/
-  border-left: 6px solid #FFF8F2;
+  /*border-left: 6px solid #FFF8F2;*/
   border-radius: 0;
   color: #FDA16E;
 }
@@ -973,7 +973,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ /*color on select or active*/
   color: #F47563;
   background-color: transparent;
-  border-left: 6px solid #F47563;
+  border-left: 2px solid #F47563;
   font-weight: 600;
 }
 
