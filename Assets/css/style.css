@@ -327,9 +327,10 @@ footer {
 /* adjust for screen size more than 992px (md) */
 @media (min-width: 992px) {
   .sidebar-container {
-    padding-top: 300px;
-    position: fixed;
-    z-index: 0;
+    padding-top: 150px;
+
+    /*position: fixed;
+    z-index: 0;*/
   }
 
   .table-padding {
@@ -980,4 +981,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .nav>li>a:focus, .nav>li>a:hover{ /*color on hover*/
   background-color: transparent;
   color: #FFEAD8;
+}
+
+.affix {
+  top: 200px;
+  z-index: 9999 !important;
 }
