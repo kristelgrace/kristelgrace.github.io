@@ -985,5 +985,121 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .affix {
   top: 200px;
-  z-index: 9999 !important;
+  z-index: 10 !important;
+}
+
+/************ MODAL POP-UP ************/
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  margin: auto;
+  width: auto;
+}
+
+.modal-content {
+  box-shadow: 0 0 0;
+  border-radius: 0;
+  border: 0;
+  outline: none;
+}
+
+.img-zoomin {
+  cursor: zoom-in;
+}
+
+.checkout-persona-modal, #checkoutPersonaCarouselModal img {
+  max-height: 90vmin;
+  max-width: 132.41vmin;
+}
+
+.checkout-journey-modal, .checkout-journey-modal-img{
+  max-height: 95vmin;
+  max-width: 109.13vmin;
+}
+
+.checkout-njourney-modal, .checkout-njourney-modal-img{
+  max-height: 95vmin;
+  max-width: 139.53vmin;
+}
+
+.checkout-nav-modal, #checkoutNavCarouselModal img {
+  max-height: 90vmin;
+  max-width: 82.44vmin;
+}
+
+.checkout-mscan-modal, .checkout-mscan-modal-img{
+  max-height: 90vmin;
+  max-width: 131.40vmin;
+}
+
+.checkout-tscan-modal, #checkoutTScanCarouselModal img, .checkout-tadd-modal, #checkoutTAddCarouselModal img, .checkout-tpay-modal, #checkoutTPayCarouselModal img {
+  max-height: 90vmin;
+  max-width: 155.54vmin;
+}
+
+.checkout-madd-modal, .checkout-madd-modal-img{
+  max-height: 90vmin;
+  max-width: 141.06vmin;
+}
+
+.checkout-mpay-modal, .checkout-mpay-modal-img{
+  max-height: 90vmin;
+  max-width: 123.87vmin;
+}
+
+.junto-journey-modal, .junto-journey-modal-img{
+  max-height: 95vmin;
+  max-width: 154.05vmin;
+}
+
+.junto-mid-modal, #juntoMidCarouselModal img {
+  max-height: 90vmin;
+  max-width: 82.44vmin;
+}
+
+.junto-nav-modal, .junto-nav-modal-img{
+  max-height: 70vmin;
+  max-width: 153.95vmin;
+}
+
+.junto-home-modal, .junto-home-modal-img{
+  max-height: 95vmin;
+  max-width: 137.86vmin;
+}
+
+.junto-social-modal, .junto-social-modal-img{
+  max-height: 95vmin;
+  max-width: 137.86vmin;
+}
+
+.creart-final-modal, #creartFinalCarouselModal img {
+  max-height: 95vmin;
+  max-width: 111.96vmin;
+}
+
+.creart-story-modal, #creartStoryCarouselModal img {
+  max-height: 90vmin;
+  max-width: 170vmin;
+}
+
+.creart-uft-modal, #creartUFTCarouselModal img {
+  max-height: 90vmin;
+  max-width: 149.22vmin;
+}
+
+.creart-journey-modal, .creart-journey-modal-img{
+  max-height: 90vmin;
+  max-width: 147.19vmin;
+}
+
+.shallmake-midfi-modal, .shallmake-midfi-modal-img{
+  max-width: 90vw;
+  max-height: 100%;
 }
