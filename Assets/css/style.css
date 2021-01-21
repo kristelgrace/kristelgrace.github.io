@@ -1103,3 +1103,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   max-width: 90vw;
   max-height: 100%;
 }
+
+.zoom {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}

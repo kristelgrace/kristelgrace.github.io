@@ -1,0 +1,28 @@
+$(document).ready(function(){
+      $('#zoom00').zoom();
+      $('#zoom0').zoom();
+			$('#zoom1').zoom({'magnify': 0.5});
+			$('#zoom2').zoom({'magnify': 0.5});
+      $('#zoom3').zoom();
+      $('#zoom4').zoom();
+      $('#zoom5').zoom();
+      $('#zoom6').zoom();
+      $('#zoom7').zoom();
+      $('#zoom8').zoom();
+      $('#zoom9').zoom();
+      $('#zoom10').zoom();
+      $('#zoom11').zoom();
+      $('#zoom12').zoom();
+      $('#zoom13').zoom();
+      $('#zoom14').zoom();
+      $('#zoom15').zoom({'magnify': 0.85});
+      $('#zoom16').zoom({'magnify': 0.85});
+      $('#zoom17').zoom({'magnify': 0.85});
+      $('#zoom18').zoom({'magnify': 0.85});
+      $('#zoom19').zoom({'magnify': 0.85});
+      $('#zoom20').zoom({'magnify': 0.85});
+      $('#zoom21').zoom({'magnify': 0.85});
+      $('#zoom22').zoom({'magnify': 0.80});
+      $('#zoom23').zoom({'magnify': 0.80});
+      $('#zoom24').zoom({'magnify': 0.80});
+		});
