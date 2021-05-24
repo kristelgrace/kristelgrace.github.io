@@ -1,6 +1,6 @@
 /*   global styles   */
 body {
-  background-color: #FFFEFC;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   position: relative;
@@ -8,14 +8,14 @@ body {
 }
 
 header {
-  background-color: #FFF8F2;
+  background-color: rgba(255, 251, 247, 0.9);
   font-size: 1.3em;
   font-weight: 400;
   padding: 20px 0;
 }
 
 footer {
-  background-color: #FFF8F2;
+  background-color: rgba(255, 251, 247, 0.9);
   font-size: 0.95em;
   font-weight: 400;
   padding: 20px 75px 40px 75px;
@@ -404,7 +404,7 @@ a.underline:hover, a.underline:focus {
 /* bio and picture styling */
 
 .work-bio {
-  background-color: #FBE2CA; /*FFF0E3*/
+  background-color: #FFF0E3; /*FFF0E3*/
   height: 100vh;
   margin-left: 0;
   margin-right: 0;
@@ -497,7 +497,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .checkout-work, .bunbun-work, .junto-work, .shallmake-work, .creart-work, .comyoot-work {
-  background-color: #FFF8F2;
+  background-color: #FFFBF7;
   height: 320px;
 }
 
@@ -512,7 +512,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 /* styling the overlay text on each portfolio item*/
 .overlay-work-items {
-  background: rgba(255,254,252, 0.9);
+  background: rgba(255,255,255, 0.9);
   height: 100%;
   left: 50%;
   margin: auto;
