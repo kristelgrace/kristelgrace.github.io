@@ -129,7 +129,7 @@ footer {
 
 .button {
   color: #F47563;
-  background-color: #FFF8F2; /*rgba(255,172,99, 0.25)*/
+  background-color: #FFFBF8; /*rgba(255,172,99, 0.25)*/
   box-shadow: 0 0 0 1px rgb(244,117,99) inset;
   /*border-radius: 5px 5px;*/
   padding: 8px 15px;
@@ -171,7 +171,7 @@ footer {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  background-color: #FFF8F2;
+  background-color: #FFFBF8;
   border: solid 2px rgba(255,255,255,0.9);
   border-radius: 0;
   font-size: 0.8em;
@@ -191,7 +191,7 @@ footer {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #FFF8F2;
+  background-color: #FFFBF8;
   font-style: italic;
 }
 
@@ -497,7 +497,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .checkout-work, .bunbun-work, .junto-work, .shallmake-work, .creart-work, .comyoot-work {
-  background-color: #FFFBF7;
+  background-color: #FFFBF8;
   height: 320px;
 }
 
@@ -727,7 +727,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .timeline {
-  background-color: #FFF8F2;
+  background-color: #FFFBF8;
   border-radius: 3px 3px;
   margin-top: 20px;
   padding: 10px;
@@ -818,7 +818,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .checkout-project, .bunbun-project, .junto-project, .shallmake-project, .creart-project, .comyoot-project {
-  background-color: #FFF8F2;
+  background-color: #FFFBF8;
   height: 150px;
 }
 
@@ -895,7 +895,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 /** sourced from w3schools **/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #FFF8F2;
+  background-color: #FFFBF8;
   color: #646464;
   cursor: pointer;
   padding: 3px 8px;
@@ -966,7 +966,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .nav-pills>li>a { /*color inactive*/
-  /*border-left: 6px solid #FFF8F2;*/
+  /*border-left: 6px solid #FFFBF8;*/
   border-radius: 0;
   color: #FDA16E;
 }
