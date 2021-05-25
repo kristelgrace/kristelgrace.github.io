@@ -137,10 +137,10 @@ footer {
 }
 
 .tags {
-  background-color: rgba(0,0,0, 0.15);
-  /*border-radius: 5px 5px;*/
-  padding: 5px 9px;;
-  margin-left: 5px;
+  background-color: rgba(255,240,227, 0.9);
+  border-radius: 5px 5px;
+  padding: 5px 9px;
+  margin-left: 0;
   margin-right: 5px;
 }
 
@@ -219,7 +219,7 @@ footer {
   }
 }
 
-/* adjust margins & paddings for screen size less than 767px */
+/* adjust margins & paddings for screen size less than 767px (sm) */
 @media (max-width: 767px) {
   .row {
     margin-left: 10px;
@@ -258,12 +258,18 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
-}
 
-/* adjust for screen size less than 767px (sm) */
-@media (max-width: 767px) {
   #checkout-final-sm {
     display: none;
+  }
+
+  .checkout-workimg {
+    margin: auto;
+    max-width: 90vw !important;
+  }
+
+  .checkout-desc {
+    padding-bottom: 30px;
   }
 }
 
@@ -293,6 +299,28 @@ footer {
     #work-container{
       margin: 0 auto;
       width: 700px;
+    }
+
+    .checkout-home {
+      height: 460px;
+    }
+
+    .checkout-desc {
+      display: block;
+      margin: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .checkout-workimg {
+      float: right;
+      height: 400px;
+      display: block;
+      max-height: 100%;
+      position: relative;
+      top: 50%;
+      }
     }
 
     .shallmake-space{
@@ -494,6 +522,14 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .work-items {
   padding-top: 75px;
+}
+
+.checkout-home {
+  padding: 30px 0;
+}
+
+.checkout-border {
+  border-bottom: 1px solid #FBBFB0;
 }
 
 .checkout-work, .bunbun-work, .junto-work, .shallmake-work, .creart-work, .comyoot-work {
