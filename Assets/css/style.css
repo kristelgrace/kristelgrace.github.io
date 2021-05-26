@@ -34,37 +34,42 @@ footer {
 .small-text {
   font-size: 0.95em;
   color: #646464;
-  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .smaller-htext {
   font-size: 1.5em;
   color: #646464;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .small-htext {
   font-size: 2em;
   color: #646464;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .norm-text {
   font-size: 1.1em;
   color: #646464;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .big-htext {
   font-size: 2.5em;
   color: #646464;
-  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .bigger-htext {
   font-size: 3em;
   color: #646464;
-  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
+
+.title-text {
+  color: #646464;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .sub-htext {
@@ -74,7 +79,7 @@ footer {
   padding-bottom: 5px !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 .orange-text {
@@ -210,12 +215,21 @@ footer {
   .work-description {
     font-size: 1.4em;
   }
+
+  .title-text {
+    font-size: 3em;
+    padding-top: 30vh;
+  }
 }
 
 /* adjust margins & paddings for screen size more than 420px */
 @media (min-width: 421px) {
   .work-description {
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+
+  .title-text {
+    font-size: 5em;
   }
 }
 
@@ -224,6 +238,10 @@ footer {
   .row {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  #work-container{
+    margin-top: 10vh;
   }
 
   .work-bio {
@@ -297,7 +315,7 @@ footer {
     }
 
     #work-container{
-      margin: 0 auto;
+      margin: 20vh auto 0 auto;
       width: 700px;
     }
 
@@ -432,11 +450,31 @@ a.underline:hover, a.underline:focus {
 /* bio and picture styling */
 
 .work-bio {
-  background-color: #FFF0E3; /*FFF0E3*/
+  background-color: #FFFCF9; /*FFF0E3*/
   height: 100vh;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+}
+
+/* sourced from https://jarv.is/notes/css-waving-hand-emoji/ */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   30% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   40% { transform: rotate(-8.0deg) }
+   50% { transform: rotate(14.0deg) }
+   60% { transform: rotate(-4.0deg) }
+   70% { transform: rotate(10.0deg) }
+   80% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
 
 .work-description {
@@ -510,6 +548,16 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   position: absolute;
   top: 90vh;
 }*/
+
+.text-slider-items {
+  display: none;
+}
+
+.typed-cursor {
+  font-size: 5em;
+  color: #646464;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+}
 
 /*portfolio items styling */
 
@@ -711,7 +759,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 #header-subtext {
   font-size: 1.6em;
   color: #646464;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
 }
 
 #arrow-container {
