@@ -4,7 +4,7 @@ if ($(".text-slider").length == 1) {
     $(".text-slider-items").text();
 
   var typed = new Typed(".text-slider", {
-    strings: ["<span class='wave'>👋</span> Hi, ^600 I'm Kristel!"],
+    strings: ["<span class='wave'>&#128075;</span> Hi, ^600 I'm Kristel!"],
     typeSpeed: 55,
     loop: false,
     backDelay: 900,
