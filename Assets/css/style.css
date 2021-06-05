@@ -183,7 +183,7 @@ footer {
   display: none;
   position: absolute;
   margin-left: -10px;
-  min-width: 130px;
+  min-width: 140px;
   z-index: 1;
 }
 
