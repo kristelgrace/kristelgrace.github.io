@@ -21,6 +21,16 @@ footer {
   padding: 20px 75px 40px 75px;
 }
 
+.about-body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.about-content {
+  flex: 1;
+}
+
 /*   change highlight color, from w3schools   */
 /* Code for Firefox */
 ::-moz-selection {
