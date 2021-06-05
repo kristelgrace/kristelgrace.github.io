@@ -684,6 +684,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   display: block;
   margin: auto;
   max-width: 100%;
+  border-radius: 50%;
 }
 
 .about-description {
@@ -692,20 +693,17 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   overflow: auto;
 }
 
-#hover-image { /* styling the overlay text on each portfolio item*/
+#hidden-image { /*hide the overlay first*/
+  opacity: 0;
+  transition: .2s ease;
   color: #fff;
   height: 100%;
+  border-radius: 50%;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: .5s ease;
-  width: 100%;
-}
-
-#hidden-image { /*hide the overlay first*/
-  opacity: 0;
-  transition: .2s ease;
 }
 
 #about-image:hover #hidden-image { /* make overlay visible upon hover */
