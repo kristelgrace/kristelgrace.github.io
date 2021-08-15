@@ -341,6 +341,14 @@ footer {
   }
 }
 
+
+/* adjust for screen size less than 991px (md) */
+@media (max-width: 991px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+
 /* adjust margins & paddings for screen size more than 768px (sm) */
 @media (min-width: 768px) {
     .vertical-align {
@@ -411,13 +419,6 @@ footer {
       display: none;
     }
 
-}
-
-/* adjust for screen size less than 991px (md) */
-@media (max-width: 991px) {
-  .sidebar-container {
-    display: none;
-  }
 }
 
 /* adjust for screen size more than 992px (md) */
