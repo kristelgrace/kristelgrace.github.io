@@ -880,6 +880,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .sidebar-container {
   font-size: 1em;
   line-height: 30px;
+  padding-top: 120px;
 }
 
 .title {

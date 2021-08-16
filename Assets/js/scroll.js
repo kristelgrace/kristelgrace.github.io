@@ -84,6 +84,7 @@ if (!isMobile()) {
   srsumL.reveal('#one', {delay: 400});
   srsumL.reveal('#two', {delay: 800});
   srsumL.reveal('#three', {delay: 1200});
+  srsumL.reveal('#four', {delay: 1600});
   srsumL.reveal('#no1-insight', {delay: 400});
   srsumL.reveal('#no2-insight', {delay: 800});
   srsumL.reveal('#no3-insight', {delay: 1200});
@@ -103,9 +104,10 @@ if (!isMobile()) {
   window.srsumR = ScrollReveal(configsumR)
 
 
-  srsumR.reveal('#problem', {delay: 400});
-  srsumR.reveal('#insight', {delay: 800});
-  srsumR.reveal('#outcome', {delay: 1200});
+  srsumR.reveal('#context', {delay: 400});
+  srsumR.reveal('#problem', {delay: 800});
+  srsumR.reveal('#insight', {delay: 1200});
+  srsumR.reveal('#outcome', {delay: 1600});
   srsumR.reveal('#insight01', {delay: 400});
   srsumR.reveal('#insight02', {delay: 800});
   srsumR.reveal('#insight03', {delay: 1200});
