@@ -1109,6 +1109,8 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   height: 300px;
   perspective: 1000px;
   border-radius: 5px;
+  z-index: 15 !important;
+  position: relative;
 }
 
 .flip-card-inner {
