@@ -9,14 +9,14 @@ body {
 
 header {
   background-color: rgba(255, 251, 247, 0.9);
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
   padding: 20px 0;
 }
 
 footer {
   background-color: rgba(255, 251, 247, 0.9);
-  font-size: 0.95em;
+  font-size: 0.85em;
   font-weight: 400;
   padding: 20px 75px 40px 75px;
 }
@@ -42,39 +42,39 @@ footer {
 }
 
 .small-text {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .smaller-htext {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .small-htext {
-  font-size: 2em;
+  font-size: 1.9em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .norm-text {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .big-htext {
-  font-size: 2.6em;
+  font-size: 2.5em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .bigger-htext {
-  font-size: 3.1em;
+  font-size: 3em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .title-text {
@@ -84,12 +84,12 @@ footer {
 
 .sub-htext {
   color: #FDA16E;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
   padding-bottom: 5px !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 .orange-text {
@@ -233,7 +233,7 @@ footer {
   background-color: #FFFBF8;
   border: solid 2px rgba(255,255,255,0.9);
   border-radius: 0;
-  font-size: 0.8em;
+  font-size: 0.85em;
   display: none;
   position: absolute;
   margin-left: -10px;
@@ -267,11 +267,11 @@ footer {
 /* adjust margins & paddings for screen size less than 420px */
 @media (max-width: 420px) {
   .work-description {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .title-text {
-    font-size: 3em;
+    font-size: 2.9em;
     padding-top: 30vh;
   }
 }
@@ -279,11 +279,11 @@ footer {
 /* adjust margins & paddings for screen size more than 420px */
 @media (min-width: 421px) {
   .work-description {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .title-text {
-    font-size: 5em;
+    font-size: 4.9em;
   }
 }
 
@@ -456,7 +456,7 @@ footer {
 
 /* text size of logo */
 #logo {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /*   styling links   */
@@ -609,9 +609,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .typed-cursor {
-  font-size: 5em;
+  font-size: 4.9em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 /*portfolio items styling */
@@ -744,7 +744,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .about-description {
   display: inline;
-  font-size: 1.35em;
+  font-size: 1.2em;
   overflow: auto;
 }
 
@@ -810,9 +810,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 #header-subtext {
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: #646464;
-  font-family: "Karla", -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, "Rubik", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Karla", Helvetica Neue, "Rubik", sans-serif;
 }
 
 #arrow-container {
@@ -876,13 +876,13 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .content-text {
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 40px;
 }
 
 
 .sidebar-container {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 30px;
   padding-top: 120px;
 }
@@ -1067,7 +1067,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .accordion:after {
   float: right;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #646464;
   content: '+';
   margin-left: 6px;
