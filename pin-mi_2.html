@@ -51,7 +51,7 @@
 
   </head>
 
-  <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+  <body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
     <header class="headroom header--fixed">
       <div class="container">
         <div class="row">
@@ -65,7 +65,7 @@
               <div class="sm-centered nav-links">
                 <div class="dropdown">
                   <div class="dropbtn">
-                    <a href='#projects' class="active-nav nav-link">Projects</a>
+                    <a href='index.html' class="active-nav nav-link">Projects</a>
                   </div>
                   <div class="dropdown-content">
                     <a href="pinmi.html">Pin-MI</a>
@@ -110,6 +110,17 @@
     </div>
 
     <div class="container-fluid">
+      <nav class="sidebar-container paragraph-3 float-end" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked sidebar-list float-end" id="scrollspyList" tabindex="0">
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#scope" class="nav-link">Scope</a></li>
+          <li><a href="#ideation" class="nav-link">Ideation</a></li>
+          <li><a href="#prototyping" class="nav-link">Prototyping</a></li>
+          <li><a href="#solution" class="nav-link">Solution</a></li>
+          <li><a href="#reflection" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
       <div class="global-margin body-project-container">
         <div class="heading-2 text-center project-section-text" id="summary">Summary</div>
         <div>
@@ -117,11 +128,11 @@
             <div class="col-lg-6">
               <div>
                 <div class="row">
-                  <div class="col-sm-6 no-left-padding">
+                  <div class="col-6 no-left-padding">
                     <div class="heading-5">Duration</div>
                     <div class="paragraph-2 margin-bottom-16">February-May 2021</div>
 
-                    <div class="heading-5">Client</div>
+                    <div class="heading-5">Clients</div>
                     <div class="paragraph-2 margin-bottom-16">
                       CMU HCI Institute<br>
                       Highmark Health
@@ -135,7 +146,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6 no-left-padding-md">
+                  <div class="col-6 no-left-padding-md">
                     <div class="heading-5">My Role</div>
                     <div class="paragraph-2 margin-bottom-16">Lead UX Designer</div>
 
@@ -169,8 +180,16 @@
                 validating the design through <span class="bold">testing</span>.
               </div>
 
+              <div class="margin-bottom-24">
+                <a href="#solution" class="button-jump">
+                  <span class="paragraph-1 button-unfilled">Jump to the final design</span>
+                </a>
+              </div>
+
 
             </div>
+
+
           </div>
         </div>
 
@@ -203,7 +222,7 @@
           Health MI training sessions</span> I observed also provided valuable insights into the status quo.
         </p>
         <div class="text-center">
-          <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-litreview.png" alt="some literature review and observation findings">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-litreview.png" alt="some literature review and observation findings">
         </div>
 
         <div class="heading-5 margin-bottom-4">User Interviews</div>
@@ -213,7 +232,7 @@
           to learn more about MI learning techniques and the effects of MI.
         </p>
         <div class="text-center">
-          <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-interviews.png" alt="quotes from interviews">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-interviews.png" alt="quotes from interviews">
         </div>
 
         <div class="heading-5 margin-bottom-4">Synthesis</div>
@@ -223,16 +242,16 @@
         </p>
       </div>
       <div class="text-center">
-        <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-affinitydiagram.png" alt="Affinity Diagram">
+        <img class="max-100width margin-bottom-56 z-index-10" src="Assets/images/pinmi/pinmi-affinitydiagram.png" alt="Affinity Diagram">
       </div>
       <div class="global-margin body-project-container">
-
+        <div class="heading-5 margin-bottom-4">Initial Personas</div>
         <p class="paragraph-1">
           We also derived four persona groups based on the main stakeholders of the project:
           clients/ patients, MI trainers, and healthare practitioners.
         </p>
 
-        <div id="pinmi-persona-carousel" class="carousel slide margin-bottom-40" data-bs-ride="carousel">
+        <div id="pinmi-persona-carousel" class="carousel slide margin-bottom-56" data-bs-ride="carousel">
           <!-- Indicators -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#pinmi-persona-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -371,8 +390,8 @@
           We grouped them together to create categories — these helped us narrow down and combine ideas.
         </p>
       </div>
-      <div class="text-center">
-        <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-ideas.png" alt="some literature review and observation findings">
+      <div class="text-center z-index-10">
+        <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-ideas.png" alt="some literature review and observation findings">
       </div>
 
       <div class="global-margin body-project-container">
@@ -381,7 +400,7 @@
           For each category, we narrowed down 2-3 ideas we wanted to further
           explore and crafted a corresponding storyboard. These are some of the storyboards I created:
         </p>
-        <div id="pinmi-storyboard-carousel" class="carousel slide margin-bottom-40" data-bs-ride="carousel">
+        <div id="pinmi-storyboard-carousel" class="carousel slide margin-bottom-56" data-bs-ride="carousel">
           <!-- Indicators -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#pinmi-storyboard-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -427,8 +446,8 @@
 
       </div>
 
-      <div class="text-center">
-        <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-speeddating.png" alt="some literature review and observation findings">
+      <div class="text-center z-index-10">
+        <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-speeddating.png" alt="some literature review and observation findings">
       </div>
 
       <div class="global-margin body-project-container">
@@ -438,10 +457,10 @@
           persona that captured the feedback from the speed dating sessions.
         </p>
         <div class="text-center">
-          <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-finalpersona.png" alt="some literature review and observation findings">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-finalpersona.png" alt="some literature review and observation findings">
         </div>
 
-        <div class="heading-5 margin-bottom-4">Speed Dating Insights</div>
+        <div class="heading-5 margin-bottom-4">Rebundling</div>
         <p class="paragraph-1">
           We then revisited the ideas and bundled together four ideas based on
           the yays, nays, and insights from the speed dating session.
@@ -449,8 +468,8 @@
         </p>
       </div>
 
-      <div class="text-center">
-        <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-bundling.png" alt="some literature review and observation findings">
+      <div class="text-center z-index-10">
+        <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-bundling.png" alt="some literature review and observation findings">
       </div>
 
       <div class="focus-section g-0">
@@ -480,14 +499,14 @@
           <span class="bold">larger screen</span> (like a desktop or laptop) on a web browser.
         </p>
         <div class="text-center">
-          <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-lofi.png" alt="some literature review and observation findings">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-lofi.png" alt="some literature review and observation findings">
         </div>
 
         <div class="heading-5 margin-bottom-4">User Testing Outcomes</div>
         <p class="paragraph-1">
           We had <span class="bold">20 user testing sessions</span>
           in total: 4 for low fidelity, 8 for mid-fidelity, and 8 for hi-fidelity.
-          Between these, we <span class="bold"> modified user journey</span>
+          Between these, we <span class="bold"> modified the user journey</span>
           based on feedback and user sentiments.<br><br>
 
           Because it was difficult to have two users test our platform at the
@@ -496,34 +515,255 @@
           two users simultaneously, with one acting as a patient and the other as a practitioner.
         </p>
         <div class="text-center">
-          <img class="max-100width margin-bottom-40" src="Assets/images/pinmi/pinmi-userjourney.png" alt="some literature review and observation findings">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-userjourney.png" alt="some literature review and observation findings">
         </div>
 
+        <div class="heading-5 margin-bottom-4">Practice Session</div>
+        <p class="paragraph-1">
+          Trainees act as either the practitioner or the patient. They will <span class="bold">pin</span>
+          time marks of interesting uses of MI.<br><br>
+          We provided explicit, just-in-time instructions on pinning because <span class="bold">many users had trouble figuring out
+          when to pin</span>.
+        </p>
+        <div class="pinmi-before-after-container margin-bottom-56">
 
-        <div id="one" class="bal-container">
-            <div class="bal-after">
-                <img src="Assets/images/pinmi/pinmi-refresher1.png" alt="">
-                <div class="bal-afterPosition afterLabel">
-                    After
-                </div>
-            </div>
-            <div class="bal-before">
-                <div class="bal-before-inset">
-                    <img src="Assets/images/pinmi/pinmi-refresher1.png" alt="">
-                    <div class="bal-beforePosition beforeLabel">
-                        Before
-                    </div>
+          <div id="pinmiPin" class="bal-container">
+              <div class="bal-after">
+                  <img src="Assets/images/pinmi/pinmi-pin2.png" alt="">
+                  <div class="bal-afterPosition">
+                  </div>
+              </div>
+              <div class="bal-before">
+                  <div class="bal-before-inset">
+                      <img src="Assets/images/pinmi/pinmi-pin1.png" alt="">
+                      <div class="bal-beforePosition">
+                      </div>
 
-                </div>
-            </div>
-            <div class="bal-handle">
-                <span class="handle-left-arrow"></span>
-                <span class="handle-right-arrow"></span>
+                  </div>
+              </div>
+              <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
 
-            </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Discussion Prep</div>
+        <p class="paragraph-1">
+          Trainees <span class="bold">discuss pins in real time</span> and prepare notes
+          to help structure the discussion.<br><br>
+
+          We coupled related elements tighter because users <span class="bold">navigated across pins with difficultly</span>. We also
+          decreased visual elements to prevent <span class="bold">cognitive overload</span>.
+        </p>
+        <div class="pinmi-before-after-container margin-bottom-56">
+
+          <div id="pinmiDiscussion" class="bal-container">
+              <div class="bal-after">
+                  <img src="Assets/images/pinmi/pinmi-drep2.png" alt="">
+                  <div class="bal-afterPosition">
+                  </div>
+              </div>
+              <div class="bal-before">
+                  <div class="bal-before-inset">
+                      <img src="Assets/images/pinmi/pinmi-dprep1.png" alt="">
+                      <div class="bal-beforePosition">
+                      </div>
+
+                  </div>
+              </div>
+              <div class="bal-handle">
+                  <span class="handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+
+              </div>
+          </div>
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Design System</div>
+        <p class="paragraph-1">
+          To maintain visual consistency across the team, I established and
+          maintained the design system and implemented these styles as Figma components.
+        </p>
+
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-design-system.png" alt="some literature review and observation findings">
         </div>
 
       </div>
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-2 text-center focus-section-text" id="solution">Solution</div>
+          <p class="heading-4 margin-bottom-16 text-center">
+            What is Pin-MI?
+          </p>
+
+          <p class="paragraph-1 margin-bottom-16">
+            Pin-MI is a web platform for Motivational Interviewing skills building
+            <span class="bold">within an organization</span>. Peers can practice,
+            give and receive feedback, and self-reflect on their performance.<br><br>
+
+            Highmark Health will implement this platform for their healthcare professionals. Thus, we
+            did not focus on creating external incentives to drive platform usage.
+          </p>
+        </div>
+      </div>
+
+      <div class="focus-section-white g-0 z-index-10">
+        <div class="global-margin row">
+          <div class="col-lg-3 no-left-padding">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Roleplay with a peer
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Trainees get info on their role, patient, and pinning.<br><br>
+              In the <span class="bold">15-minute session</span>,
+              trainees are reminded to <span class="bold">pin</span> or timestamp
+              interesting MI usages or opportunities.
+            </p>
+          </div>
+
+          <div class="col-lg-9 no-right-padding no-left-padding-md">
+            <video class="max-100width margin-bottom-120" controls preload="metadata">
+              <source src="Assets/images/pinmi/pinmi-final-video-pin.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="global-margin row">
+          <div class="col-lg-3 no-right-padding no-left-padding-md hide-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus ">
+              Prep for the discussion
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Trainees <span class="bold">add notes</span> to pins and review the recorded session.
+            </p>
+          </div>
+
+          <div class="col-lg-9 no-left-padding">
+            <video class="max-100width margin-bottom-120" controls preload="metadata">
+              <source src="Assets/images/pinmi/pinmi-final-video-discussionprep.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="col-lg-3 no-right-padding no-left-padding-md show-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus ">
+              Prep for the discussion
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Trainees <span class="bold">add notes</span> to pins and review the recorded session.
+            </p>
+          </div>
+        </div>
+
+        <div class="global-margin row">
+          <div class="col-lg-3 no-left-padding">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Discuss with the peer
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Trainees meet their peer again to discuss their notes and
+              reach a <span class="bold">shared takeaway</span> from each pin.
+            </p>
+          </div>
+
+          <div class="col-lg-9 no-right-padding no-left-padding-md">
+            <video class="max-100width margin-bottom-16" controls preload="metadata">
+              <source src="Assets/images/pinmi/pinmi-final-video-discussion.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="global-margin body-project-container margin-project-end">
+        <div class="heading-2 text-center project-section-text" id="reflection">Reflection</div>
+
+        <div class="heading-5 margin-bottom-4">Lessons Learned</div>
+        <p class="paragraph-1">
+          This has been the most rewarding project I have worked on. I sometimes
+          felt overwhelmed with the amount of work entrusted to me, but I
+          learned three overarching lessons:
+        </p>
+
+        <div class="row">
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 1</p>
+                <p class="paragraph-2">
+                  Trust my teammates, admit my shortcomings
+                  when I can't do things alone, and ask for help quickly.
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 2</p>
+                <p class="paragraph-2">
+                  Take risks (like pitching the possibility of using a conversational AI agent) —
+                  it's our role to expand what is possible.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 3</p>
+                <p class="paragraph-2">
+                  Take more initiative and create a space for myself within the team by
+                  knowingly using my strengths.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="paragraph-1">
+          <br><br>Say hi to the dream team! We started off in four timezones but we all made it to Pittsburgh eventually!
+        </p>
+
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/pinmi/pinmi-team.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="heading-3 text-center project-section-text">Other Projects</div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="selfcheckout.html" class="no-text-decoration">
+              <div class="other-project-container text-center">
+                <img class="other-project-image" src="Assets/images/checkout-project.png" alt="Self-Checkout+ mockups">
+                <div class="paragraph-1 bold red-text">Self-Checkout+</div>
+                <div class="paragraph-3">Add-as-you-go system for Giant Eagle</div>
+
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6">
+            <a href="selfcheckout.html" class="no-text-decoration">
+              <div class="other-project-container text-center">
+                <img class="other-project-image" src="Assets/images/junto-project.png" alt="Junto mockups">
+                <div class="paragraph-1 bold red-text">Junto</div>
+                <div class="paragraph-3">Gamified AR anti-procrastination app</div>
+
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
 
@@ -558,12 +798,10 @@
     <script src="Assets/js/scroll.js"></script>
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/fade.js"></script>
-    <script src="Assets/js/smoothscroll.js"></script>
     <script src="Assets/js/scrollspying.js"></script>
     <script src="Assets/js/autoplay.js"></script>
     <script src="Assets/js/blurry.js"></script>
-    <script src="Assets/js/zoom.js"></script>
-    <script src="Assets/js/zoom-activate.js"></script>
+    <script src="Assets/js/sticky.js"></script>
     <script src="Assets/js/image-slider.js"></script>
     <script src="Assets/js/image-slider-activate.js"></script>
 
