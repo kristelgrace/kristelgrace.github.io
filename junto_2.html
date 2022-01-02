@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Junto — Kristel Yu</title>
+    <meta name="description" content="A web platform for mock patient role-play
+    sessions and peer feedback enhanced with pins."/>
+    <!-- character encoding -->
+    <meta charset="utf-8">
+
+    <!-- initial scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- bootstrap css+js library for screen responsiveness -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- scrollreveal js library for animating objects -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- headroom js library for sticky header animation-->
+    <script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
+
+    <!-- jump js library for smooth scrolling animation -->
+    <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
+
+    <!-- typing animation js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style_2.css">
+
+    <!-- icon -->
+    <link rel="icon" href="Assets/images/ky_logo.png">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
+    <header class="headroom header--fixed">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-12 logo sm-centered">
+              <a href="index.html" class="nav-link">
+                <!--<img src="Assets/images/ky_logo.png" alt="logo" class="logo-nav d-inline-block align-text-top">-->
+                Kristel Yu
+              </a>
+            </div>
+            <div class="col-sm-9 col-12 sm-centered">
+              <div class="sm-centered nav-links">
+                <div class="dropdown">
+                  <div class="dropbtn">
+                    <a href='index.html' class="active-nav nav-link">Projects</a>
+                  </div>
+                  <div class="dropdown-content">
+                    <a href="pinmi.html">Pin-MI</a>
+                    <a href="selfcheckout.html">Self-Checkout+</a>
+                    <a href="junto.html">Junto</a>
+                  </div>
+                </div>
+                <a href="about.html" class="nav-link ">About</a>
+                <a href="https://drive.google.com/file/d/1IJN5jMxx33Cu9ApvbzMyBtCIf9ipigJq/view?usp=sharing" class="nav-link" target="_blank">Resume</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- introduction area -->
+    <div class="container-fluid g-0 project-header">
+      <div class="row project-header-inner-container">
+        <div class="col-lg-4 col-md-12">
+          <div class="project-title" id="project-title-sm">
+            <div class="heading-1">
+              Junto
+            </div>
+
+            <div class="paragraph-1">
+              A gamified productivity app to combat academic procrastination among undergraduate students
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 project-header-image-container">
+          <div class="overlaying-image">
+            <img class="header-image under-overlay" src="Assets/images/junto/junto-headersmall.png" data-src="Assets/images/junto/junto-header.png" alt="CreArt header showing designs">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id="arrow-container">
+            <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" onclick="Jump('#summary')"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <nav class="sidebar-container paragraph-3 float-start" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked sidebar-list" id="scrollspyList" tabindex="0">
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#scope" class="nav-link">Scope</a></li>
+          <li><a href="#ideation" class="nav-link">Ideation</a></li>
+          <li><a href="#prototyping" class="nav-link">Prototyping</a></li>
+          <li><a href="#solution" class="nav-link">Solution</a></li>
+          <li><a href="#reflection" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="summary">Summary</div>
+        <div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div>
+                <div class="row">
+                  <div class="col-6 no-left-padding">
+                    <div class="heading-5">Duration</div>
+                    <div class="paragraph-2 margin-bottom-16">November-December 2019</div>
+
+                    <div class="heading-5">Class</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      Persuasive Design
+                    </div>
+
+                    <div class="heading-5">Team</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      Graphic Designer<br>
+                      Researcher<br>
+                      UX Designer x2<br>
+                    </div>
+                  </div>
+
+                  <div class="col-6 no-left-padding-md">
+                    <div class="heading-5">My Role</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      Research Lead<br>
+                      UX Designer
+                    </div>
+
+                    <div class="heading-5">Skills</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      User Interviews<br>
+                      Affinity Diagramming<br>
+                      Usability Testing<br>
+                      Literature Review
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 no-right-padding no-left-padding-md">
+
+              <div class="heading-5">Problem</div>
+              <div class="paragraph-2 margin-bottom-16">
+                College students procrastinate and face increasing
+                distractions caused by technology. Existing apps fail to
+                incentivize users to stop procrastinating.
+              </div>
+
+              <div class="heading-5">My Focus</div>
+              <div class="paragraph-2 margin-bottom-16">
+                I focused on conducting <span class="bold">secondary research</span>,
+                linking research to <span class="bold">design principles</span>,
+                and designing screens for <span class="bold">social interactions</span>.
+              </div>
+
+              <div class="margin-bottom-24">
+                <a href="#solution" class="button-jump">
+                  <span class="paragraph-1 button-unfilled">Jump to the final design</span>
+                </a>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-3 text-center margin-bottom-16">Our Prompt</div>
+          <div class="paragraph-1">
+            Design a persuasive intervention that positively combats a user's
+            negative behavior. The persuasive intervention must apply 8 design
+            principles and psychological theories.<br><br>
+            Our team, composed of 4 graduate and 1 undergraduate student (me!),
+            chose to target procrastination as the negative behavior because this
+            is something that we all struggled with.
+          </div>
+        </div>
+      </div>
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="research">Research Phase</div>
+        <div class="heading-5 margin-bottom-4">User Interviews</div>
+        <p class="paragraph-1">
+          We conducted 15 storytelling interviews with undergraduate students.
+          These interviews helped us determine the causes and pain points within
+          academic procrastination.
+        </p>
+        <div class="row">
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-small-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Finding 1</p>
+                <p class="paragraph-2">
+                  Smartphone usage causes uncontrollable distraction.
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-small-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Finding 2</p>
+                <p class="paragraph-2">
+                  Anxiety towards a task causes students to delay the task.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row margin-bottom-56">
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-small-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Finding 3</p>
+                <p class="paragraph-2">
+                  Peer influence can deter but also mitigate procrastination.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-small-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Finding 4</p>
+                <p class="paragraph-2">
+                  Intrinsic motivation is necessary to eliminate procrastination.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="heading-5 margin-bottom-4">Customer Journey Map</div>
+        <p class="paragraph-1">
+          We then synthesized our interviews to a consolidated journey map.
+          This revealed areas for opportunity that we looked into addressing:
+        </p>
+      </div>
+
+      <div class="text-center z-index-10 body-container">
+        <img class="max-100width margin-bottom-56" src="Assets/images/junto/junto-journeymap.png" alt="quotes from interviews">
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-5 margin-bottom-4">Persona</div>
+        <p class="paragraph-1">
+          I then synthesized our findings through a persona in the form of Jessica,
+          an undergraduate student. This persona helped us remain objective as we
+          ideated solutions.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56 z-index-10" src="Assets/images/junto/junto-persona.png" alt="Affinity Diagram">
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Affinity Diagramming</div>
+        <p class="paragraph-1">
+          We compiled our findings though an affinity diagram and grouped
+          them together. We found that
+          <span class="bold">
+            emotional and external factors significantly affected academic
+            procrastination</span>.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56 z-index-10" src="Assets/images/junto/junto-affinity.png" alt="Affinity Diagram">
+        </div>
+      </div>
+
+
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-2 text-center focus-section-text" id="scope">Scope</div>
+          <p class="heading-4 margin-bottom-16">
+            How might we make the <span class="bold">environment</span> surrounding
+            a task more <span class="bold">enjoyable</span> for undergraduate
+            students?
+          </p>
+
+          <p class="paragraph-1 margin-bottom-16">
+            An academic task usually does not provide undergraduate students
+            sufficient intrinsic motivation for completing the task. The environment
+            surrounding the task needs to
+            <span class="bold">provide the intrinsic motivation</span>
+            necessary to complete the task.<br><br>
+            Our persuasive intervention cannot obviously target procrastination
+            because that will likely increase user skepticism and decrease overall effectivity.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="ideation">Ideation</div>
+        <div class="heading-5 margin-bottom-4">Competitive Analysis</div>
+        <p class="paragraph-1">
+          We looked into existing solutions that provide ways for a user to focus on their tasks
+          and listed down pros and cons for each.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/junto/junto-companalysis.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Idea Generation</div>
+        <p class="paragraph-1">
+          We timeboxed ourselves and listed down a few basic ideas to start working with.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/junto/junto-ideas.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Theories Applied</div>
+        <p class="paragraph-1">
+          We applied eight design principles and psychological theories in
+          designing Junto.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="accordion" id="accordionJuntoOne">
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Augmented Reality
+                  </button>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionJuntoOne">
+                  <div class="accordion-body paragraph-3">
+                    Augmented Reality (AR) has been seen as an effective incentive to overcome
+                    procrastination. AR allows Junto users to see and interact with their pet in
+                    real life, which makes the pet more tangible and enjoyable.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Curiosity
+                  </button>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionJuntoOne">
+                  <div class="accordion-body paragraph-3">
+                    Curiosity can serve as a form of intrinsic motivation for
+                    to complete tasks well. Junto leverages curiosity by suspensefully
+                    unwrapping the future prize.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Design Principles
+                  </button>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionJuntoOne">
+                  <div class="accordion-body paragraph-3">
+                    Junto uses four of IBM Nudge Library's suggested design principles to achieve the desired behavior.
+                    <ul>
+                      <li>Appeal to emotions: designing cute pets and using light colors</li>
+                      <li>Anticipation: built through slow reveal of pets</li>
+                      <li>Progress in tasks: gift box gradually reveals pet</li>
+                      <li>Habit cycle: create tasks (cue), complete tasks on time (action), and receive a pet (rewards).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Gamification
+                  </button>
+                </div>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionJuntoOne">
+                  <div class="accordion-body paragraph-3">
+                    Gamification is defined as the use of “game-based mechanics,
+                    aesthetics, and game thinking to engage people, motivate action,
+                    promote learning, and solve problems.” (Kapp, 2012).
+                    Junto transforms each task as part of a game —
+                    users complete one task to unlock part of a prize.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="accordion" id="accordionJuntoTwo">
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Outcome-Focused
+                  </button>
+                </div>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionJuntoTwo">
+                  <div class="accordion-body paragraph-3">
+                    Procrastination often serves as a relief or reward from undesired
+                    activity. Junto provides immediate feedback upon task completion
+                    through rewards the focus from completing tasks to unlocking rewards.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Self-Awareness Theory
+                  </button>
+                </div>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionJuntoTwo">
+                  <div class="accordion-body paragraph-3">
+                    Junto allows users to enter into self-awareness: users can see their
+                    progress based on the visual status of an unwrapped present.
+                    This encourages users to match their behavior to their desired outcome
+                    of receiving the pet.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Self-Regulation Theories of Goal Striving
+                  </button>
+                </div>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionJuntoTwo">
+                  <div class="accordion-body paragraph-3">
+                    Junto directly addresses four problems that must be overcome for successful goal
+                    striving.
+                    <ul>
+                      <li>Overcome the initiation of action on a goal: Users can sync their tasks</li>
+                      <li>Overcome distractions and stay on track with the goal: Mystery pets become the focus of the goal</li>
+                      <li>Overcome failure and continue progress: Users are not punished for failure</li>
+                      <li>Overcome the avoidance of overextension and ego depletion: Users can review their progress</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed paragraph-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Social Comparisons
+                  </button>
+                </div>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionJuntoTwo">
+                  <div class="accordion-body paragraph-3">
+                    The continued presence of positive role models can motivate
+                    someone to achieve a difficult goal. Users can remind each
+                    other to remain focused and see others' pet collections (progress).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-3 text-center margin-bottom-16">Deciding on the Solution</div>
+          <div class="paragraph-1 margin-bottom-16">
+            While we had a difficult time deciding on our final solution, our decision
+            came down to focusing on providing external and intrinsic motivation through
+            personal enjoyment.<br><br>
+
+            We decided on disguising our app as a productivity app,
+            but we did not focus on the task-based aspects as much as the user motivations.
+          </div>
+        </div>
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="prototyping">Prototyping</div>
+
+        <div class="heading-5 margin-bottom-4">Low to Mid-Fidelity</div>
+        <p class="paragraph-1">
+          We sketched ideas then solidified them through mid-fidelity prototypes,
+          focusing on four main screens.
+
+        </p>
+      </div>
+      <div class="text-center">
+        <img class="max-100width margin-bottom-56 body-container" src="Assets/images/junto/junto-medfi.png" alt="some literature review and observation findings">
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-5 margin-bottom-4">User Testing</div>
+        <p class="paragraph-1">
+          We conducted user testing sessions to determine the usability and usefulness
+          of our prototype. These paper prototypes helped us discover notable insights.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/junto/junto-usertesting.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="heading-5 margin-bottom-4 margin-top-pinmi-focus">Home Screen Iterations</div>
+            <p class="paragraph-1">
+              Users needed to see the full description of  tasks rather than
+              just a few characters.<br><br>
+              We learned that academic tasks are not
+              easily identifiable by just a few characters.
+
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="junto-vertical-before-after-container margin-bottom-56">
+
+              <div id="juntoHome" class="bal-vertical-container">
+                  <div class="bal-vertical-after">
+                      <img src="Assets/images/junto/junto-home-after.png" alt="">
+                      <div class="bal-vertical-afterPosition">
+                      </div>
+                  </div>
+                  <div class="bal-vertical-before">
+                      <div class="bal-vertical-before-inset">
+                          <img src="Assets/images/junto/junto-home-before.png" alt="">
+                          <div class="bal-vertical-beforePosition">
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="bal-vertical-handle">
+                      <span class="handle-vertical-top-arrow"></span>
+                      <span class="handle-vertical-bottom-arrow"></span>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="paragraph-1">
+          Users also felt that the mystery pet was not surprising enough. We then
+          added a gradual unwrapping animation to build user curiosity.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/junto/junto-unwrap.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="heading-5 margin-bottom-4 margin-top-pinmi-focus">Social Screen Iterations</div>
+            <p class="paragraph-1">
+              We added a remind feature to allow users to take advantage of
+              peer influences. Friends help one another stay focused on their tasks.<br><br>
+              In this iteration, I also considered the information hierarchy and
+              minimized visual elements.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="junto-vertical-before-after-container margin-bottom-56">
+
+              <div id="juntoSocial" class="bal-vertical-container">
+                  <div class="bal-vertical-after">
+                      <img src="Assets/images/junto/junto-social-after.png" alt="">
+                      <div class="bal-vertical-afterPosition">
+                      </div>
+                  </div>
+                  <div class="bal-vertical-before">
+                      <div class="bal-vertical-before-inset">
+                          <img src="Assets/images/junto/junto-social-before.png" alt="">
+                          <div class="bal-vertical-beforePosition">
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="bal-vertical-handle">
+                      <span class="handle-vertical-top-arrow"></span>
+                      <span class="handle-vertical-bottom-arrow"></span>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-2 text-center focus-section-text" id="solution">Solution</div>
+          <p class="heading-4 margin-bottom-16 text-center">
+            What is Junto?
+          </p>
+
+          <p class="paragraph-1 margin-bottom-56">
+            Junto is a productivity app that
+            <span class="bold">rewards users when they accomplish tasks
+            </span>
+            by unlocking and revealing mystery pets, collecting these pets,
+            and placing these in their rooms through augmented
+            reality (AR). The anti-procrastination intention is
+            <span class="bold">
+              disguised as productivity to diminish users' skepticism
+            </span>
+            towards the intended effect of the app.
+          </p>
+
+          <p class="heading-4 margin-bottom-16 text-center">
+            Why "Junto"?
+          </p>
+
+          <p class="paragraph-1 margin-bottom-16">
+            The
+            <a class="underline" href="http://www.benjamin-franklin-history.org/junto-club/" target="_blank">Junto</a>
+            (from the Spanish word for assembly, junta)
+            is a club that Benjamin Franklin formed in 1727. Franklin is well known for his
+            wit and famous phrases, some of which have to do with
+            combating procrastination and making the most of one’s time.
+          </p>
+
+          <div class="text-center">
+            <img class="max-100width" src="Assets/images/junto/junto-mockup.png" alt="some literature review and observation findings">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="global-margin checkout-solution-container margin-top-pinmi-focus">
+        <div class="row">
+          <div class="col-md-6 no-left-padding">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Start the Junto journey
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Onboarding is fun and easy with Junto through easy syncing and adding.
+            </p>
+          </div>
+
+          <div class="col-md-6 no-right-padding no-left-padding-md text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/junto/junto-video-onboarding.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 no-right-padding no-left-padding-md hide-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Remind your friends
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Your friends can help you and you can help your friends out too
+              by reminding each other to stay focused on tasks.
+            </p>
+          </div>
+
+          <div class="col-md-6 no-left-padding text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/junto/junto-video-social.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="col-md-6 no-right-padding no-left-padding-md show-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Remind your friends
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Your friends can help you and you can help your friends out too
+              by reminding each other to stay focused on tasks.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 no-left-padding">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus margin-top-checkout-solution">
+              Complete your tasks
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Finish all your tasks in the challenge and receive a mystery pet!
+            </p>
+          </div>
+
+          <div class="col-md-6 no-right-padding no-left-padding-md text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/junto/junto-video-tasks.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 no-right-padding no-left-padding-md hide-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              View your pets
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              You can view your pets in your room through Augmented Reality or
+              choose to see them in a special Junto virtual world.
+            </p>
+          </div>
+
+          <div class="col-md-6 no-left-padding text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/junto/junto-video-social.mov#t=0.1" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="col-md-6 no-right-padding no-left-padding-md show-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              View your pets
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              You can view your pets in your room through Augmented Reality or
+              choose to see them in a special Junto virtual world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="global-margin body-project-container margin-project-end">
+        <div class="heading-5 margin-bottom-4">Try the mobile interactive site!</div>
+        <iframe class="figma margin-bottom-16" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfK1K7l1oemxGr4HCLkxNt5%2FJunto%3Fnode-id%3D1%253A3%26viewport%3D503%252C104%252C0.0895676389336586%26scaling%3Dscale-down" allowfullscreen></iframe>
+
+        <div class="heading-2 text-center project-section-text" id="reflection">Reflection</div>
+
+        <div class="heading-5 margin-bottom-4">Lessons Learned</div>
+        <p class="paragraph-1">
+          This project was difficult due to the quick timeline, and this was my first
+          step into HCI. Nevertheless, it was an immensely rewarding project and
+          I learned so much.
+        </p>
+
+        <div class="row">
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 1</p>
+                <p class="paragraph-2">
+                  Take constructive criticism and be quick to iterate on designs.
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 2</p>
+                <p class="paragraph-2">
+                  Theoretical applications can lead to tried-and-tested outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 3</p>
+                <p class="paragraph-2">
+                  Welcome uncertainty and openly discuss how to deal with it as a team.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="paragraph-1">
+          <br><br>A sneak peak into the team and demo day!
+        </p>
+
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/junto/junto-team.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="heading-3 text-center project-section-text">Other Projects</div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="pinmi.html" class="no-text-decoration">
+              <div class="other-project-container text-center">
+                <img class="other-project-image" src="Assets/images/pinmi-project.png" alt="Self-Checkout+ mockups">
+                <div class="paragraph-1 bold red-text">Pin-MI</div>
+                <div class="paragraph-3">Live talk therapy practice platform</div>
+
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6">
+            <a href="selfcheckout.html" class="no-text-decoration">
+              <div class="other-project-container text-center">
+                <img class="other-project-image" src="Assets/images/checkout-project.png" alt="Self-Checkout+ mockups">
+                <div class="paragraph-1 bold red-text">Self-Checkout+</div>
+                <div class="paragraph-3">Scan-as-you-go system for Giant Eagle</div>
+
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <span class="col-sm-6 col-12 paragraph-3 sm-centered">
+            <a class="underline" href="https://www.linkedin.com/in/kristelyu/" target="_blank">linkedin</a><br>
+            <a class="underline" href="mailto:kristelgraceyu@gmail.com" target="_blank">email</a>
+          </span>
+
+          <span class="col-sm-6 col-12 paragraph-3 sm-centered">
+            <span class="float-end sm-centered">
+              Coded and designed by me &#128105;&#127995;&#8205;&#128187;<br>
+              © Kristel Yu 2022
+            </span>
+          </span>
+        </div>
+      </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- js files for libraries -->
+    <script src="Assets/js/scroll.js"></script>
+    <script src="Assets/js/header.js"></script>
+    <script src="Assets/js/fade.js"></script>
+    <script src="Assets/js/scrollspying.js"></script>
+    <script src="Assets/js/autoplay.js"></script>
+    <script src="Assets/js/blurry.js"></script>
+    <script src="Assets/js/sticky.js"></script>
+    <script src="Assets/js/image-slider.js"></script>
+    <script src="Assets/js/image-slider-activate.js"></script>
+    <script src="Assets/js/image-vertical-slider.js"></script>
+    <script>
+    new BeforeAfterVertical({
+        id: '#juntoHome'
+    });
+    new BeforeAfterVertical({
+        id: '#juntoSocial'
+    });
+    </script>
+
+  </body>
+
+</html>

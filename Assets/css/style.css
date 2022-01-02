@@ -842,13 +842,14 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 #project-header-container {
-  margin-top: 50vh;
   width: 100%;
 }
 
 #project-header-text {
-  background: rgba(255,254,252,0.9);
-  padding: 20px;
+  background: rgb(255,254,252);
+  background: linear-gradient(90deg, rgba(255,254,252,0) 0%, rgba(255,254,252,0.9) 40%);
+  padding: 50vh 20px 20px 20vw;
+  height: 100vh;
 }
 
 .bunbun-project-page {

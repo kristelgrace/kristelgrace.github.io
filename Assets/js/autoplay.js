@@ -4,7 +4,7 @@
 $(document).ready(function() {
 // Get media - with autoplay disabled (audio or video)
 var media = $('video').not("[autoplay='autoplay']");
-var tolerancePixel = 200;
+var tolerancePixel = 100;
 
 function checkMedia(){
     // Get current browser top and bottom
