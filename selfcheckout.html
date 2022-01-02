@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Self-Checkout+ — Kristel Yu</title>
+    <meta name="description" content="A web platform for mock patient role-play
+    sessions and peer feedback enhanced with pins."/>
     <!-- character encoding -->
     <meta charset="utf-8">
 
@@ -9,11 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!-- bootstrap css+js library for screen responsiveness -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- scrollreveal js library for animating objects -->
     <script src="https://unpkg.com/scrollreveal@4"></script>
@@ -24,16 +30,20 @@
     <!-- jump js library for smooth scrolling animation -->
     <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script>
 
+    <!-- typing animation js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <!-- animation css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style_2.css">
 
     <!-- icon -->
     <link rel="icon" href="Assets/images/ky_logo.png">
 
     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -41,1077 +51,681 @@
 
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
     <header class="headroom header--fixed">
-      <div class="small-text row">
-        <a href="index.html" class="col-md-9 col-xs-12 bold italic" id="logo">kristel yu</a>
-        <div class="dropdown col-md-1 col-xs-3">
-          <div class="dropbtn bold italic" id="work-button">
-            <a href="index.html" class="bold italic">work</a>
-          </div>
-          <div class="dropdown-content">
-            <a href="pinmi.html">Pin-MI</a>
-            <a class="semibold" href="selfcheckout.html">Self-Checkout+</a>
-            <a href="junto.html">Junto</a>
-          </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-12 logo sm-centered">
+              <a href="index.html" class="nav-link">
+                <!--<img src="Assets/images/ky_logo.png" alt="logo" class="logo-nav d-inline-block align-text-top">-->
+                Kristel Yu
+              </a>
+            </div>
+            <div class="col-sm-9 col-12 sm-centered">
+              <div class="sm-centered nav-links">
+                <div class="dropdown">
+                  <div class="dropbtn">
+                    <a href='index.html' class="active-nav nav-link">Projects</a>
+                  </div>
+                  <div class="dropdown-content">
+                    <a href="pinmi.html">Pin-MI</a>
+                    <a href="selfcheckout.html">Self-Checkout+</a>
+                    <a href="junto.html">Junto</a>
+                  </div>
+                </div>
+                <a href="about.html" class="nav-link ">About</a>
+                <a href="https://drive.google.com/file/d/1IJN5jMxx33Cu9ApvbzMyBtCIf9ipigJq/view?usp=sharing" class="nav-link" target="_blank">Resume</a>
+              </div>
+            </div>
         </div>
-        <a href="about.html" class="col-md-1 col-xs-3 italic" id="about-button">about</a>
-        <a href="https://drive.google.com/file/d/1IJN5jMxx33Cu9ApvbzMyBtCIf9ipigJq/view?usp=sharing" target="_blank" class="col-md-1 col-xs-6 italic" id="resume-button">resume</a>
       </div>
     </header>
 
-    <!-- title portion -->
-
-    <div class="overlaying-image project-header">
-      <img class="header-image under-overlay" src="Assets/images/self-checkout/checkout-headersmall.png" data-src="Assets/images/self-checkout/checkout-header.png" alt="CreArt header showing designs">
-      <div id="arrow-container">
-        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" onclick="Jump('#summary')"></a>
-      </div>
-
-      <div class="overlay-text" id="project-header-container">
-        <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
-        </div>
-        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12" id="project-header-text">
-          <div class="bigger-htext bold">
-            Self-Checkout+
-          </div>
-
-          <div id="header-subtext">
-            A responsive site for an incremental add-as-you-go system in a grocery store
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="space">
-    </div>
-
-    <div class="row bunbun-project-page container">
-
-      <div class="col-md-9">
-        <div class="big-htext bold bg-title" id="summary">Summary</div>
-
-        <div class="no-margin row">
-          <div class="col-sm-1 big-htext semibold no-left-padding no-padding" id="one">01</div>
-          <div class="col-sm-11 no-left-padding no-padding" id="context">
-            <p class="sub-htext remove-line">Context</p>
-            <p class="norm-text margin-bottom">
-              As a <span class="bold">UX Designer</span>
-              on this project, I worked alongside three other
-              UX Designers in November 2020 for our Interaction Design Studio 1
-              class. I focused on
-              <span class="bold">creating and refining the design system, user
-              testing prototypes, and understanding the user journey</span>.
-            </p>
-          </div>
-        </div>
-
-        <div class="no-margin row">
-          <div class="col-sm-1 big-htext semibold no-left-padding no-padding" id="two">02</div>
-          <div class="col-sm-11 no-left-padding no-padding" id="problem">
-            <p class="sub-htext remove-line">Problem</p>
-            <p class="norm-text margin-bottom">
-              <a href="https://www.gianteagle.com/" target="_blank" class="underline">Giant Eagle</a>
-              needs to better compete with competitors in response
-              to the changes that the COVID-19 pandemic has brought upon the
-              grocery industry.
-            </p>
-          </div>
-        </div>
-
-        <div class="no-margin row">
-          <div class="col-sm-1 big-htext semibold no-left-padding no-padding" id="three">03</div>
-          <div class="col-sm-11 no-left-padding no-padding" id="insight">
-            <p class="sub-htext remove-line">Insight</p>
-            <p class="norm-text margin-bottom">
-              Customers want to <span class="bold">spend less time</span>
-              inside grocery stores and <span class="bold">minimize their contact</span>
-              with others. One key area that both areas touch on is the
-              self-checkout process.
-              <span class="bold">
-                Interestingly, as the size and quantity of items increase, the
-                usability of the current self-checkout system decreases.
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <div class="no-margin row">
-          <div class="col-sm-1 big-htext semibold no-left-padding no-padding" id="four">04</div>
-          <div class="col-sm-11 no-left-padding no-padding" id="outcome">
-            <p class="sub-htext remove-line">Outcome</p>
-            <p class="norm-text margin-bottom">
-              A mobile and tablet site for a
-              <span class="bold">
-                seamless add-as-you-go system
-              </span>
-              that also helps users plan their trip ahead of time
-            </p>
-          </div>
-        </div>
-
-        <div id="creart-view" class="figma-link-jump norm-text button view-final" onclick="Jump('#final-design')">
-          Jump to the final design
-        </div>
-
-      </div>
-
-
-        <div class="col-md-2 col-md-offset-1 col-xs-12">
-          <div class="sidebar-container small-text" id="myScrollspy">
-            <ul class="sidebar-list nav nav-pills nav-stacked" data-spy="affix" data-offset-top="760">
-              <li><a href="#summary">Summary</a></li>
-              <li><a href="#research">Research Phase</a></li>
-              <li><a href="#scope">Scope</a></li>
-              <li><a href="#ideation">Ideation</a></li>
-              <li><a href="#prototyping">Prototyping</a></li>
-              <li><a href="#final-design">Final Design</a></li>
-              <li><a href="#reflection">Reflection</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="row bunbun-project-page container">
-      <div class="col-md-9">
-
-        <div class="big-htext bold title" id="research">Research Phase</div>
-        <p class="sub-htext remove-line">Storytelling interviews</p>
-        <p class="norm-text">
-          We aimed to understand
-          <span class="bold">
-            how different groups of customers are currently grocery
-            shopping</span>.
-          We conducted 12 storytelling interviews among a
-          diverse group of participants, including parents, working professionals,
-          and college students. We discovered the following insights for the
-          digital and physical grocery shopping experience.
-        </p>
-        <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-interviews.png" alt="Findings from interviews">
-
-        <p class="sub-htext remove-line">Secondary Research</p>
-        <p class="norm-text">
-          To gauge existing solutions and opportunities within the grocery
-          shopping experience, we examined different technologies targeted at
-          improving the self-checkout experience and the psychology of grocery
-          stores and their layouts. <br><br>
-
-          We found research that supported our initial findings and pointed out
-          opportunities within customers' checkout experience – a significant
-          pain point for most shoppers:
-        </p>
-        <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-secondary.png" alt="Findings from secondary research">
-
-        <p class="sub-htext remove-line">Targeted Interviews</p>
-        <p class="norm-text">
-          As we narrowed down our focus, we wanted to get more insights into the
-          current state of the checkout experience. We interviewed eight more
-          participants, and we asked questions to gauge their experiences
-          on checking out.
-        </p>
-        <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-targeted.png" alt="2 quotes from targeted interviews">
-
-        <p class="sub-htext remove-line">Personas</p>
-        <p class="norm-text">
-          After reviewing our research, findings, and insights, we came up with
-          two distinct personas representing our main user groups. Our primary
-          user groups focused on young adults and stay-at-home parents.
-        </p>
-        <div id="checkout-persona-carousel" class="carousel slide margin-bottom" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#checkout-persona-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#checkout-persona-carousel" data-slide-to="1"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox" data-toggle="modal" data-target="#checkoutPersonaModal">
-
-            <div class="item active">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-persona1.png" alt="Persona 1 (Kevin)" data-target="#checkoutPersonaCarouselModal" data-slide-to="0">
+    <!-- introduction area -->
+    <div class="container-fluid g-0 project-header">
+      <div class="row project-header-inner-container">
+        <div class="col-lg-4 col-md-12">
+          <div class="project-title" id="project-title-sm">
+            <div class="heading-1">
+              Self-Checkout+
             </div>
 
-            <div class="item">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-persona2.png" alt="Persona 2 (Serena)" data-target="#checkoutPersonaCarouselModal" data-slide-to="1">
+            <div class="paragraph-1">
+              A responsive site for an incremental scan-as-you-go system in a grocery store
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 project-header-image-container">
+          <div class="overlaying-image">
+            <img class="header-image under-overlay" src="Assets/images/self-checkout/checkout-headersmall.png" data-src="Assets/images/self-checkout/checkout-header.png" alt="CreArt header showing designs">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id="arrow-container">
+            <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" onclick="Jump('#summary')"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <nav class="sidebar-container paragraph-3 float-start" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked sidebar-list" id="scrollspyList" tabindex="0">
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#scope" class="nav-link">Scope</a></li>
+          <li><a href="#ideation" class="nav-link">Ideation</a></li>
+          <li><a href="#prototyping" class="nav-link">Prototyping</a></li>
+          <li><a href="#solution" class="nav-link">Solution</a></li>
+          <li><a href="#reflection" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="summary">Summary</div>
+        <div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div>
+                <div class="row">
+                  <div class="col-6 no-left-padding">
+                    <div class="heading-5">Duration</div>
+                    <div class="paragraph-2 margin-bottom-16">November 2020</div>
+
+                    <div class="heading-5">Course</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      Interaction Design Studio
+                    </div>
+
+                    <div class="heading-5">Team</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      UX Designer x3
+                    </div>
+                  </div>
+
+                  <div class="col-6 no-left-padding-md">
+                    <div class="heading-5">My Role</div>
+                    <div class="paragraph-2 margin-bottom-16">UX Designer</div>
+
+                    <div class="heading-5">Skills</div>
+                    <div class="paragraph-2 margin-bottom-16">
+                      Design System<br>
+                      User Testing<br>
+                      User Interviews<br>
+                      Journey Mapping<br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 no-right-padding no-left-padding-md">
+
+              <div class="heading-5">Problem</div>
+              <div class="paragraph-2 margin-bottom-16">
+                <a href="https://www.gianteagle.com/" target="_blank" class="underline">Giant Eagle</a>
+                needs to better compete with competitors in response
+                to the changes that the COVID-19 pandemic has brought upon the
+                grocery industry.
+              </div>
+
+              <div class="heading-5">My Focus</div>
+              <div class="paragraph-2 margin-bottom-16">
+                I focused on
+                creating and refining the <span class="bold">design system</span>,
+                <span class="bold">user testing</span> prototypes, and
+                understanding the <span class="bold">user journey</span>.
+              </div>
+
+              <div class="margin-bottom-24">
+                <a href="#solution" class="button-jump">
+                  <span class="paragraph-1 button-unfilled">Jump to the final design</span>
+                </a>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-3 text-center margin-bottom-16">What is Giant Eagle?</div>
+          <div class="paragraph-1 margin-bottom-16">
+            <a href="https://www.gianteagle.com/" target="_blank" class="underline">Giant Eagle</a>
+            is a Pittsburgh-based grocery chain which has stores in Pennsylvania, Ohio, and
+            nearby states.<br><br>
+            For this class, we are tasked with finding new ways for them to better
+            adapt to COVID-19 restrictions and demands through a responsive site.
+            Our team selected Giant Eagle acted as our hypothetical client
+            since it is native to Pittsburgh.
+          </div>
+        </div>
+      </div>
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="research">Research Phase</div>
+        <div class="heading-5 margin-bottom-4">Storytelling Interviews</div>
+        <p class="paragraph-1">
+          We conducted 12 storytelling interviews to understand
+          <span class="bold">
+            how different groups of customers are grocery
+            shopping</span>.
+          We interviewed parents, working professionals, and college students.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-interviews.png" alt="some literature review and observation findings">
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Secondary Research</div>
+        <p class="paragraph-1">
+          To gauge existing solutions and opportunities within the grocery
+          shopping experience, we examined different self-checkout technologies
+          and the psychology of grocery stores and their layouts.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-secondary.png" alt="quotes from interviews">
+        </div>
+
+        <div class="heading-5 margin-bottom-4">Targeted Interviews</div>
+        <p class="paragraph-1">
+          As we narrowed down our focus, we interviewed 8 more participants
+          to get more insights into the current state of the checkout experience.
+        </p>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-targeted.png" alt="quotes from interviews">
+        </div>
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-5 margin-bottom-4">Personas</div>
+        <p class="paragraph-1">
+          We synthesized our findings by deriving two persona groups: young adults
+          and stay-at-home parents. We reviewed the personas to ensure we
+          were guided by research and not intuition.
+        </p>
+
+        <div id="checkout-persona-carousel" class="carousel slide margin-bottom-56" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#checkout-persona-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#checkout-persona-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="Assets/images/self-checkout/checkout-persona1.png" alt="Persona 1 (Ellen)" data-slide-to="0">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Assets/images/self-checkout/checkout-persona2.png" alt="Persona 2 (Donna)" data-slide-to="1">
             </div>
 
           </div>
 
           <!-- Left and right controls -->
-          <span class="left carousel-control" href="#checkout-persona-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </span>
-          <span class="right carousel-control" href="#checkout-persona-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#checkout-persona-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#checkout-persona-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
 
         </div>
 
-        <div class="modal fade" id="checkoutPersonaModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-persona-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div id="checkoutPersonaCarouselModal" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#checkoutPersonaCarouselModal" data-slide-to="0" class="active"></li>
-                    <li data-target="#checkoutPersonaCarouselModal" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <span class="zoom" id="zoom00">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-persona1.png" alt="Persona 1 (Kevin)">
-                      </span>
-                    </div>
-                    <div class="item">
-                      <span class="zoom" id="zoom0">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-persona2.png" alt="Persona 2 (Serena)">
-                      </span>
-                    </div>
-                  </div>
-
-                  <span class="left carousel-control" href="#checkoutPersonaCarouselModal" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </span>
-                  <span class="right carousel-control" href="#checkoutPersonaCarouselModal" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </span>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <p class="sub-htext remove-line">Customer Journey Mappping</p>
-        <p class="norm-text">
-          We created a customer journey map for each interview, separating the
-          maps by each stage (consideration, preparation, experience, and
-          post-experience). We merged our findings into a consolidated customer journey map:
+        <div class="heading-5 margin-bottom-4">Customer Journey Map</div>
+        <p class="paragraph-1">
+          We diagrammed a journey map from each interview and consolidated the patterns into
+          one journey map. This journey map highlights the pain points at specific stages.
         </p>
-        <img class="max-100width margin-bottom img-zoomin" src="Assets/images/self-checkout/checkout-journeymap.png" alt="Customer Journey Map" data-toggle="modal" data-target="#checkoutJourneyModal">
+      </div>
 
-        <div class="modal fade" id="checkoutJourneyModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-journey-modal" role="document">
-            <div class="modal-content">
+      <div class="text-center z-index-10 global-margin">
+        <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-journeymap.png" alt="quotes from interviews">
+      </div>
 
-              <div class="modal-body zoom" id="zoom1">
-                <img class="checkout-journey-modal-img zoomImg" src="Assets/images/self-checkout/checkout-journeymap.png" alt="Customer Journey Map">
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <p class="sub-htext">Key insights</p>
-
-        <div>
-          <div class="col-md-4 margin-bottom">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="sub-htext remove-line vertical-center">Being idle</p>
-                  <img class="card-arrow" src="Assets/images/arrow-right.png" alt="Right arrow">
-                </div>
-                <div class="flip-card-back">
-                  <p class="norm-text vertical-center left-text">
-                    People dislike <span class="bold">long wait times</span>,
-                    especially during <span class="bold">checkout</span> because
-                    <span class="bold">being idle</span> because it feels like a waste of time.
-                  </p>
-                </div>
+      <div class="global-margin body-project-container">
+        <div class="heading-5 margin-bottom-4">Insights</div>
+        <p class="paragraph-1">
+          Through the consolidated journey map and personas, our team
+          discovered the following insights:
+        </p>
+        <div class="row">
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Insight 1</p>
+                <p class="paragraph-2">
+                  People dislike long wait times and being idle in checkout lines.
+                </p>
               </div>
             </div>
+
+
+
           </div>
 
-          <div class="col-md-4 margin-bottom">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="sub-htext remove-line vertical-center">Minimizing interactions</p>
-                  <img class="card-arrow" src="Assets/images/arrow-right.png" alt="Right arrow">
-                </div>
-                <div class="flip-card-back">
-                  <p class="norm-text vertical-center left-text">
-                    Even before COVID, people wanted to <span class="bold">avoid interacting</span>
-                    with others in a grocery store.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 margin-bottom">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="sub-htext remove-line vertical-center">Feeling conscious</p>
-                  <img class="card-arrow" src="Assets/images/arrow-right.png" alt="Right arrow">
-                </div>
-                <div class="flip-card-back">
-                  <p class="norm-text vertical-center left-text">
-                    People don’t like the feeling of <span class="bold">being watched
-                    or making mistakes</span> during self-checkout.
-                  </p>
-                </div>
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Insight 2</p>
+                <p class="paragraph-2">
+                  People want to avoid human-human interaction in groceries (even pre-COVID).
+                </p>
               </div>
             </div>
           </div>
 
         </div>
+
+        <div class="row">
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Insight 3</p>
+                <p class="paragraph-2">
+                  People don’t like the feeling of being watched or making mistakes during self-checkout.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Insight 4</p>
+                <p class="paragraph-2">
+                  People often need help in self-checkout but feel shame when asking for help due to loud store alerts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
 
       </div>
-    </div>
 
-    <div class="focus-colors">
-      <div class="row bunbun-project-page container">
-        <div class="col-md-offset-1 col-md-10 col-md-offset-1">
-
-          <div class="big-htext bold title focus-text" id="scope">Scope</div>
-          <p class="smaller-htext focus-text">
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-2 text-center focus-section-text" id="scope">Scope</div>
+          <p class="heading-4 margin-bottom-16">
             How might we make navigating the grocery store and checking out more
             <span class="bold">time-efficient</span>?
           </p>
-          <p class="norm-text focus-text">
-            One of the largest grocery store stressors for customers is the wait
-            time. The satisfaction of customers who enjoy and don't enjoy grocery
-            shopping is significantly impacted by their wait time. This is one
-            area for opportunity that our team aimed to address.
+
+          <p class="paragraph-1 margin-bottom-16">
+            Customers are highly stressed by <span class="bold">long wait times</span>. The satisfaction of
+            customers who enjoy and don't enjoy grocery
+            shopping is significantly impacted by their wait time.
+
           </p>
-
-          <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-groceries-freepik.png" alt="Findings from interviews">
-
         </div>
       </div>
-    </div>
 
-    <div class="row bunbun-project-page container focus-decrease-bottom-padding">
-      <div class="col-md-9">
-
-        <div class="big-htext bold title" id="ideation">Ideation</div>
-        <p class="sub-htext remove-line">Competitive Analysis</p>
-        <p class="norm-text">
-          Before ideating, we analyzed three mobile applications in the grocery
-          store space. We looked at Giant Eagle's own application, Target,
-          and Walmart. With these applications, we also listed down some
-          pros and cons to help us with our ideation process:
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="ideation">Ideation</div>
+        <div class="heading-5 margin-bottom-4">Competitive Analysis</div>
+        <p class="paragraph-1">
+          Before ideating, we analyzed three mobile applications in the grocery store space
+          and listed pros and cons for each.
         </p>
-        <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-companalysis.png" alt="Competitive analysis">
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-companalysis.png" alt="some literature review and observation findings">
+        </div>
 
-        <p class="sub-htext remove-line">Ideating solutions</p>
-        <p class="norm-text">
-          We then listed down small ideas on a sticky note to help with bundling
-          these ideas together. These small ideas were all considered, but we
+        <div class="heading-5 margin-bottom-4">Idea Generation</div>
+        <p class="paragraph-1">
+          We then timeboxed ourselves and generated quick ideas. We then
           prioritized some ideas over others based on technical feasibility,
           impact to the user, and our team's time constraints.
         </p>
-        <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-ideas.png" alt="Sticky notes of ideas">
 
-
-
-      </div>
-    </div>
-
-    <div class="focus-colors">
-      <div class="row bunbun-project-page container focus-inside-padding">
-        <div class="col-md-12 high-z">
-          <p class="sub-htext remove-line focus-orange-text">New user journey</p>
-          <p class="norm-text focus-text">
-            After bundling our ideas, we decided to targeted the <span class="bold">experience stage </span> of the
-            grocery shopping experience. Self-Checkout+ transforms the current
-            shopping experience of customers by innovating the way customers shop
-            and pay for groceries.
-          </p>
-          <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-newjourney.png" alt="Drawing of current vs new user journey" data-toggle="modal" data-target="#checkoutNJourneyModal">
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-ideas.png" alt="some literature review and observation findings">
         </div>
-      </div>
-    </div>
 
-    <div class="row bunbun-project-page container focus-increase-top-padding">
-      <div class="col-md-9">
-        <p class="sub-htext remove-line">Mobile and tablet versions</p>
-        <p class="norm-text">
-          Users can use <span class="bold">their own mobile devices</span>
-          to plan their trip at home then scan items in store. Giant Eagle can
-          also provide <span class="bold">mounted tablets on the grocery cart</span>
-          to further facilitate active use of the Self-Checkout+ system.
+        <div class="heading-5 margin-bottom-4">New User Journey</div>
+        <p class="paragraph-1">
+          After bundling our ideas, we targeted the <span class="bold">experience stage </span> of the
+          grocery shopping experience. Self-Checkout+ transforms the current
+          shopping experience of customers by innovating the way customers shop
+          and pay for groceries.
         </p>
-        <div id="checkout-mockup-carousel" class="carousel slide margin-bottom" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#checkout-mockup-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#checkout-mockup-carousel" data-slide-to="1"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-
-            <div class="item active">
-              <img src="Assets/images/self-checkout/checkout-mockup.png" alt="Mockup of the scan page of Self-Checkout+">
-            </div>
-
-            <div class="item">
-              <img src="Assets/images/self-checkout/checkout-ipadmockup.png" alt="Mockup of Self-Checkout+ on a tablet mounted on a shopping cart">
-            </div>
-
-          </div>
-
-          <!-- Left and right controls -->
-          <span class="left carousel-control" href="#checkout-mockup-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </span>
-          <span class="right carousel-control" href="#checkout-mockup-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </span>
-
-        </div>
       </div>
-    </div>
 
-    <div class="row bunbun-project-page container">
-      <div class="col-md-9">
+      <div class="text-center z-index-10 global-margin">
+        <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-newjourney.png" alt="some literature review and observation findings">
+      </div>
 
-        <div class="big-htext bold margin-up title" id="prototyping">Prototyping</div>
 
-        <p class="sub-htext remove-line">Low-fidelity prototyping</p>
-        <p class="norm-text">
+      <div class="global-margin body-project-container">
+        <div class="heading-2 text-center project-section-text" id="prototyping">Prototyping</div>
+
+        <div class="heading-5 margin-bottom-4">Low fidelity</div>
+        <p class="paragraph-1">
           We timeboxed the design of our low-fidelity prototype in Figma to
           emphasize creation and ideation over polish.
         </p>
-        <img class="max-100width margin-bottom" src="Assets/images/self-checkout/checkout-lowfi.png" alt="Low-fidelity prototypes">
-        <div class="no-margin row">
-          <div class="col-sm-6 no-left-padding no-padding margin-up">
-            <p class="sub-htext remove-line">Navigation bar</p>
-            <p class="norm-text">
-              We decided to use a <span class="bold">bottom navbar instead of a hamburger menu</span>
-              to help users access nav links faster since it is the
-              <span class="bold">natural location for thumbs</span>.<br><br>
-              With more user testing, we found that
-              <ul class="norm-text">
-                <li>Icon size and text were initially too small</li>
-                <li>The bold separation of the navbar attracted too much attention</li>
-                <li class="bold">Icon text was not necessary when using clear icons</li>
-              </ul>
-            </p>
-          </div>
-
-          <div class="col-sm-6 no-right-padding no-padding">
-            <div id="checkout-nav-carousel" class="carousel slide margin-bottom" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#checkout-nav-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#checkout-nav-carousel" data-slide-to="1"></li>
-                <li data-target="#checkout-nav-carousel" data-slide-to="2"></li>
-              </ol>
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox" data-toggle="modal" data-target="#checkoutNavModal">
-
-                <div class="item active">
-                  <img class="img-zoomin" src="Assets/images/self-checkout/checkout-nav1.png" alt="First nav bar iteration" data-target="#checkoutNavCarouselModal" data-slide-to="0">
-                </div>
-
-                <div class="item">
-                  <img class="img-zoomin" src="Assets/images/self-checkout/checkout-nav2.png" alt="Second nav bar iteration" data-target="#checkoutNavCarouselModal" data-slide-to="1">
-                </div>
-
-                <div class="item">
-                  <img class="img-zoomin" src="Assets/images/self-checkout/checkout-nav3.png" alt="Third nav bar iteration" data-target="#checkoutNavCarouselModal" data-slide-to="2">
-                </div>
-
-              </div>
-
-              <!-- Left and right controls -->
-              <span class="left carousel-control" href="#checkout-nav-carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </span>
-              <span class="right carousel-control" href="#checkout-nav-carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </span>
-
-            </div>
-          </div>
+        <div class="text-center">
+          <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-lowfi.png" alt="some literature review and observation findings">
         </div>
 
-        <div class="modal fade" id="checkoutNavModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-nav-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div id="checkoutNavCarouselModal" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#checkoutNavCarouselModal" data-slide-to="0" class="active"></li>
-                    <li data-target="#checkoutNavCarouselModal" data-slide-to="1"></li>
-                    <li data-target="#checkoutNavCarouselModal" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <span class="zoom" id="zoom3">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-nav1.png" alt="First nav bar iteration">
-                      </span>
-                    </div>
-
-                    <div class="item">
-                      <span class="zoom" id="zoom4">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-nav2.png" alt="Second nav bar iteration">
-                      </span>
-                    </div>
-
-                    <div class="item">
-                      <span class="zoom" id="zoom5">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-nav3.png" alt="Third nav bar iteration">
-                      </span>
-                    </div>
-                  </div>
-
-                  <span class="left carousel-control" href="#checkoutNavCarouselModal" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </span>
-                  <span class="right carousel-control" href="#checkoutNavCarouselModal" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </span>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <p class="sub-htext remove-line">Mobile Scanner</p>
-        <p class="norm-text">
-          As we iterated on the designs, we decided to use <span class="bold">minimal colors</span>
-          especially since Giant Eagle red is a bold color that immediately
-          attracts the user's attention. We also found that
-          <span class="bold">
-            viewing the grocery list while shopping and calling for assistance
-          </span>
-          added significant value to users.
+        <div class="heading-5 margin-bottom-4">User Testing: Iterations for Mobile</div>
+        <p class="paragraph-1">
+          As we conducted user testing sessions, we made notable iterations to
+          maximize visual real estate, provide error correction steps, and
+          decrease cognitive overload.
         </p>
-        <img class="max-100width margin-bottom img-zoomin" src="Assets/images/self-checkout/checkout-scan.png" alt="Mid-fidelity prototypes" data-toggle="modal" data-target="#checkoutMScanModal">
-
-        <div class="modal fade" id="checkoutMScanModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-mscan-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body zoom" id="zoom6">
-                <img class="checkout-mscan-modal-img zoomImg" src="Assets/images/self-checkout/checkout-scan.png" alt="Mid-fidelity prototypes">
-              </div>
-
-            </div>
-          </div>
-        </div>
-<!--
-        <p class="sub-htext remove-line">Iterating: Tablet Scanner</p>
-        <p class="norm-text">
-          After building the mobile version, we built the tablet version of the
-          site. The visual real estate available on the tablet allowed a
-          <span class="bold">3-column display</span>
-          including deals, the grocery list, and a
-          <span class="bold">larger call for help button</span> in later iterations.
-        </p>
-
-        <div id="checkout-tabletscan-carousel" class="carousel slide margin-bottom" data-ride="carousel">
-
-          <ol class="carousel-indicators">
-            <li data-target="#checkout-tabletscan-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#checkout-tabletscan-carousel" data-slide-to="1"></li>
-          </ol>
-
-
-          <div class="carousel-inner" role="listbox" data-toggle="modal" data-target="#checkoutTScanModal">
-
-            <div class="item active">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-tablet-scan1.png" alt="First tablet scan page iteration" data-target="#checkoutTScanCarouselModal" data-slide-to="0">
-            </div>
-
-            <div class="item">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-tablet-scan2.png" alt="Second tablet scan page iteration" data-target="#checkoutTScanCarouselModal" data-slide-to="1">
-            </div>
-
-          </div>
-
-
-          <span class="left carousel-control" href="#checkout-tabletscan-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </span>
-          <span class="right carousel-control" href="#checkout-tabletscan-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </span>
-
-        </div>
-
-        <div class="modal fade" id="checkoutTScanModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-tscan-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div id="checkoutTScanCarouselModal" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#checkoutTScanCarouselModal" data-slide-to="0" class="active"></li>
-                    <li data-target="#checkoutTScanCarouselModal" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <span class="zoom" id="zoom7">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-tablet-scan1.png" alt="First tablet scan page iteration">
-                      </span>
-                    </div>
-
-                    <div class="item">
-                      <span class="zoom" id="zoom8">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-tablet-scan2.png" alt="Second tablet scan page iteration">
-                      </span>
-                    </div>
-                  </div>
-
-                  <span class="left carousel-control" href="#checkoutTScanCarouselModal" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </span>
-                  <span class="right carousel-control" href="#checkoutTScanCarouselModal" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </span>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
--->
-        <p class="sub-htext remove-line">Mobile Add to Cart</p>
-        <p class="norm-text">
-          In the earlier iterations, we decided to create a pop-up when a user
-          successfully scans the barcode of an item. However, we found that
-          <span class="bold">creating a new page for the item decreased confusion on the next steps</span>.
-          It also gave us space to
-          <span class="bold">integrate the suggested quantity found from the user's grocery list</span>.
-        </p>
-        <img class="max-100width margin-bottom img-zoomin" src="Assets/images/self-checkout/checkout-add.png" alt="Mid-fidelity prototypes" data-toggle="modal" data-target="#checkoutMAddModal">
-
-        <div class="modal fade" id="checkoutMAddModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-madd-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body zoom" id="zoom9">
-                <img class="checkout-madd-modal-img zoomImg" src="Assets/images/self-checkout/checkout-add.png" alt="Mid-fidelity prototypes">
-              </div>
-
-            </div>
-          </div>
-        </div>
-<!--
-        <p class="sub-htext remove-line">Iterating: Tablet Add to Cart</p>
-        <p class="norm-text">
-          For the tablet site, the pop-up is most effective for easy
-          navigation. We then <span class="bold">enlarged the pop-up</span>
-          in later iterations to mimic the changes made on the mobile version.
-        </p>
-        <div id="checkout-tabletadd-carousel" class="carousel slide margin-bottom" data-ride="carousel">
-
-          <ol class="carousel-indicators">
-            <li data-target="#checkout-tabletadd-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#checkout-tabletadd-carousel" data-slide-to="1"></li>
-          </ol>
-
-
-          <div class="carousel-inner" role="listbox" data-toggle="modal" data-target="#checkoutTAddModal">
-
-            <div class="item active">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-tablet-add1.png" alt="First tablet add to cart page iteration" data-target="#checkoutTAddCarouselModal" data-slide-to="0">
-            </div>
-
-            <div class="item">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-tablet-add2.png" alt="Second tablet add to cart page iteration" data-target="#checkoutTAddCarouselModal" data-slide-to="1">
-            </div>
-
-          </div>
-
-
-          <span class="left carousel-control" href="#checkout-tabletadd-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </span>
-          <span class="right carousel-control" href="#checkout-tabletadd-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </span>
-
-        </div>
-
-        <div class="modal fade" id="checkoutTAddModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-tadd-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div id="checkoutTAddCarouselModal" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#checkoutTAddCarouselModal" data-slide-to="0" class="active"></li>
-                    <li data-target="#checkoutTAddCarouselModal" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <span class="zoom" id="zoom10">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-tablet-add1.png" alt="First tablet add to cart page iteration">
-                      </span>
-                    </div>
-
-                    <div class="item">
-                      <span class="zoom" id="zoom11">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-tablet-add2.png" alt="Second tablet add to cart page iteration">
-                      </span>
-                    </div>
-                  </div>
-
-                  <span class="left carousel-control" href="#checkoutTAddCarouselModal" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </span>
-                  <span class="right carousel-control" href="#checkoutTAddCarouselModal" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </span>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
--->
-        <p class="sub-htext remove-line">Mobile Payment</p>
-        <p class="norm-text">
-          We created more detail for the payment section. We initially
-          added a step to allow users to review their order before finally
-          paying. User testing revealed that this extra step was very confusing,
-          so in our next iteration, we created a
-          <span class="bold">swipe to pay action so users can still change their minds before finalizing the payment process</span>.
-        </p>
-
-        <img class="max-100width margin-bottom img-zoomin" src="Assets/images/self-checkout/checkout-pay.png" alt="Mid-fidelity of payment pages" data-toggle="modal" data-target="#checkoutMPayModal">
-
-        <div class="modal fade" id="checkoutMPayModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-mpay-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body zoom" id="zoom12">
-                <img class="checkout-mpay-modal-img zoomImg" src="Assets/images/self-checkout/checkout-pay.png" alt="Mid-fidelity prototypes">
-              </div>
-
-            </div>
-          </div>
-        </div>
-<!--
-        <p class="sub-htext remove-line">Iterating: Tablet Payment</p>
-        <p class="norm-text">
-          These iterations closely model the mobile version, but the additional
-          space allowed us to use a <span class="bold">two-column display</span>:
-          one column for the shopping cart, and another column for an ad and payment summary.
-        </p>
-        <div id="checkout-tabletpay-carousel" class="carousel slide margin-bottom" data-ride="carousel">
-
-          <ol class="carousel-indicators">
-            <li data-target="#checkout-tabletpay-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#checkout-tabletpay-carousel" data-slide-to="1"></li>
-          </ol>
-
-
-          <div class="carousel-inner" role="listbox" data-toggle="modal" data-target="#checkoutTPayModal">
-
-            <div class="item active">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-tablet-pay1.png" alt="First tablet payment page iteration" data-target="#checkoutTPayCarouselModal" data-slide-to="0">
-            </div>
-
-            <div class="item">
-              <img class="img-zoomin" src="Assets/images/self-checkout/checkout-tablet-pay2.png" alt="Second tablet payment page iteration" data-target="#checkoutTPayCarouselModal" data-slide-to="0">
-            </div>
-
-          </div>
-
-
-          <span class="left carousel-control" href="#checkout-tabletpay-carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </span>
-          <span class="right carousel-control" href="#checkout-tabletpay-carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </span>
-
-        </div>
-
-        <div class="modal fade" id="checkoutTPayModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog checkout-tpay-modal" role="document">
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div id="checkoutTPayCarouselModal" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#checkoutTPayCarouselModal" data-slide-to="0" class="active"></li>
-                    <li data-target="#checkoutTPayCarouselModal" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <span class="zoom" id="zoom13">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-tablet-pay1.png" alt="First tablet payment page iteration">
-                      </span>
-                    </div>
-
-                    <div class="item">
-                      <span class="zoom" id="zoom14">
-                        <img class="zoomImg" src="Assets/images/self-checkout/checkout-tablet-pay2.png" alt="Second tablet payment page iteration">
-                      </span>
-                    </div>
-                  </div>
-
-                  <span class="left carousel-control" href="#checkoutTPayCarouselModal" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </span>
-                  <span class="right carousel-control" href="#checkoutTPayCarouselModal" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </span>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      -->
       </div>
-    </div>
 
-    <div class="row bunbun-project-page container">
-      <div class="col-md-9">
+      <div class="body-container">
+        <div class="checkout-before-after-container margin-bottom-56">
 
-        <div class="big-htext bold title" id="final-design">Final Design</div>
-        <div class="no-margin row">
-          <div class="col-sm-6 no-left-padding no-padding margin-up">
-            <div class="big-htext bold orange-text">
-              01
+          <div id="checkoutMobile" class="bal-vertical-container">
+              <div class="bal-vertical-after">
+                  <img src="Assets/images/self-checkout/checkout-mobile-after.png" alt="">
+                  <div class="bal-vertical-afterPosition">
+                  </div>
+              </div>
+              <div class="bal-vertical-before">
+                  <div class="bal-vertical-before-inset">
+                      <img src="Assets/images/self-checkout/checkout-mobile-before.png" alt="">
+                      <div class="bal-vertical-beforePosition">
+                      </div>
+
+                  </div>
+              </div>
+              <div class="bal-vertical-handle">
+                  <span class="handle-vertical-top-arrow"></span>
+                  <span class="handle-vertical-bottom-arrow"></span>
+
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-5 margin-bottom-4">User Testing: Iterations for Tablet</div>
+        <p class="paragraph-1">
+          We used a mobile-first approach by prioritizing mobile iterations and
+          applying these to the tablet version. On the tablet, we used a three-column
+          layout to maximize the visual real estate.
+        </p>
+      </div>
+
+      <div class="checkout-tablet-before-after-container body-container">
+
+        <div id="checkoutTablet" class="bal-container margin-bottom-56">
+            <div class="bal-after">
+                <img src="Assets/images/self-checkout/checkout-tablet-after.png" alt="">
+                <div class="bal-afterPosition">
+                </div>
             </div>
-            <div class="small-htext semibold">
-              Plan the next grocery trip
+            <div class="bal-before">
+                <div class="bal-before-inset">
+                    <img src="Assets/images/self-checkout/checkout-tablet-before.png" alt="">
+                    <div class="bal-beforePosition">
+                    </div>
+
+                </div>
             </div>
-            <p class="norm-text">
-              Users can browse through weekly deals from Giant Eagle and plan
-              their next grocery trip from their homes. They can also refer to
-              old grocery lists when making a new list.
+            <div class="bal-handle">
+                <span class="handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+
+            </div>
+        </div>
+      </div>
+
+      <div class="global-margin body-project-container">
+        <div class="heading-5 margin-bottom-4">Design System</div>
+        <p class="paragraph-1">
+          To maintain visual consistency across the team, I established and
+          maintained the design system and implemented these styles as Figma components.
+        </p>
+      </div>
+
+      <div class="text-center z-index-10">
+        <img class="max-100width margin-bottom-56 body-container" src="Assets/images/self-checkout/checkout-design-system.png" alt="some literature review and observation findings">
+      </div>
+
+      <div class="focus-section g-0">
+        <div class="global-margin body-project-container">
+          <div class="heading-2 text-center focus-section-text" id="solution">Solution</div>
+          <p class="heading-4 margin-bottom-16 text-center">
+            What is Self-Checkout+?
+          </p>
+
+          <p class="paragraph-1 margin-bottom-16">
+            Self-Checkout+ is a web application that allows Giant Eagle shoppers to plan a
+            grocery trip and scan items as they add them to their cart. Our team
+            initially considered implementing the store layout, but this would
+            be far too costly for the backend of Giant Eagle.<br><br>
+
+            Self-Checkout+ is responsive and comes in a mobile and tablet version.
+            With a mobile version, shoppers can use their own phones in the store.
+          </p>
+          <div class="text-center">
+            <img class="max-100width margin-bottom-56" src="Assets/images/self-checkout/checkout-mobile-mockup.png" alt="some literature review and observation findings">
+          </div>
+          <p class="paragraph-1 margin-bottom-16">
+            Giant Eagle will also mount tablets on shopping carts to streamline
+            the checkout process.
+          </p>
+          <div class="text-center">
+            <img class="max-100width" src="Assets/images/self-checkout/checkout-tablet-mockup.png" alt="some literature review and observation findings">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="global-margin checkout-solution-container margin-top-pinmi-focus">
+        <div class="row">
+          <div class="col-md-6 no-left-padding">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Plan the next trip
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Users browse through weekly deals from and plan
+              their next grocery trip from their homes.
             </p>
           </div>
-          <div class="col-sm-6 no-right-padding no-padding">
 
-            <video class="max-100width margin-bottom" controls preload="metadata">
-              <source src="Assets/images/self-checkout/checkout-plantrip.mov#t=0.5" type="video/mp4">
+          <div class="col-md-6 no-right-padding no-left-padding-md text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/self-checkout/checkout-plan.mov#t=0.1" type="video/mp4">
             </video>
           </div>
         </div>
 
-        <div class="no-margin row">
-
-          <div class="col-sm-6 no-left-padding no-padding margin-up" id="checkout-final-xs">
-            <div class="big-htext bold orange-text">
-              02
-            </div>
-            <div class="small-htext semibold">
-              Add-as-you-go
-            </div>
-            <p class="norm-text">
-              With Self-Checkout+, users can easily ask for help without having
-              to look for someone to assist them in the store.
-              <br><br>
-              Users can view their grocery list as they scan items to add to
-              their carts. They simply need to scan the barcode,
-              indicate quantity, and add it to their cart!
+        <div class="row">
+          <div class="col-md-6 no-right-padding no-left-padding-md hide-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Scan-as-you-go
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Users can ask for help on their phones and view their grocery list
+              as they scan items onto their carts.
             </p>
           </div>
 
-          <div class="col-sm-6 no-left-padding no-padding">
-            <video class="max-100width margin-bottom" controls preload="metadata">
-              <source src="Assets/images/self-checkout/checkout-addtocart.mov#t=0.5" type="video/mp4">
+          <div class="col-md-6 no-left-padding text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/self-checkout/checkout-add.mov#t=0.1" type="video/mp4">
             </video>
           </div>
 
-          <div class="col-sm-6 no-right-padding no-padding margin-up" id="checkout-final-sm">
-            <div class="big-htext bold orange-text">
-              02
-            </div>
-            <div class="small-htext semibold">
-              Add-as-you-go
-            </div>
-            <p class="norm-text">
-              With Self-Checkout+, users can easily ask for help without having
-              to look for someone to assist them in the store.
-              <br><br>
-              Users can view their grocery list as they scan items to add to
-              their carts. They simply need to scan the barcode,
-              indicate quantity, and add it to their cart!
+          <div class="col-md-6 no-right-padding no-left-padding-md show-lg">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus">
+              Scan-as-you-go
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Users can ask for help on their phones and view their grocery list
+              as they scan items onto their carts.
             </p>
           </div>
         </div>
 
-        <div class="no-margin row">
-          <div class="col-sm-6 no-left-padding no-padding margin-up">
-            <div class="big-htext bold orange-text">
-              03
-            </div>
-            <div class="small-htext semibold">
+        <div class="row">
+          <div class="col-md-6 no-left-padding">
+            <p class="heading-4 margin-bottom-16 margin-top-pinmi-focus margin-top-checkout-solution">
               Checkout in one swipe
-            </div>
-            <p class="norm-text">
-              Users can pay for the items in their cart by sliding the credit
-              card image. They must then show the QR code to a Giant Eagle
-              store associate to inspect and bag the purchased items.
+            </p>
+            <p class="paragraph-1 margin-bottom-16">
+              Users swipe to pay and show their QR code for inspection before
+              exiting the store.
             </p>
           </div>
-          <div class="col-sm-6 no-right-padding no-padding">
 
-            <video class="max-100width margin-bottom" controls preload="metadata">
-              <source src="Assets/images/self-checkout/checkout-payment.mov#t=0.5" type="video/mp4">
+          <div class="col-md-6 no-right-padding no-left-padding-md text-center">
+            <video class="max-100width margin-bottom-120 mobile-video" controls preload="metadata">
+              <source src="Assets/images/self-checkout/checkout-pay.mov#t=0.1" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="focus-colors">
-      <div class="row bunbun-project-page container focus-inside-padding">
-        <div class="col-md-12">
+      <div class="global-margin body-project-container margin-project-end">
+        <div class="heading-5 margin-bottom-4">Try the mobile interactive site!</div>
+        <iframe class="figma margin-bottom-16" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKlDZwGw9ZEkw5ZmK46BK5k%2FSelf-Checkout%3Fnode-id%3D9%253A1%26viewport%3D2602%252C-1104%252C0.2974817454814911%26scaling%3Dscale-down" allowfullscreen></iframe>
 
-          <p class="sub-htext remove-line focus-orange-text">Mobile interactive design — try it yourself!</p>
-          <iframe class="figma margin-bottom" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKlDZwGw9ZEkw5ZmK46BK5k%2FSelf-Checkout%3Fnode-id%3D9%253A1%26viewport%3D2602%252C-1104%252C0.2974817454814911%26scaling%3Dscale-down" allowfullscreen></iframe>
 
-          <div class="view-final">
-            <a href="https://www.figma.com/proto/KlDZwGw9ZEkw5ZmK46BK5k/Self-Checkout?node-id=73%3A0&viewport=346%2C142%2C0.05096887797117233&scaling=scale-down" target="_blank">
-              <div class="norm-text focus-button">Try the tablet version of Self-Checkout+</div>
+        <div class="heading-2 text-center project-section-text" id="reflection">Reflection</div>
+
+        <div class="heading-5 margin-bottom-4">Lessons Learned</div>
+        <p class="paragraph-1">
+          I enjoyed working on this project and thinking more critically about
+          how others experience the same spaces that I experience. Here are three
+          main lessons I learned.
+        </p>
+
+        <div class="row">
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 1</p>
+                <p class="paragraph-2">
+                  Be quick to iterate and know when you are wrong—listen to the user.
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 2</p>
+                <p class="paragraph-2">
+                  Use my background in business to realize
+                  product feasibility.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 margin-bottom-16">
+            <div class="card-container">
+              <div class="vertical-middle">
+                <p class="heading-5">Lesson 3</p>
+                <p class="paragraph-2">
+                  Refine my skills in visual design across multiple devices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="heading-3 text-center project-section-text">Other Projects</div>
+        <div class="row">
+
+          <div class="col-sm-6">
+            <a href="junto.html" class="no-text-decoration">
+              <div class="other-project-container text-center">
+                <img class="other-project-image" src="Assets/images/junto-project.png" alt="Junto mockups">
+                <div class="paragraph-1 bold red-text">Junto</div>
+                <div class="paragraph-3">Gamified AR anti-procrastination app</div>
+
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6">
+            <a href="pinmi.html" class="no-text-decoration">
+              <div class="other-project-container text-center">
+                <img class="other-project-image" src="Assets/images/pinmi-project.png" alt="Self-Checkout+ mockups">
+                <div class="paragraph-1 bold red-text">Pin-MI</div>
+                <div class="paragraph-3">Live talk therapy practice platform</div>
+
+              </div>
             </a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row bunbun-project-page container">
-      <div class="col-md-9">
 
-        <div class="big-htext bold title margin-up" id="reflection">Reflection</div>
-
-        <p class="sub-htext remove-line">Lessons Learned</p>
-        <p class="norm-text">
-          Throughout the process of researching, ideating, and
-          iterating, I learned how to work harmoniously with my teammates to
-          come up with one cohesive design that we were all very proud of.
-          Additionally, as a Business + HCI major, I also enjoyed learning
-          how to design a website that improves the grocery shopping experience
-          and balances specific business boundaries and feasibility.
-        </p>
-
-        <div class="small-htext semibold other-projects">Other Projects</div>
-
-        <div class="col-md-4 col-sm-4 form-group margin-bottom" id="junto-project">
-          <a href="junto.html">
-          <div class="junto-project">
-            <img class="junto-img-project" src="Assets/images/junto-project.png" alt="logo of Junto">
-
-            <!-- overlay objects for junto -->
-            <div class="overlay-project-items" id="junto-overlay-project">
-              <div class="vertical-center">
-                <div class="norm-text semibold">Junto</div>
-                <div class="small-text">Gamified AR anti-procrastination app</div>
-              </div>
-            </div>
-
-          </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-sm-4 form-group margin-bottom" id="creart-project">
-          <a href="creart.html">
-            <div class="creart-project">
-              <img class="creart-img-project" src="Assets/images/creart-project.png" alt="public art">
-
-              <!-- overlay objects for public art -->
-              <div class="overlay-project-items" id="creart-overlay-project">
-                <div class="vertical-center">
-                  <div class="norm-text semibold">CreArt</div>
-                  <div class="small-text">Public art co-creation app</div>
-                </div>
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4 col-sm-4 form-group margin-bottom" id="shallmake-project">
-          <a href="pinmi.html">
-          <div class="shallmake-project">
-            <img class="shallmake-img-project" src="Assets/images/pinmi-project.png" alt="Pin-MI">
-
-            <!-- overlay objects for shallmake -->
-            <div class="overlay-project-items" id="shallmake-overlay-project">
-              <div class="vertical-center">
-                <div class="norm-text semibold">Pin-MI</div>
-                <div class="small-text">Mock Patient Practice Platform</div>
-              </div>
-            </div>
-
-          </div>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="col-md-3">
-      </div>
 
     </div>
 
     <footer>
-      <div class="row">
-        <span class="col-md-9 col-sm-6 col-xs-12 small-text" id="footer">
-          <a class="underline" href="https://www.linkedin.com/in/kristelyu/" target="_blank">linkedin</a><br>
-          <a class="underline" href="mailto:kristelgraceyu@gmail.com" target="_blank">email</a>
-        </span>
+      <div class="container">
+        <div class="row">
+          <span class="col-sm-6 col-12 paragraph-3 sm-centered">
+            <a class="underline" href="https://www.linkedin.com/in/kristelyu/" target="_blank">linkedin</a><br>
+            <a class="underline" href="mailto:kristelgraceyu@gmail.com" target="_blank">email</a>
+          </span>
 
-        <span class="col-md-3 col-sm-6 col-xs-12 no-left-padding no-padding small-text" id="right">
-          Coded and designed by me &#128105;&#127995;&#8205;&#128187;<br>
-          © Kristel Yu 2021
-        </span>
+          <span class="col-sm-6 col-12 paragraph-3 sm-centered">
+            <span class="float-end sm-centered">
+              Coded and designed by me &#128105;&#127995;&#8205;&#128187;<br>
+              © Kristel Yu 2022
+            </span>
+          </span>
+        </div>
       </div>
 
 
     </footer>
+
+
+
+
+
+
+
+
     <!-- js files for libraries -->
     <script src="Assets/js/scroll.js"></script>
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/fade.js"></script>
-    <script src="Assets/js/smoothscroll.js"></script>
     <script src="Assets/js/scrollspying.js"></script>
     <script src="Assets/js/autoplay.js"></script>
     <script src="Assets/js/blurry.js"></script>
-    <script src="Assets/js/zoom.js"></script>
-    <script src="Assets/js/zoom-activate.js"></script>
+    <script src="Assets/js/sticky.js"></script>
+    <script src="Assets/js/image-vertical-slider.js"></script>
+    <script src="Assets/js/image-slider.js"></script>
+    <script>
+    new BeforeAfterVertical({
+        id: '#checkoutMobile'
+    });
+    new BeforeAfter({
+        id: '#checkoutTablet'
+    });
+    </script>
 
   </body>
 
