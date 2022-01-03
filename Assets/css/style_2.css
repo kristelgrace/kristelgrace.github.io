@@ -253,7 +253,7 @@ a.underline:hover, a.underline:focus {
 
   .project-img {
     margin: auto;
-    max-width: 90vw !important;
+    max-width: 80vw !important;
   }
 
   /* project */
@@ -263,6 +263,7 @@ a.underline:hover, a.underline:focus {
 
   #project-title-sm {
     padding: 200px 24px 16px 24px !important;
+    text-align: center;
   }
 
   /* about */
