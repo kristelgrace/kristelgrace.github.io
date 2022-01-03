@@ -266,6 +266,10 @@ a.underline:hover, a.underline:focus {
     text-align: center;
   }
 
+	#junto-vertical-before-after-container-sm {
+		height: calc(1.456*(100vw - 48px)) !important;
+	}
+
   /* about */
   .max-75vw {
     max-width: 75vw;
@@ -338,6 +342,14 @@ a.underline:hover, a.underline:focus {
   .overlaying-image {
     padding-left: 24px !important;
   }
+
+	.pinmi-before-after-container {
+		 height: calc(0.657*(100vw - 48px)) !important;
+	 }
+
+	.junto-vertical-before-after-container {
+		height: calc(1.456/2*(100vw - 48px)) !important;
+	}
 }
 
 /* adjust for screen size less than 991px (md) */
@@ -374,6 +386,22 @@ a.underline:hover, a.underline:focus {
     bottom: 0;
     padding-right: 0;
   }
+
+	.pinmi-before-after-container {
+		 height: calc(0.657*(100vw - 144px));
+	 }
+
+	 .checkout-before-after-container {
+		 height: calc(0.588*(100vw - 1.5rem));
+	 }
+
+	 .checkout-tablet-before-after-container {
+		 height: calc(0.729*(100vw - 1.5rem));
+	 }
+
+	 .junto-vertical-before-after-container {
+		 height: calc(1.456/2*(100vw - 144px));
+	 }
 }
 
 /* adjust margins & paddings for screen size more than 768px (sm) */
@@ -431,6 +459,27 @@ a.underline:hover, a.underline:focus {
   .margin-top-pinmi-focus {
     margin-top: 32px !important;
   }
+
+	.body-project-container{
+    margin: 0 auto !important;
+    width: 720px !important;
+  }
+
+	.pinmi-before-after-container {
+		 height: 473px;
+	 }
+
+	 .checkout-before-after-container {
+		 height: 588px;
+	 }
+
+	 .checkout-tablet-before-after-container {
+		 height: 729px;
+	 }
+
+	 .junto-vertical-before-after-container {
+		 height: 507px;
+	 }
 }
 
 /* adjust margins & paddings for screen size less than 1200px (lg) */
@@ -457,11 +506,6 @@ a.underline:hover, a.underline:focus {
     margin-left: auto !important;
     margin-right: auto !important;
     width: 860px !important;
-  }
-
-  .body-project-container{
-    margin: 0 auto !important;
-    width: 720px !important;
   }
 
   /* project */
@@ -1052,7 +1096,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  height: 473px;
   overflow: auto;
 }
 
@@ -1064,7 +1107,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  height: 729px;
   overflow: auto;
 }
 
@@ -1076,7 +1118,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  height: 507px;
   overflow: auto;
 }
 
@@ -1256,7 +1297,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  height: 588px;
   overflow: auto;
 }
 
