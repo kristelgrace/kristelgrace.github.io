@@ -262,7 +262,7 @@ a.underline:hover, a.underline:focus {
   }
 
   #project-title-sm {
-    padding: 200px 24px 16px 24px !important;
+    padding: 16vh 24px 16px 24px !important;
     text-align: center;
   }
 
@@ -322,7 +322,7 @@ a.underline:hover, a.underline:focus {
     padding: 40px 48px;
   }
 
-  #introduction-name.form-group {
+  #introduction-name {
     margin-bottom: 0;
   }
 
