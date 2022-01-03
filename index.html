@@ -154,7 +154,9 @@
                 </div>
               </div>
 
-              <span class="paragraph-1 button-disabled">Coming soon</span>
+              <a href="mailto:kristelgraceyu@gmail.com?subject=Learning More about your GoDaddy Project" class="button-unfilled paragraph-1 arrow-right" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Project is under NDA">
+                <span>Contact me</span>
+              </a>
 
             </div>
           </div>
@@ -282,6 +284,12 @@
     <script src="Assets/js/header.js"></script>
     <script src="Assets/js/fade.js"></script>
     <script src="Assets/js/typing.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
 
   </body>
 

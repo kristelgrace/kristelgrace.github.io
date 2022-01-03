@@ -700,6 +700,38 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 /** end of arrow **/
 
+/** tooltip **/
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  background-color: #646464;
+  color: #fff;
+  box-shadow: 0;
+  opacity: 1 !important;
+  font-family: 'Manrope', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-size: 1em;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #646464;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #646464;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #646464;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #646464;
+}
+
+/** end of tooltip **/
+
 /** projects **/
 .projects-container {
   padding-top: 72px;
@@ -1030,7 +1062,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     height: 100%;
     cursor: grab;
     overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
 }
 
 .bal-after {
