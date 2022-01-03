@@ -267,8 +267,8 @@ a.underline:hover, a.underline:focus {
   }
 
   /* about */
-  .max-80vw {
-    max-width: 80vw;
+  .max-75vw {
+    max-width: 75vw;
   }
 }
 
