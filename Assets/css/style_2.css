@@ -396,7 +396,7 @@ a.underline:hover, a.underline:focus {
 	 }
 
 	 .checkout-tablet-before-after-container {
-		 height: calc(0.729*(100vw - 1.5rem));
+		 height: calc(56px + calc(0.729*(100vw - 1.5rem)));
 	 }
 
 	 .junto-vertical-before-after-container {
@@ -474,7 +474,7 @@ a.underline:hover, a.underline:focus {
 	 }
 
 	 .checkout-tablet-before-after-container {
-		 height: 729px;
+		 height: 785px;
 	 }
 
 	 .junto-vertical-before-after-container {
