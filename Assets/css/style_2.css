@@ -1,17 +1,12 @@
 /**** GLOBAL ****/
 html {
 	scroll-behavior: smooth;
-	height: -webkit-fill-available;
 }
 
 body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-
-	min-height: 100vh;
-	/* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
 }
 
 @keyframes fadeInAnimation {
