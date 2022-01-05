@@ -350,6 +350,11 @@ a.underline:hover, a.underline:focus {
 	.junto-vertical-before-after-container {
 		height: calc(1.456/2*(100vw - 48px)) !important;
 	}
+
+	#solution-mobile-focus-margins-sm {
+		margin-left: 48px;
+		margin-right: 48px;
+	}
 }
 
 /* adjust for screen size less than 991px (md) */
