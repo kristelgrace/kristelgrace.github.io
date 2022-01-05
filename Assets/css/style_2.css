@@ -9,6 +9,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
+	min-height: 100vh;
 	/* mobile viewport bug fix */
   min-height: -webkit-fill-available;
 }
