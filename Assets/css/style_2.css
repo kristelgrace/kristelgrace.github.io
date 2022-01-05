@@ -383,7 +383,7 @@ a.underline:hover, a.underline:focus {
 
   .project-header-image-container {
     position: absolute;
-    bottom: 0;
+    bottom: 0vh;
     padding-right: 0;
   }
 
