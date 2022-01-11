@@ -142,6 +142,10 @@ a:hover {
   top: -4px;
 }
 
+.button-unfilled[type=button] {
+	-webkit-appearance: none !important;
+}
+
 .button-disabled {
   color: #FFF;
   background-color: #FBC8C1;
